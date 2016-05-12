@@ -135,6 +135,8 @@ def cop(driver):
         driver.find_element_by_id("vval").send_keys(CVV)
 
         driver.find_element_by_tag_name("ins").click()
+        
+        driver.find_element_by_xpath(".//*[contains(text(), 'I have read and agree to the')]").click()
 
     req = driver.find_element_by_id("order_billing_state")
     req.send_keys(STATE)

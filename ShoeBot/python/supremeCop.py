@@ -5,36 +5,43 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import Select
 import time
 
-FIREFOX_PROFILE =  'EDIT WITH PATH TO YOUR FIREFOX PROFILE.'
+# PARTS YOU SHOULD EDIT
+###########################################
+# Address location of you firefox profile (for autofill)
+FIREFOX_PROFILE =  '/Users/Ruht_Roh/Library/Application Support/Firefox/Profiles/xzbpu59q.default'
 
-# Some accessory link that already exists in the store you dont want to buy
-CHECKOUT_BUFFER = "http://www.supremenewyork.com/shop/accessories/u0fno6g8i/bbdxfjcgu"
+# Make this an accessory link that already exists in the store you dont want to buy
+CHECKOUT_BUFFER = "http://www.supremenewyork.com/shop/accessories/t0oldw67n/bbdxfjcgu"
 
 #Keyword
-KEYWORD_ONE = "short"
-KEYWORD_TWO = "white"
+KEYWORD_ONE = "Short"
+KEYWORD_TWO = "Yellow"
 
 # if Item you are trying to buy has a size, then set ITEM_HAS_SIZE to 1, otherwise zero
 ITEM_HAS_SIZE = 1
-SIZE = "large" # Put size that you want; Note that it will buy the next bigger size if specified size is out
+SIZE = "34917" # Put size that you want; Note that it will buy the next bigger size if specified size is out
 
 
 CUSTOM_AUTOFILL = 0   # Set this to 0 if you dont want to use the firefox autofill plugin
 # your checkout details
-NAME = ""
-EMAIL = ""
-TEL = ""
-ADDRESS = ""
-ZIP = ""
+NAME = "Jeremy Hithcock"
+EMAIL = "kicksaddictions@gmail.com"
+TEL = "6502882217"
+ADDRESS = "2310 Poppy Drive"
+ZIP = "94010"
 CITY = ""
-STATE = ""
-TYPE = ""
-NUMBER = ""
-EXP_DATE_MONTH = ""
-EXP_DATE_YEAR = ""
-CVV = ""
+STATE = "CA"
+TYPE = "Visa"
+NUMBER = "4342356388548174"
+EXP_DATE_MONTH = "06"
+EXP_DATE_YEAR = "2017"
+CVV = "420"
 
-TARGET = "http://www.supremenewyork.com/shop/new"  # login page of aurora student
+
+
+# DON'T EDIT THIS
+###########################################
+TARGET = "http://www.supremenewyork.com/shop/all"  # login page of aurora student
 CHECKOUT = "https://www.supremenewyork.com/checkout"
 CART = "http://www.supremenewyork.com/shop/cart"
 
@@ -52,10 +59,12 @@ def bufferCheckout(driver):
     time.sleep(0.75)
     driver.get(TARGET)
 
+
 def selectSize(driver):
+
     #pick size and check if checkout button is there to checkout
     if ITEM_HAS_SIZE:
-      driver.find_element_by_id("size").send_keys(SIZE)
+        driver.find_element_by_id("size").send_keys(SIZE)
     driver.find_element_by_id("add-remove-buttons").find_element_by_class_name("button").click()
     driver.find_element_by_partial_link_text("checkout")
     driver.get(CHECKOUT)
@@ -67,11 +76,22 @@ def cop(driver):
     #buffer the checkout
     bufferCheckout(driver)
 
-    #link strink to check if shop has been updated
+    #link string to check if shop has been updated
     req = driver.find_element_by_class_name(ITEM)
     str1 = req.find_element_by_css_selector("a").get_attribute(HREF)
 
     driver.get(TARGET)
+
+#######################################################
+    # #Keyword
+            #modify target to contain link of where item is located...
+                #example: http://www.supremenewyork.com/shop/shorts/ [where 'shorts' is our inputted code string]
+    # TARGET = "http://www.supremenewyork.com/shop/new"
+    # KEYWORD_ONE = "Short"
+    # KEYWORD_TWO = "Yellow"
+    # HREF = "href"
+    # ITEM = "inner-article"
+#######################################################
 
     i = 0
     #while we have not found our item
@@ -85,11 +105,12 @@ def cop(driver):
         #check if the first item is the same, if so, continue refreshing
         str2 = req1[0].find_element_by_css_selector("a").get_attribute(HREF)
 
-        if( str1 == str2):
+        if(str1 == str2):
             if(i == 3):    #if you are not testing, take out the if statement str1, and increment
                 str1 = "hai"
             i = i + 1
             continue
+
 
         #Once shop updates, get all of the links and check for keywords
         for i in range(len(req1)):
@@ -107,6 +128,7 @@ def cop(driver):
         #fill out check form
         driver.find_element_by_id("order_billing_name").send_keys(NAME)
         driver.find_element_by_id("order_email").send_keys(EMAIL)
+
 
         tel_input = driver.find_element_by_id("order_tel")
         tel_input.click()
@@ -135,7 +157,7 @@ def cop(driver):
         driver.find_element_by_id("vval").send_keys(CVV)
 
         driver.find_element_by_tag_name("ins").click()
-        
+
         driver.find_element_by_xpath(".//*[contains(text(), 'I have read and agree to the')]").click()
 
     req = driver.find_element_by_id("order_billing_state")

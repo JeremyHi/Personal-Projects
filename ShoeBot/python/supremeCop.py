@@ -24,15 +24,15 @@ SIZE = "34916" # Put size that you want; Note that it will buy the next bigger s
 
 CUSTOM_AUTOFILL = 0   # Set this to 0 if you dont want to use the firefox autofill plugin
 # your checkout details
-NAME = "Jeremy Hithcock"
-EMAIL = "kicksaddictions@gmail.com"
-TEL = "6502882217"
-ADDRESS = "2310 Poppy Drive"
+NAME = "James Harden"
+EMAIL = "fakeEmail@gmail.com"
+TEL = "6505557382"
+ADDRESS = "2519 Poop St"
 ZIP = "94010"
-CITY = ""
+CITY = "Burbank"
 STATE = "CA"
 TYPE = "Visa"
-NUMBER = "4342356388548174"
+NUMBER = "5940295833728195"
 EXP_DATE_MONTH = "06"
 EXP_DATE_YEAR = "2017"
 CVV = "420"
@@ -92,32 +92,6 @@ def cop(driver):
     # ITEM = "inner-article"
 #######################################################
 
-    i = 0
-    #while we have not found our item
-    while 1:
-        start = time.time()
-
-        #refresh the website and create a new list of all the items
-        driver.get(TARGET)
-        req1 = driver.find_elements_by_class_name(ITEM)
-
-        #check if the first item is the same, if so, continue refreshing
-        str2 = req1[0].find_element_by_css_selector("a").get_attribute(HREF)
-
-        if(str1 == str2):
-            if(i == 3):    #if you are not testing, take out the if statement str1, and increment
-                str1 = "hai"
-            i = i + 1
-            continue
-
-
-        #Once shop updates, get all of the links and check for keywords
-        for i in range(len(req1)):
-            link = req1[i].find_element_by_css_selector("a").get_attribute(HREF)
-            if KEYWORD_ONE in link and KEYWORD_TWO in link:
-                driver.get(link)
-                break
-        break
 
     #selects size and adds to cart
     selectSize(driver)

@@ -1,9 +1,10 @@
+import time
+import sys
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import Select
-import time
 
 # PARTS YOU SHOULD EDIT
 ###########################################
@@ -39,26 +40,15 @@ CVV = "420"
 
 
 
-# DON'T EDIT THIS
+# DON'T EDIT THIS - fuck it im editing it
 ###########################################
-TARGET = "http://www.supremenewyork.com/shop/all"  # login page of aurora student
+userItem = sys.argv[1]
+TARGET = "http://www.supremenewyork.com/shop/all/" + userItem
 CHECKOUT = "https://www.supremenewyork.com/checkout"
 CART = "http://www.supremenewyork.com/shop/cart"
 
 HREF = "href"
 ITEM = "inner-article"
-
-def bufferCheckout(driver):
-    driver.get(CHECKOUT_BUFFER)
-
-    driver.find_element_by_id("add-remove-buttons").find_element_by_class_name("button").click()
-    driver.find_element_by_partial_link_text("checkout")
-    driver.get(CHECKOUT)
-    driver.get(CART)
-    driver.find_element_by_class_name("cart-remove").find_element_by_css_selector("button").click()
-    time.sleep(0.75)
-    driver.get(TARGET)
-
 
 def selectSize(driver):
 
@@ -72,13 +62,11 @@ def cop(driver):
     #go to supreme new section of shop
     driver.get(TARGET)
 
-    #buffer the checkout
-    bufferCheckout(driver)
-
     #link string to check if shop has been updated
     req = driver.find_element_by_class_name(ITEM)
     str1 = req.find_element_by_css_selector("a").get_attribute(HREF)
 
+    #mod target to be link of where i want shit to go
     driver.get(TARGET)
 
 #######################################################
@@ -91,6 +79,11 @@ def cop(driver):
     # HREF = "href"
     # ITEM = "inner-article"
 #######################################################
+
+    
+
+
+
 
 
     #selects size and adds to cart

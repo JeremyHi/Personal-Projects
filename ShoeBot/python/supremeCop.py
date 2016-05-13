@@ -7,7 +7,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import Select
 
 # Address location of you firefox profile (for autofill)
-FIREFOX_PROFILE =  '/Users/Ruht_Roh/Library/Application Support/Firefox/Profiles/xzbpu59q.default'
+FIREFOX_PROFILE = '/Users/Ruht_Roh/Library/Application Support/Firefox/Profiles/xzbpu59q.default'
 
 #Keyword
 ITEM_NAME = "Marbled Belted Short"
@@ -49,6 +49,8 @@ def selectSize(driver):
     driver.find_element_by_partial_link_text("checkout").click()
 
 def cop(driver):
+    start = time.time()
+
     driver.get(TARGET)
     
     for a in driver.find_elements_by_css_selector("a.name-link"):

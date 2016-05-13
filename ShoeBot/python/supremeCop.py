@@ -19,7 +19,7 @@ KEYWORD_TWO = "Yellow"
 
 # if Item you are trying to buy has a size, then set ITEM_HAS_SIZE to 1, otherwise zero
 ITEM_HAS_SIZE = 1
-SIZE = "34917" # Put size that you want; Note that it will buy the next bigger size if specified size is out
+SIZE = "34916" # Put size that you want; Note that it will buy the next bigger size if specified size is out
 
 
 CUSTOM_AUTOFILL = 0   # Set this to 0 if you dont want to use the firefox autofill plugin
@@ -65,9 +65,8 @@ def selectSize(driver):
     #pick size and check if checkout button is there to checkout
     if ITEM_HAS_SIZE:
         driver.find_element_by_id("size").send_keys(SIZE)
-    driver.find_element_by_id("add-remove-buttons").find_element_by_class_name("button").click()
-    driver.find_element_by_partial_link_text("checkout")
-    driver.get(CHECKOUT)
+    driver.find_element_by_id("add-remove-buttons").find_element_by_name("commit").click()
+    driver.find_element_by_partial_link_text("checkout").click()
 
 def cop(driver):
     #go to supreme new section of shop

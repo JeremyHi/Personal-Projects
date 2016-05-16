@@ -13,12 +13,16 @@ FIREFOX_PROFILE = '/Users/Ruht_Roh/Library/Application Support/Firefox/Profiles/
 #spreadsheetInformation
 wb = openpyxl.load_workbook('Customer.xlsx')
 sheet = wb.get_sheet_by_name('Sheet1')
+customerInfo = []
 customerList = []
 
 #fills customerList with the Customer Information.
 for row in range(2, sheet.get_highest_row()+1):
     for column in range(1, sheet.get_highest_column()):
-        customerList.append(sheet.cell(row=row,column=column).value)
+        customerInfo.append(sheet.cell(row=row,column=column).value)
+    customerList.append(customerInfo)
+    customerInfo = []
+
 
 CUSTOM_AUTOFILL = 0   # Set this to 0 if you dont want to use the firefox autofill plugin
 NAME = "James Harden"
@@ -118,7 +122,6 @@ if __name__ == '__main__':
     except Exception:
         print("Test Failed.")
         driver.close()
-
 
 
 

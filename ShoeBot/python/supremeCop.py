@@ -1,5 +1,6 @@
 import time
 import sys
+import openpyxl
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
@@ -9,14 +10,15 @@ from selenium.webdriver.support.ui import Select
 # Address location of you firefox profile (for autofill)
 FIREFOX_PROFILE = '/Users/Ruht_Roh/Library/Application Support/Firefox/Profiles/xzbpu59q.default'
 
-#Keyword
-ITEM_NAME = "Marbled Belted Short"
-ITEM_COLOR = "Yellow"
+#spreadsheetInformation
+wb = openpyxl.load_workbook('Customer.xlsx')
+sheet = wb.get_sheet_by_name('Sheet1')
+customerList = []
 
-# if Item you are trying to buy has a size, then set ITEM_HAS_SIZE to 1, otherwise zero
-ITEM_HAS_SIZE = 1
-SIZE = "34916" # 34916 = medium, 34917 = large, 34918 = X-large
-
+#fills customerList with the Customer Information.
+for row in range(2, sheet.get_highest_row()+1):
+    for column in range(1, sheet.get_highest_column()):
+        customerList.append(sheet.cell(row=row,column=column).value)
 
 CUSTOM_AUTOFILL = 0   # Set this to 0 if you dont want to use the firefox autofill plugin
 NAME = "James Harden"
@@ -31,8 +33,14 @@ NUMBER = "5940295833728195"
 EXP_DATE_MONTH = "06"
 EXP_DATE_YEAR = "2017"
 CVV = "420"
+ITEM_NAME = "Marbled Belted Short"
+ITEM_COLOR = "Yellow"
 
+ITEM_HAS_SIZE = 1 #0 = no | 1 = yes
+SIZE = "34916" # 34916 = medium, 34917 = large, 34918 = X-large
 userItem = sys.argv[1]
+
+
 TARGET = "http://www.supremenewyork.com/shop/all/" + userItem
 CHECKOUT = "https://www.supremenewyork.com/checkout"
 CART = "http://www.supremenewyork.com/shop/cart"
@@ -110,3 +118,9 @@ if __name__ == '__main__':
     except Exception:
         print("Test Failed.")
         driver.close()
+
+
+
+
+
+

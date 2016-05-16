@@ -1,4 +1,3 @@
-import time
 import sys
 import openpyxl
 from selenium import webdriver
@@ -18,34 +17,13 @@ customerList = []
 
 #fills customerList with the Customer Information.
 for row in range(2, sheet.get_highest_row()+1):
-    for column in range(1, sheet.get_highest_column()):
+    for column in range(1, sheet.get_highest_column()+1):
         customerInfo.append(sheet.cell(row=row,column=column).value)
     customerList.append(customerInfo)
     customerInfo = []
 
-
 CUSTOM_AUTOFILL = 0   # Set this to 0 if you dont want to use the firefox autofill plugin
-NAME = "James Harden"
-EMAIL = "fakeEmail@gmail.com"
-TEL = "6505557382"
-ADDRESS = "2519 Poop St"
-ZIP = "94010"
-CITY = "Burbank"
-STATE = "CA"
-TYPE = "Visa"
-NUMBER = "5940295833728195"
-EXP_DATE_MONTH = "06"
-EXP_DATE_YEAR = "2017"
-CVV = "420"
-ITEM_NAME = "Marbled Belted Short"
-ITEM_COLOR = "Yellow"
 
-ITEM_HAS_SIZE = 1 #0 = no | 1 = yes
-SIZE = "34916" # 34916 = medium, 34917 = large, 34918 = X-large
-userItem = sys.argv[1]
-
-
-TARGET = "http://www.supremenewyork.com/shop/all/" + userItem
 CHECKOUT = "https://www.supremenewyork.com/checkout"
 CART = "http://www.supremenewyork.com/shop/cart"
 
@@ -61,8 +39,6 @@ def selectSize(driver):
     driver.find_element_by_partial_link_text("checkout").click()
 
 def cop(driver):
-    start = time.time()
-
     driver.get(TARGET)
     
     for a in driver.find_elements_by_css_selector("a.name-link"):
@@ -107,9 +83,6 @@ def cop(driver):
     req.send_keys(STATE)
     req.submit()
 
-    end = time.time()
-    print(end - start)
-
 if __name__ == '__main__':
 
     #define the driver to use the special firefox settings
@@ -118,7 +91,31 @@ if __name__ == '__main__':
     driver.implicitly_wait(2)
 
     try:
-        cop(driver)
+        for customer in customerList:
+            NAME = customer[0]
+            EMAIL = customer[1]
+            TEL = customer[2]
+            ADDRESS = customer[3]
+            ZIP = customer[4]
+            CITY = customer[5]
+            STATE = customer[6]
+            TYPE = customer[7]
+            NUMBER = customer[8]
+            EXP_DATE_MONTH = customer[9]
+            EXP_DATE_YEAR = customer[10]
+            CVV = customer[11]
+            ITEM_NAME = customer[12]
+            ITEM_COLOR = customer[13]
+
+            ITEM_HAS_SIZE = 1 if customer[16] == "NO" else 0
+            SIZE = "34916" if customer[14].lower() == "medium" else "34917"
+
+            userItem = customer[15] #arg entered for type of clothing, TODO: make as spreadsheet info.
+            TARGET = "http://www.supremenewyork.com/shop/all/" + userItem
+            cop(driver)
+            driver.find_element_by_tag_name('body').send_keys(Keys.COMMAND + 't')
+
+
     except Exception:
         print("Test Failed.")
         driver.close()

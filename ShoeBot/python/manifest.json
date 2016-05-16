@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Supreme Information Fill",
+  "description": "Let's get some dope stuff fam.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "images/Beta Palace inverted copy.jpg",
+  },
+
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+  "content_scripts": [
+    {
+        "matches": [
+        "https://www.supremenewyork.com/*"
+        ],
+        
+        "python": [
+            "python/supremeCop.py",
+        ],
+        "run_at": "document_start"
+    }
+  ]
+}

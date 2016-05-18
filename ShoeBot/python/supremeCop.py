@@ -5,9 +5,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import Select
+from datetime import datetime
+from threading import Timer
 
 # Address location of you firefox profile (for autofill)
 FIREFOX_PROFILE = '/Users/Ruht_Roh/Library/Application Support/Firefox/Profiles/xzbpu59q.default'
+
+#timing information
+
 
 #spreadsheetInformation
 wb = openpyxl.load_workbook('Customer.xlsx')
@@ -40,14 +45,15 @@ def selectSize(driver):
 
 def cop(driver):
     driver.get(TARGET)
-    
+
     for a in driver.find_elements_by_css_selector("a.name-link"):
-        if a.text == ITEM_NAME:
+        if ITEM_NAME in a.text:
             for b in driver.find_elements_by_css_selector("a.name-link"):
                 if b.text == ITEM_COLOR:
                     b.click()
                     break
             break
+        return
 
     selectSize(driver)
 

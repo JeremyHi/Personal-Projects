@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "Shortify",
+  "description": "I'll shorten it down right quick.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "images/Beta Palace inverted copy.jpg"
+  },
+
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+  "content_scripts": [
+    {
+        "matches": [
+        "http://*/*",
+        "https://*/*"
+        ],
+        
+        "js": [
+            "js/reroute.js",
+        ],
+
+        "run_at": "document_start"
+    }
+  ]
+}

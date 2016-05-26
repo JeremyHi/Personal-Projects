@@ -6,7 +6,7 @@
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "images/Beta Palace inverted copy.jpg"
+    "default_icon": "Threads Logo artwork.jpg"
   },
 
   "permissions": [
@@ -15,16 +15,15 @@
   ],
   "content_scripts": [
     {
-        "matches": [
+      "matches": [
         "http://*/*",
         "https://*/*"
-        ],
-        
-        "js": [
-            "js/reroute.js",
-        ],
-
-        "run_at": "document_start"
+      ],
+      
+      "js": [
+        "/Users/Ruht_Roh/Desktop/Programming/Summer2016/Shortify/reroute.js"
+      ],
+      "run_at": "document_start"
     }
   ]
 }

@@ -3,8 +3,9 @@
 /* Padding below the footer and lighter body text */
 html {
     font-size: 10px;
-    /*background-image: url("Vinfolio_Towels.jpg");*/
+    background-image: url("Vinfolio_Towels.jpg");
     background-color: #D6C885;
+    background-attachment: fixed;
 }
 
 
@@ -13,8 +14,7 @@ body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 17px;
   line-height: 1.42857143;
-  color: rgb(150, 150, 121);
-  background-color: #FFFFFF;
+  background-color: rgba(150, 150, 121,0);
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -61,7 +61,7 @@ body {
 /* Carousel base class */
 .carousel {
   height: 500px;
-  margin-bottom: 60px;
+  margin-bottom: 29px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -96,22 +96,30 @@ body {
 
 /* QUOTES
 -------------------------------------------------- */
+.Read-what {
+    height: 20vh;
+}
+
 center {
-  background-color: #DAC86E;
+  background-color: rgba(218, 200, 110, 0);
   height: 20vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "BrandonGrotesque-Bold", sans-serif;
+  color: white;
 }
 
 h2.section-header.transparent {
+    padding-top: 2vh;
     margin-bottom: 0px;
 }
 
 p {
   margin: 0 0 10px;
   text-align: center;
+  background-color: rgba(0,0,0,0);
 }
 
 p.Quote1 {
@@ -155,12 +163,17 @@ img.vintanklogo {
     height: auto;
 }
 
+img.cellar {
+    width: 40%;
+    float: right;
+    border-radius: 20%;
+    margin: 11vh;
+}
+
 .Quote.container {
-    background: url("https://upload.wikimedia.org/wikipedia/commons/6/65/Wine_cellar.jpg") no-repeat center right;
-    background-size: auto 95%;
     background-color: #E8D884;
-    background-position: 95% center;
-    overflow: auto;
+    height: 64vh;
+
 }
 
 
@@ -195,7 +208,6 @@ section.third-heading {
   font-weight: normal;
   font-family: Courier New, Helvetica, sans-serif;
   font-size: 33px;
-  margin-top: 10px;
 }
 
 .h1, .h2, .h3, h1, h2, h3 {
@@ -247,6 +259,8 @@ img.featurette-image.img-responsive.center-block {
 .col-md-7 {
     width: 58.333333%;
     padding-left: 3vw;
+    padding-top: 2vh;
+    text-align: center;
 }
 
 /* Quote Box
@@ -327,7 +341,7 @@ img.vineyardImagePlaceholder {
   .container-top {
     width: 100vw;
     height: 37vh;
-    margin-top: 5vh;
+    margin-top: 4vh;
     background-color: #F9EBA2;
   }
 }
@@ -354,6 +368,10 @@ img.vineyardImagePlaceholder {
   margin-top: 71px;
 }
 
+/* ----- Footer ----- */
+.footer {
+    background-color: #F9EBA2;
+}
 
 
 

@@ -1,0 +1,365 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    line-height: 1.42857143;
+    color: rgb(150, 150, 121);
+    background-color: #f7f0eb;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.dropdown-menu>li>a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+  font-size: 18px;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+    width: auto;
+    height: 0vh;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-image: url("vineyard.jpg")
+}
+.carousel-inner > .item > img {
+  min-width: inherit;
+  height: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.p {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+.h1, h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+/* QUOTES
+-------------------------------------------------- */
+center {
+  background-color: #E6D898;
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2.section-header.transparent {
+    margin-bottom: 0px;
+}
+
+p {
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+p.Quote1 {
+    font-size: 18px;
+    word-wrap: break-word;
+    padding-bottom: 0vh;
+    padding-left: 3%;
+    padding-right: 73%;
+    font-family: "Courier New", Helvetica, sans-serif;
+    text-align: center;
+}
+
+p.Quote2 {
+    font-size: 18px;
+    word-wrap: break-word;
+    padding-bottom: 0vh;
+    padding-left: 23%;
+    padding-right: 56%;
+    font-family: "Courier New", Helvetica, sans-serif;
+    text-align: center;
+}
+
+p.Quote3 {
+    font-size: 18px;
+    word-wrap: break-word;
+    padding-bottom: 0vh;
+    padding-left: 3%;
+    padding-right: 73%;
+    font-family: "Courier New", Helvetica, sans-serif;
+    text-align: center;
+}
+
+.quote.box {
+    background-color: rgba(232, 229, 215, 0);
+    width: 100vw;
+    height: 50vh;
+}
+
+img.vintanklogo {
+    width: 44%;
+    height: auto;
+}
+
+.Quote.container {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/6/65/Wine_cellar.jpg") no-repeat center right;
+    background-size: auto 95%;
+    background-color: #EFE3AE;
+    background-position: 95% center;
+    overflow: hidden;
+}
+
+.container {
+  width: 100vw;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .article-1 {
+  text-align: center;
+  width: 33%;
+}
+
+.marketing .article-2 {
+  text-align: center;
+  width: 33%;
+}
+
+.marketing .article-3 {
+  text-align: center;
+  width: 33%;
+}
+
+h2.featurette-heading {
+    text-align: center;
+}
+
+section.third-heading {
+    margin-top: 4vh;
+}
+
+.marketing h2 {
+  font-weight: normal;
+  font-family: Courier New, Helvetica, sans-serif;
+  font-size: 33px;
+}
+.marketing .article-1 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.marketing .article-2 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.marketing .article-3 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.col-md-5 {
+    width: 41.66666667%;
+    margin-top: 3vh
+}
+
+@media{
+  .container {
+    width: 100vw;
+    height: 50vh;
+  }
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.shadowy {
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+.row {
+  margin-top: -39px;
+  background-color: #D6C885;
+  /*background-color: #F3EAC3;*/
+  width: 100vw;
+}
+
+.center-block {
+  display: block;
+}
+
+/* Quote Box
+-------------------------------------------------- */
+
+.center {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+img.vineyardImagePlaceholder {
+    height: 77%;
+    padding-left: 58%;
+}
+
+.Cellar-Picture {
+    height: 354px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 0vh;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 3px;
+    margin-right: 60px;
+    margin-left: 60px;
+    font-size: 19px;
+    line-height: 1.4;
+    color: #ffffff;
+    text-align: center;
+    white-space: pre-wrap;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+  .container2 {
+    background-color: #FBF8EE;
+    width: 100vw;
+  }
+
+  .container {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .container-top {
+    width: 100vw;
+    height: 50vh;
+    margin-top: 5vh;
+    background-color: #F5F0DE;
+  }
+}
+
+@media (min-width: 1000px) {
+  .featurette-heading {
+    font-size: 33px
+  }
+}
+
+/* For the Transparent box section */
+
+@media screen and (min-width: 768px) {}
+  body.public-home h2.section-header {
+    padding: 120px 0 112px 0;
+  }
+
+  .carousel-indicators {
+    bottom: 3px;
+  }
+}
+
+.Quote.container {
+  margin-top: 71px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

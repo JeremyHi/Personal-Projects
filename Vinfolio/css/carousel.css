@@ -10,11 +10,11 @@ html {
 
 body {
   padding-bottom: 40px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 17px;
-    line-height: 1.42857143;
-    color: rgb(150, 150, 121);
-   background-color: #D6C885;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  line-height: 1.42857143;
+  color: rgb(150, 150, 121);
+  background-color: #FFFFFF;
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -228,12 +228,14 @@ section.third-heading {
   letter-spacing: -1px;
 }
 
-.shadowy {
-  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+img.featurette-image.img-responsive.center-block {
+  padding-left: inherit;
+  border-radius: 10%;
 }
 
 .row {
   margin-top: -29px;
+  margin-left: 0px;
   background-color: #F9EBA2;
   width: 100vw;
 }
@@ -312,20 +314,21 @@ img.vineyardImagePlaceholder {
   }
 
   .container2 {
-    background-color: #FBF8EE;
+    background-color: #F9EBA2;
     width: 100vw;
   }
 
   .container {
     width: 100vw;
     height: 50vh;
+    background-color: #F9EBA2;
   }
 
   .container-top {
     width: 100vw;
     height: 37vh;
     margin-top: 5vh;
-    background-color: #F5F0DE;
+    background-color: #F9EBA2;
   }
 }
 
@@ -350,3 +353,21 @@ img.vineyardImagePlaceholder {
 .Quote.container {
   margin-top: 71px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

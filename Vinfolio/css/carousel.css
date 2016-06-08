@@ -1,6 +1,12 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
+html {
+    font-size: 10px;
+    /*background-image: url("Vinfolio_Towels.jpg");*/
+    background-color: #D6C885;
+}
+
 
 body {
   padding-bottom: 40px;
@@ -8,7 +14,7 @@ body {
     font-size: 17px;
     line-height: 1.42857143;
     color: rgb(150, 150, 121);
-    background-color: #f7f0eb;
+   background-color: #D6C885;
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -91,7 +97,7 @@ body {
 /* QUOTES
 -------------------------------------------------- */
 center {
-  background-color: #E6D898;
+  background-color: #DAC86E;
   height: 20vh;
   width: 100vw;
   display: flex;
@@ -109,7 +115,7 @@ p {
 }
 
 p.Quote1 {
-    font-size: 18px;
+    font-size: 21px;
     word-wrap: break-word;
     padding-bottom: 0vh;
     padding-left: 3%;
@@ -119,7 +125,7 @@ p.Quote1 {
 }
 
 p.Quote2 {
-    font-size: 18px;
+    font-size: 21px;
     word-wrap: break-word;
     padding-bottom: 0vh;
     padding-left: 23%;
@@ -129,7 +135,7 @@ p.Quote2 {
 }
 
 p.Quote3 {
-    font-size: 18px;
+    font-size: 21px;
     word-wrap: break-word;
     padding-bottom: 0vh;
     padding-left: 3%;
@@ -152,71 +158,60 @@ img.vintanklogo {
 .Quote.container {
     background: url("https://upload.wikimedia.org/wikipedia/commons/6/65/Wine_cellar.jpg") no-repeat center right;
     background-size: auto 95%;
-    background-color: #EFE3AE;
+    background-color: #E8D884;
     background-position: 95% center;
-    overflow: hidden;
+    overflow: auto;
 }
 
-.container {
-  width: 100vw;
-}
+
 
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.marketing .article-1 {
-  text-align: center;
-  width: 33%;
+.col-lg-4 .icon {
+  height: 50px;
+  margin: 30px auto 20px auto;
 }
 
-.marketing .article-2 {
+.col-lg-4 {
+  margin-bottom: 0 !important;
+  margin-top: 1vh;
+  color: #847c77;
   text-align: center;
-  width: 33%;
+  padding-left: 4vw;
 }
 
-.marketing .article-3 {
-  text-align: center;
-  width: 33%;
-}
-
-h2.featurette-heading {
-    text-align: center;
+img {
+  vertical-align: middle;
 }
 
 section.third-heading {
-    margin-top: 4vh;
+  margin-top: 4vh;
 }
 
 .marketing h2 {
   font-weight: normal;
   font-family: Courier New, Helvetica, sans-serif;
   font-size: 33px;
-}
-.marketing .article-1 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-.marketing .article-2 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-.marketing .article-3 p {
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-top: 10px;
 }
 
-.col-md-5 {
-    width: 41.66666667%;
-    margin-top: 3vh
+.h1, .h2, .h3, h1, h2, h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
-@media{
-  .container {
-    width: 100vw;
-    height: 50vh;
+@media (min-width: 992px) {
+  .col-md-4 {
+    width: 33.3333333333%;
   }
+}
+
+.h4, h4 {
+    font-size: 18px;
+    text-align: center;
 }
 
 /* Featurettes
@@ -238,14 +233,18 @@ section.third-heading {
 }
 
 .row {
-  margin-top: -39px;
-  background-color: #D6C885;
-  /*background-color: #F3EAC3;*/
+  margin-top: -29px;
+  background-color: #F9EBA2;
   width: 100vw;
 }
 
 .center-block {
   display: block;
+}
+
+.col-md-7 {
+    width: 58.333333%;
+    padding-left: 3vw;
 }
 
 /* Quote Box
@@ -265,6 +264,12 @@ img.vineyardImagePlaceholder {
     height: 354px;
 }
 
+.container {
+    padding-right: 15px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 
 /* RESPONSIVE CSS
@@ -277,7 +282,7 @@ img.vineyardImagePlaceholder {
   }
   .navbar-wrapper .container {
     padding-right: 15px;
-    padding-left: 15px;
+    /*padding-left: 15px;*/
     padding-top: 0vh;
   }
   .navbar-wrapper .navbar {
@@ -318,7 +323,7 @@ img.vineyardImagePlaceholder {
 
   .container-top {
     width: 100vw;
-    height: 50vh;
+    height: 37vh;
     margin-top: 5vh;
     background-color: #F5F0DE;
   }
@@ -345,21 +350,3 @@ img.vineyardImagePlaceholder {
 .Quote.container {
   margin-top: 71px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

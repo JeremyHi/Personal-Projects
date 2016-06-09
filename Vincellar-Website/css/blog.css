@@ -191,6 +191,10 @@ p.subheading {
   color: #847c77;
 }
 
+b.title {
+  font-size: 32px;
+}
+
 b, strong {
   font-weight: bold;
   padding: 5vw;

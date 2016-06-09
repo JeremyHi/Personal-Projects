@@ -17,6 +17,7 @@ h6, .h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #333;
+  text-align: center;
 }
 
 
@@ -93,6 +94,11 @@ h6, .h6 {
   color: #999;
 }
 
+/* Logo for Vintank */
+
+img.vintanklogo {
+  width: 32%;
+}
 
 /*
  * Main column and sidebar layout
@@ -137,13 +143,49 @@ h6, .h6 {
  * Blog posts
  */
 
+@media (min-width: 992px) {
+  .container {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .container,
+  .col-sm-8 {
+    width: 100vw;
+  }
+}
+
+p {
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  width: 100vw;
+}
+
 .blog-post {
   margin-bottom: 60px;
 }
 .blog-post-title {
-  margin-bottom: 5px;
-  font-size: 40px;
+  margin-bottom: 0px;
+  background-color: #f3efec;
+  font-family: "BrandonGrotesque-Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
+
+.blog-post-subheading {
+  background-color: #f7f5f2;
+}
+
+.blog-post-content {
+  background-color: #fbfaf8;
+}
+
 .blog-post-meta {
   margin-bottom: 20px;
   color: #999;

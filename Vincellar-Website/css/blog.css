@@ -56,6 +56,18 @@ h6, .h6 {
   text-decoration: none;
 }
 
+/*  Placing the "Log In" section on the right side of page */
+.navbar-form {
+  width: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+  margin-left: 22vw;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 /* Active state gets a caret at the bottom */
 .blog-nav .active {
   color: #fff;
@@ -82,6 +94,8 @@ h6, .h6 {
 .blog-header {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-image: url('Vineyard-2.jpg');
+  background-attachment: fixed;
 }
 .blog-title {
   margin-top: 30px;
@@ -91,7 +105,7 @@ h6, .h6 {
 }
 .blog-description {
   font-size: 20px;
-  color: #999;
+  color: #ffffff;
 }
 
 /* Logo for Vintank */
@@ -161,6 +175,23 @@ p {
   text-align: center;
 }
 
+p.overview {
+    text-align: left;
+}
+
+p.subheading {
+    padding: 2vh;
+}
+
+b, strong {
+  font-weight: bold;
+  padding: 5vw;
+}
+
+p.Quote1 {
+    color: #A59F72;
+}
+
 blockquote {
   padding: 10px 20vw;
   margin: 0 0 20px;
@@ -172,6 +203,10 @@ blockquote {
   margin-right: -15px;
   margin-left: -15px;
   width: 100vw;
+}
+
+img.bullet {
+    width: 3%;
 }
 
 .col-sm-8 {
@@ -199,6 +234,7 @@ blockquote {
 .blog-post-content {
   padding: 3vh;
   background-color: #fbfaf8;
+  text-align: center;
 }
 
 .blog-post-meta {

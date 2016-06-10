@@ -92,18 +92,20 @@ h6, .h6 {
 .blog-header {
   padding-top: 40px;
   padding-bottom: 20px;
-  background-image: url('../Images/Vineyard-2.jpg');
-  background-attachment: fixed;
+  background-color: #f3efec;
+  border-style: solid;
 }
 .blog-title {
   margin-top: 30px;
   margin-bottom: 0;
   font-size: 60px;
   font-weight: normal;
+  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
 }
 .blog-description {
   font-size: 20px;
-  color: #ffffff;
+  color: #A29191;
+  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
 }
 
 
@@ -122,23 +124,16 @@ h6, .h6 {
 
 /*------------ Blog posts ---------------*/
 
-@media (min-width: 992px) {
-  .container {
-    width: 100vw;
-  }
-
-  .blog-post-content {
-    padding: 25px 0 28vh 0;
-    background-color: #fbfaf8;
-    text-align: center;
-  }
+.container {
+  width: 100vw;
 }
 
-@media (min-width: 768px) {
-  .container,
-  .col-sm-8 {
-    width: 100vw;
-  }
+.blog-post-content {
+  padding: 20px 0 3vh 0;
+  background-color: #E6E5E3;
+  text-align: -webkit-center;
+  border-style: dotted;
+  overflow: auto;
 }
 
 p {
@@ -147,18 +142,9 @@ p {
 }
 
 b.title {
-  color: #847C82;
-}
-
-p.subheading {
-  padding: 2vh;
-}
-
-blockquote {
-  font-size: 17.5px;
-  margin: 0px;
-  border-left: 5px solid #eee;
-  background-color: #F7F5F2
+  color: #FFFFFF;
+  font-size: 43px;
+  letter-spacing: 8px;
 }
 
 .row {
@@ -171,6 +157,7 @@ blockquote {
   width: 50%;
   padding-left: 8vw;
   padding-right: 8vw;
+  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
 }
 
 .col-sm-8 {
@@ -196,14 +183,19 @@ section.post-container {
   margin-bottom: 0px;
   padding: 10vh;
   background-color: transparent;
-  font-family: "BrandonGrotesque-Bold", sans-serif;
+  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
   text-transform: uppercase;
-  background-image: url(../Images/Wine_cellar.jpg);
+  background-image: url(../Images/WineBottles.jpg);
   background-attachment: fixed;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .blog-post-subheading {
   background-color: #f7f5f2;
+  padding: 5vw;
+  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+  font-size: 20px;
 }
 
 
@@ -213,7 +205,9 @@ section.post-container {
   padding: 40px 0;
   color: #999;
   text-align: center;
-  background-color: #f9f9f9;
+  background-image: url(../Images/WineBottles.jpg);
+  background-attachment: fixed;
+  background-size: 100% auto;
   border-top: 1px solid #e5e5e5;
 }
 .blog-footer p:last-child {

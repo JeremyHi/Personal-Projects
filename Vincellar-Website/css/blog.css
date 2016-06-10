@@ -67,6 +67,10 @@ h6, .h6 {
   box-shadow: none;
 }
 
+form.navbar-form.navbar-right {
+    margin-left: 45vw;
+}
+
 /* Active state gets a caret at the bottom */
 
 .blog-nav .active {
@@ -84,6 +88,16 @@ h6, .h6 {
   border-right: 5px solid transparent;
   border-bottom: 5px solid;
   border-left: 5px solid transparent;
+}
+
+@media (min-width: 768px) {
+  .container > .navbar-header,
+  .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+  .container-fluid > .navbar-collapse {
+    margin-right: -15px;
+    margin-left: 0;
+  }
 }
 
 

@@ -21,9 +21,7 @@ h6, .h6 {
 }
 
 
-/*
- * Override Bootstrap's default container.
- */
+/*------------- Override Bootstrap's default container. --------------*/
 
 @media (min-width: 1200px) {
   .container {
@@ -32,9 +30,7 @@ h6, .h6 {
 }
 
 
-/*
- * Masthead for nav
- */
+/*--------------- Masthead for nav ---------------*/
 
 .blog-masthead {
   background-color: #428bca;
@@ -43,6 +39,7 @@ h6, .h6 {
 }
 
 /* Nav links */
+
 .blog-nav-item {
   position: relative;
   display: inline-block;
@@ -50,6 +47,7 @@ h6, .h6 {
   font-weight: 500;
   color: #cdddeb;
 }
+
 .blog-nav-item:hover,
 .blog-nav-item:focus {
   color: #fff;
@@ -57,6 +55,7 @@ h6, .h6 {
 }
 
 /*  Placing the "Log In" section on the right side of page */
+
 .navbar-form {
   width: auto;
   padding-top: 0;
@@ -69,6 +68,7 @@ h6, .h6 {
 }
 
 /* Active state gets a caret at the bottom */
+
 .blog-nav .active {
   color: #fff;
 }
@@ -87,9 +87,7 @@ h6, .h6 {
 }
 
 
-/*
- * Blog name and description
- */
+/*------------ Blog name and description -------------*/
 
 .blog-header {
   padding-top: 20px;
@@ -108,39 +106,8 @@ h6, .h6 {
   color: #ffffff;
 }
 
-/* Logo for Vintank */
 
-img.vintanklogo {
-  width: 32%;
-}
-
-/*
- * Main column and sidebar layout
- */
-
-.blog-main {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-/* Sidebar modules for boxing content */
-.sidebar-module {
-  padding: 15px;
-  margin: 0 -15px 15px;
-}
-.sidebar-module-inset {
-  padding: 15px;
-  background-color: #f5f5f5;
-  border-radius: 4px;
-}
-.sidebar-module-inset p:last-child,
-.sidebar-module-inset ul:last-child,
-.sidebar-module-inset ol:last-child {
-  margin-bottom: 0;
-}
-
-
-/* Pagination */
+/*---------- Pagination ----------------*/
 .pager {
   margin-bottom: 60px;
   text-align: left;
@@ -153,9 +120,7 @@ img.vintanklogo {
 }
 
 
-/*
- * Blog posts
- */
+/*------------ Blog posts ---------------*/
 
 @media (min-width: 992px) {
   .container {
@@ -163,7 +128,7 @@ img.vintanklogo {
   }
 
   .blog-post-content {
-    padding: 25px 0 50px 0;
+    padding: 25px 0 28vh 0;
     background-color: #fbfaf8;
     text-align: center;
   }
@@ -177,32 +142,16 @@ img.vintanklogo {
 }
 
 p {
-  margin: 0;
+  margin: 0px 10px 0px 10px;
   text-align: center;
+}
+
+b.title {
+  color: #847C82;
 }
 
 p.subheading {
   padding: 2vh;
-}
-
-.text-box {
-  font-size: 16px;
-  font-family: "BrandonText-Regular", sans-serif;
-  color: #847c77;
-}
-
-b.title {
-  font-size: 32px;
-}
-
-b, strong {
-  font-weight: bold;
-  padding: 5vw;
-  font-size: 21px;
-}
-
-p.Quote1 {
-    color: #A59F72;
 }
 
 blockquote {
@@ -218,13 +167,10 @@ blockquote {
   width: 100vw;
 }
 
-img.bullet {
-    width: 3%;
-}
-
 .col-md-4 {
-  float: left;
-  width: 33.33333%;
+  width: 50%;
+  padding-left: 8vw;
+  padding-right: 8vw;
 }
 
 .col-sm-8 {
@@ -259,15 +205,8 @@ section.post-container {
   background-color: #f7f5f2;
 }
 
-.blog-post-meta {
-  margin-bottom: 20px;
-  color: #999;
-}
 
-
-/*
- * Footer
- */
+/*------------------ Footer ------------------*/
 
 .blog-footer {
   padding: 40px 0;

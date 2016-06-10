@@ -127,10 +127,8 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     margin-right: 0;
-    margin-left: 22vw;
     border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  }
 }
 
   /* Bump up size of carousel content */

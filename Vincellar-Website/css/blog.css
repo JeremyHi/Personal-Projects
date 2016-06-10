@@ -61,14 +61,7 @@ h6, .h6 {
   padding-top: 0;
   padding-bottom: 0;
   margin-right: 0;
-  margin-left: 22vw;
   border: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-form.navbar-form.navbar-right {
-    margin-left: 45vw;
 }
 
 /* Active state gets a caret at the bottom */
@@ -224,6 +217,8 @@ section.post-container {
   background-size: 100% auto;
   border-top: 1px solid #e5e5e5;
 }
-.blog-footer p:last-child {
-  margin-bottom: 0;
+
+a.back-to-top-button {
+  background-color: blanchedalmond;
+  border-radius: 24%;
 }

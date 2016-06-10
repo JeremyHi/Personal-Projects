@@ -92,7 +92,7 @@ h6, .h6 {
 .blog-header {
   padding-top: 40px;
   padding-bottom: 20px;
-  background-image: url('Vineyard-2.jpg');
+  background-image: url('../Images/Vineyard-2.jpg');
   background-attachment: fixed;
 }
 .blog-title {
@@ -194,11 +194,12 @@ section.post-container {
 
 .blog-post-title {
   margin-bottom: 0px;
-  padding: 3vh;
-  background-color: #f3efec;
+  padding: 10vh;
+  background-color: transparent;
   font-family: "BrandonGrotesque-Bold", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  background-image: url(../Images/Wine_cellar.jpg);
+  background-attachment: fixed;
 }
 
 .blog-post-subheading {

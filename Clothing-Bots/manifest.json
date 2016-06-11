@@ -1,0 +1,28 @@
+{
+  "name": "Supreme Bot",
+  "manifest_version": 2,
+  "version": "1",
+  "description": "A bot to get supreme",
+  "icons": {"16": "logo.jpg", "48": "logo.jpg", "128": "logo.jpg"},
+  "browser_action": {
+    "default_icon": "logo.jpg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.supremenewyork.com/*"],
+      "js": ["view/jquery-1.9.1.min.js", "supreme.js"],
+	  "run_at": "document_start"
+    },
+	{
+      "matches": ["*://*.supremenewyork.com/checkout/*"],
+      "js": ["view/jquery-1.9.1.min.js", "checkout.js"],
+	  "run_at": "document_end"
+    }
+  ], "background": {
+		"permissions": [ "http://*/*", "https://*/*" ],
+        "scripts": ["view/jquery-1.9.1.min.js", "background.js"]
+  },  
+  "permissions": [ "cookies", "browsingData", "tabs", "http://*/*", "https://*/*" ],
+  "options_page": "view/options.html",
+  "web_accessible_resources": [ ]
+}

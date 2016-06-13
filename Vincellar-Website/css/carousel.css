@@ -11,7 +11,11 @@ body {
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
-
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+  float: right;
+}
 
 
 /* CUSTOMIZE THE CAROUSEL

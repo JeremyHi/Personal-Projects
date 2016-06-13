@@ -5,8 +5,12 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+p {
+  margin: 0px 10px 10px;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -65,10 +69,10 @@ img.vintank-logo {
   margin-left: 10px;
 }
 
-.row.featurette{
-  margin-right: -15px;
-  margin-left: -15px;
+.row.featurette {
   text-align: -webkit-center;
+  background-color: #f3f9f8;
+  padding: 2vw;
 }
 
 
@@ -76,7 +80,7 @@ img.vintank-logo {
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 5vh 0;
 }
 
 /* Thin out the marketing headings */
@@ -84,7 +88,10 @@ img.vintank-logo {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
+  font-family: SpecialElite;
 }
+
+@font-face { font-family: SpecialElite; src: url('../fonts/SpecialElite.ttf'); } 
 
 
 /* RESPONSIVE CSS
@@ -99,7 +106,7 @@ img.vintank-logo {
   }
 
   .featurette-heading {
-    font-size: 50px;
+    font-size: 36px;
   }
 }
 

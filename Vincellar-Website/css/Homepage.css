@@ -2,14 +2,17 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+@font-face { font-family: SpecialElite; src: url('../fonts/SpecialElite.ttf'); } 
+
 body {
-  padding-bottom: 40px;
+  padding-bottom: 15px;
   color: #5a5a5a;
   font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #fff8e7;
 }
 
 p {
-  margin: 0px 10px 10px;
+  margin: 0px 10px 0px;
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -21,6 +24,11 @@ p {
   float: right;
 }
 
+.navbar-default {
+  background-color: #ffd373;
+  border-color: #f7ab05;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -28,7 +36,6 @@ p {
 /* Carousel base class */
 .carousel {
   height: 500px;
-  margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -49,7 +56,8 @@ p {
 }
 
 img.vintank-logo {
-    background-color: rgba(255, 255, 255, 0.64);
+  background-color: rgba(255, 255, 255, 0.64);
+  width: 71%;
 }
 
 
@@ -69,11 +77,36 @@ img.vintank-logo {
   margin-left: 10px;
 }
 
-.row.featurette {
+.row.featurette.top {
   text-align: -webkit-center;
-  background-color: #f3f9f8;
+  background-color: #ffe3a7;  
   padding: 2vw;
 }
+.row.featurette.middle {
+  text-align: -webkit-center;
+  background-color: #ffe9ba;
+  padding: 2vw;
+}
+.row.featurette.bottom {
+  text-align: -webkit-center;
+  background-color: #ffefcb;
+  padding: 2vw;
+}
+
+h2.section-header.transparent {
+  text-align: center;
+  font-family: SpecialElite;
+  font-size: 40px;
+  background-color: transparent;
+  padding: 9vh;
+  margin: 0;
+  background-image: url("../Images/Wine-Cellar-2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
 
 
 /* Featurettes
@@ -91,8 +124,22 @@ img.vintank-logo {
   font-family: SpecialElite;
 }
 
-@font-face { font-family: SpecialElite; src: url('../fonts/SpecialElite.ttf'); } 
+.center-block {
+  border-radius: 22%;
+}
 
+.text-muted {
+  color: #b9b7b7;
+}
+
+
+.col-md-7.Register {
+  float: none;
+}
+
+h2.featurette-heading.Register {
+  padding-bottom: 7vh;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -115,3 +162,29 @@ img.vintank-logo {
     margin-top: 120px;
   }
 }
+
+.col-xs-12 {
+    width: 100%;
+    background-color: #000000;
+}
+
+small, .small {
+  font-size: 75%;
+  color: #ffffff
+}
+
+.container {
+    width: 100vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -11,8 +11,13 @@
 }
 
 .navbar-default {
-  border-color: white;
-  background-color: black;
+    border-color: white;
+    background-color: #f8f8f8;
+}
+
+.navbar-inverse {
+    background-color: #e7e7e7;
+    border-color: #080808;
 }
 
 .tt-dropdown-menu {
@@ -132,3 +137,34 @@ a {
 .twitter-typeahead {
   width: 100%;
 }
+
+
+
+/* Login Section */
+
+#fg_membersite fieldset {
+  width: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

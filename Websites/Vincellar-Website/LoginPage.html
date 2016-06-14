@@ -22,11 +22,15 @@
     <meta name="sailthru.hong_kong_price" content="" />
     <meta name="sailthru.rating" content="" />
 
+    <link rel="STYLESHEET" type="text/css" href="source/style/fg_membersite.css" />
+    <script type='text/javascript' src='source/scripts/gen_validatorv31.js'></script>
+    <link rel="STYLESHEET" type="text/css" href="source/style/pwdwidget.css" />
+    <script src="scripts/pwdwidget.js" type="source/text/javascript"></script>
+
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="font-awesome/fa-css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/CloudZoom.css" />
     <link rel="stylesheet" type="text/css" href="css/LoginPage.css" />
-
 
     <script type="text/javascript" src="/javascript-timestamped/jquery-1.11.1.minTSTMP2152724868.js"></script>
     <script type="text/javascript" src="/javascript-timestamped/jquery.cookie.minTSTMP3123389698.js"></script>
@@ -191,6 +195,10 @@
 
   <body>
 
+    <!-- ********************************************************************************************* -->
+
+
+    <!-- ********************************************************************************************* -->
 
     <div id="alertContent" style="visibility:hidden;display:none;" class="alert alert-danger"></div>
 
@@ -223,7 +231,7 @@
     <div class="navbar-inverse">
       <div class="container">
 
-        
+
         </form>
 
       </div>
@@ -273,393 +281,135 @@
             <p class="confirmation" id="global-messages" style="display: none;"></p>
           </div>
         </div>
-        <form name="registerForm" method="POST" action="/do/registerComplete" onsubmit="javascript:interfaceObj.registerCustomer();">
-          <input name="doAction" type="hidden" value="" />
-          <input type="hidden" name="context" id="context" value="ws" />
-          <input type="hidden" name="customer.gaSource" value="" id="source">
-          <input type="hidden" name="customer.gaMedium" value="" id="medium">
-          <input type="hidden" name="customer.gaTerm" value="" id="term">
-          <input type="hidden" name="customer.gaContent" value="" id="content">
-          <input type="hidden" name="customer.gaCampaign" value="" id="campaign">
-          <input type="hidden" name="customer.gaClid" value="" id="gclid">
 
-          <div class="row">
-            <div class="col-sm-3">
-              <p class="text-info">* Required field</p>
-            </div>
-
-          </div>
-
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="form-group ">
-                <label class="control-label" for="firstName">First Name*</label>
-                <input type="text" name="customer.firstName" tabindex="1" value="" id="firstName" class="form-control">
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="form-group ">
-                <label class="control-label" for="lastName">Last Name*</label>
-                <input type="text" name="customer.lastName" tabindex="2" value="" id="lastName" class="form-control">
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="form-group ">
-                <label class="control-label" for="emailAddress">Email Address*</label>
-                <input type="text" name="customer.email" tabindex="3" value="" id="emailAddress" class="form-control">
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="form-group ">
-                <label class="control-label" for="confirmEmailAddress">Confirm Email Address*</label>
-                <input type="text" name="emailConfirm" tabindex="4" value="" id="confirmEmailAddress" class="form-control">
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="form-group ">
-                <label class="control-label" for="password">Password*</label>
-                <input type="password" name="customer.password" tabindex="5" value="" id="password" class="form-control">
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="form-group ">
-                <label class="control-label" for="confirmPassword">Confirm Password*</label>
-                <input type="password" name="passwordConfirm" tabindex="6" value="" id="confirmPassword" class="form-control">
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="form-group ">
-                <label class="control-label" for="country">Country*</label>
-                <select name="customer.mailingAddress.country" tabindex="7" id="country" class="form-control">
-                  <option value="">Select</option>
-                  <option value="US">United States</option>
-                  <option value="AF">Afghanistan</option>
-                  <option value="AX">Aland</option>
-                  <option value="AL">Albania</option>
-                  <option value="DZ">Algeria</option>
-                  <option value="AS">American Samoa</option>
-                  <option value="AD">Andorra</option>
-                  <option value="AO">Angola</option>
-                  <option value="AI">Anguilla</option>
-                  <option value="AQ">Antarctica</option>
-                  <option value="AG">Antigua and Barbuda</option>
-                  <option value="AR">Argentina</option>
-                  <option value="AM">Armenia</option>
-                  <option value="AW">Aruba</option>
-                  <option value="AU">Australia</option>
-                  <option value="AT">Austria</option>
-                  <option value="AZ">Azerbaijan</option>
-                  <option value="BS">Bahamas</option>
-                  <option value="BH">Bahrain</option>
-                  <option value="BD">Bangladesh</option>
-                  <option value="BB">Barbados</option>
-                  <option value="BY">Belarus</option>
-                  <option value="BE">Belgium</option>
-                  <option value="BZ">Belize</option>
-                  <option value="BJ">Benin</option>
-                  <option value="BM">Bermuda</option>
-                  <option value="BT">Bhutan</option>
-                  <option value="BO">Bolivia</option>
-                  <option value="BA">Bosnia and Herzegovina</option>
-                  <option value="BW">Botswana</option>
-                  <option value="BV">Bouvet Island</option>
-                  <option value="BR">Brazil</option>
-                  <option value="IO">British Indian Ocean Territory</option>
-                  <option value="BN">Brunei Darussalam</option>
-                  <option value="BG">Bulgaria</option>
-                  <option value="BF">Burkina Faso</option>
-                  <option value="BI">Burundi</option>
-                  <option value="KH">Cambodia</option>
-                  <option value="CM">Cameroon</option>
-                  <option value="CA">Canada</option>
-                  <option value="CV">Cape Verde</option>
-                  <option value="KY">Cayman Islands</option>
-                  <option value="CF">Central African Republic</option>
-                  <option value="TD">Chad</option>
-                  <option value="CL">Chile</option>
-                  <option value="CN">China</option>
-                  <option value="CX">Christmas Island</option>
-                  <option value="CC">Cocos (Keeling) Islands</option>
-                  <option value="CO">Colombia</option>
-                  <option value="KM">Comoros</option>
-                  <option value="CG">Congo (Brazzaville)</option>
-                  <option value="CD">Congo (Kinshasa)</option>
-                  <option value="CK">Cook Islands</option>
-                  <option value="CR">Costa Rica</option>
-                  <option value="CI">Cote d&#39;Ivoire</option>
-                  <option value="HR">Croatia</option>
-                  <option value="CU">Cuba</option>
-                  <option value="CY">Cyprus</option>
-                  <option value="CZ">Czech Republic</option>
-                  <option value="DK">Denmark</option>
-                  <option value="DJ">Djibouti</option>
-                  <option value="DM">Dominica</option>
-                  <option value="DO">Dominican Republic</option>
-                  <option value="EC">Ecuador</option>
-                  <option value="EG">Egypt</option>
-                  <option value="SV">El Salvador</option>
-                  <option value="GQ">Equatorial Guinea</option>
-                  <option value="ER">Eritrea</option>
-                  <option value="EE">Estonia</option>
-                  <option value="ET">Ethiopia</option>
-                  <option value="FK">Falkland Islands</option>
-                  <option value="FO">Faroe Islands</option>
-                  <option value="FJ">Fiji</option>
-                  <option value="FI">Finland</option>
-                  <option value="FR">France</option>
-                  <option value="GF">French Guiana</option>
-                  <option value="PF">French Polynesia</option>
-                  <option value="TF">French Southern Lands</option>
-                  <option value="GA">Gabon</option>
-                  <option value="GM">Gambia</option>
-                  <option value="GE">Georgia</option>
-                  <option value="DE">Germany</option>
-                  <option value="GH">Ghana</option>
-                  <option value="GI">Gibraltar</option>
-                  <option value="GR">Greece</option>
-                  <option value="GL">Greenland</option>
-                  <option value="GD">Grenada</option>
-                  <option value="GP">Guadeloupe</option>
-                  <option value="GU">Guam</option>
-                  <option value="GT">Guatemala</option>
-                  <option value="GN">Guinea</option>
-                  <option value="GW">Guinea-Bissau</option>
-                  <option value="GY">Guyana</option>
-                  <option value="HT">Haiti</option>
-                  <option value="HM">Heard and McDonald Islands</option>
-                  <option value="HN">Honduras</option>
-                  <option value="HK">Hong Kong</option>
-                  <option value="HU">Hungary</option>
-                  <option value="IS">Iceland</option>
-                  <option value="IN">India</option>
-                  <option value="ID">Indonesia</option>
-                  <option value="IR">Iran</option>
-                  <option value="IQ">Iraq</option>
-                  <option value="IE">Ireland</option>
-                  <option value="IL">Israel</option>
-                  <option value="IT">Italy</option>
-                  <option value="JM">Jamaica</option>
-                  <option value="JP">Japan</option>
-                  <option value="JO">Jordan</option>
-                  <option value="KZ">Kazakhstan</option>
-                  <option value="KE">Kenya</option>
-                  <option value="KI">Kiribati</option>
-                  <option value="KP">Korea, North</option>
-                  <option value="KR">Korea, South</option>
-                  <option value="KW">Kuwait</option>
-                  <option value="KG">Kyrgyzstan</option>
-                  <option value="LA">Laos</option>
-                  <option value="LV">Latvia</option>
-                  <option value="LB">Lebanon</option>
-                  <option value="LS">Lesotho</option>
-                  <option value="LR">Liberia</option>
-                  <option value="LY">Libya</option>
-                  <option value="LI">Liechtenstein</option>
-                  <option value="LT">Lithuania</option>
-                  <option value="LU">Luxembourg</option>
-                  <option value="MO">Macau</option>
-                  <option value="MK">Macedonia</option>
-                  <option value="MG">Madagascar</option>
-                  <option value="MW">Malawi</option>
-                  <option value="MY">Malaysia</option>
-                  <option value="MV">Maldives</option>
-                  <option value="ML">Mali</option>
-                  <option value="MT">Malta</option>
-                  <option value="MH">Marshall Islands</option>
-                  <option value="MQ">Martinique</option>
-                  <option value="MR">Mauritania</option>
-                  <option value="MU">Mauritius</option>
-                  <option value="YT">Mayotte</option>
-                  <option value="MX">Mexico</option>
-                  <option value="FM">Micronesia</option>
-                  <option value="MD">Moldova</option>
-                  <option value="MC">Monaco</option>
-                  <option value="MN">Mongolia</option>
-                  <option value="MS">Montserrat</option>
-                  <option value="MA">Morocco</option>
-                  <option value="MZ">Mozambique</option>
-                  <option value="MM">Myanmar</option>
-                  <option value="NA">Namibia</option>
-                  <option value="NR">Nauru</option>
-                  <option value="NP">Nepal</option>
-                  <option value="NL">Netherlands</option>
-                  <option value="AN">Netherlands Antilles</option>
-                  <option value="NC">New Caledonia</option>
-                  <option value="NZ">New Zealand</option>
-                  <option value="NI">Nicaragua</option>
-                  <option value="NE">Niger</option>
-                  <option value="NG">Nigeria</option>
-                  <option value="NU">Niue</option>
-                  <option value="NF">Norfolk Island</option>
-                  <option value="MP">Northern Mariana Islands</option>
-                  <option value="NO">Norway</option>
-                  <option value="OM">Oman</option>
-                  <option value="PK">Pakistan</option>
-                  <option value="PW">Palau</option>
-                  <option value="PS">Palestine</option>
-                  <option value="PA">Panama</option>
-                  <option value="PG">Papua New Guinea</option>
-                  <option value="PY">Paraguay</option>
-                  <option value="PE">Peru</option>
-                  <option value="PH">Philippines</option>
-                  <option value="PN">Pitcairn</option>
-                  <option value="PL">Poland</option>
-                  <option value="PT">Portugal</option>
-                  <option value="PR">Puerto Rico</option>
-                  <option value="QA">Qatar</option>
-                  <option value="RE">Reunion</option>
-                  <option value="RO">Romania</option>
-                  <option value="RU">Russian Federation</option>
-                  <option value="RW">Rwanda</option>
-                  <option value="SH">Saint Helena</option>
-                  <option value="KN">Saint Kitts and Nevis</option>
-                  <option value="LC">Saint Lucia</option>
-                  <option value="PM">Saint Pierre and Miquelon</option>
-                  <option value="VC">Saint Vincent and the Grenadines</option>
-                  <option value="WS">Samoa</option>
-                  <option value="SM">San Marino</option>
-                  <option value="ST">Sao Tome and Principe</option>
-                  <option value="SA">Saudi Arabia</option>
-                  <option value="SN">Senegal</option>
-                  <option value="CS">Serbia and Montenegro</option>
-                  <option value="SC">Seychelles</option>
-                  <option value="SL">Sierra Leone</option>
-                  <option value="SG">Singapore</option>
-                  <option value="SK">Slovakia</option>
-                  <option value="SI">Slovenia</option>
-                  <option value="SB">Solomon Islands</option>
-                  <option value="SO">Somalia</option>
-                  <option value="ZA">South Africa</option>
-                  <option value="GS">South Georgia and South Sandwich Islands</option>
-                  <option value="ES">Spain</option>
-                  <option value="LK">Sri Lanka</option>
-                  <option value="SD">Sudan</option>
-                  <option value="SR">Suriname</option>
-                  <option value="SJ">Svalbard and Jan Mayen Islands</option>
-                  <option value="SZ">Swaziland</option>
-                  <option value="SE">Sweden</option>
-                  <option value="CH">Switzerland</option>
-                  <option value="SY">Syria</option>
-                  <option value="TW">Taiwan</option>
-                  <option value="TJ">Tajikistan</option>
-                  <option value="TZ">Tanzania</option>
-                  <option value="TH">Thailand</option>
-                  <option value="TL">Timor-Leste</option>
-                  <option value="TG">Togo</option>
-                  <option value="TK">Tokelau</option>
-                  <option value="TO">Tonga</option>
-                  <option value="TT">Trinidad and Tobago</option>
-                  <option value="TN">Tunisia</option>
-                  <option value="TR">Turkey</option>
-                  <option value="TM">Turkmenistan</option>
-                  <option value="TC">Turks and Caicos Islands</option>
-                  <option value="TV">Tuvalu</option>
-                  <option value="UG">Uganda</option>
-                  <option value="UA">Ukraine</option>
-                  <option value="AE">United Arab Emirates</option>
-                  <option value="GB">United Kingdom</option>
-                  <option value="UM">United States Minor Outlying Islands</option>
-                  <option value="UY">Uruguay</option>
-                  <option value="UZ">Uzbekistan</option>
-                  <option value="VU">Vanuatu</option>
-                  <option value="VA">Vatican City</option>
-                  <option value="VE">Venezuela</option>
-                  <option value="VN">Viet Nam</option>
-                  <option value="VG">Virgin Islands, British</option>
-                  <option value="VI">Virgin Islands, U.S.</option>
-                  <option value="WF">Wallis and Futuna Islands</option>
-                  <option value="EH">Western Sahara</option>
-                  <option value="YE">Yemen</option>
-                  <option value="ZM">Zambia</option>
-                  <option value="ZW">Zimbabwe</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="form-group ">
-                <label class="control-label" for="zipCode">Zip / Postal Code*</label>
-                <input type="text" name="customer.mailingAddress.postalCode" tabindex="8" value="" id="zipCode" class="form-control">
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="checkbox" style="padding-left:15px;padding-top:20px;padding-bottom:20px">
-                <input type="checkbox" id="agreeToTermsCheckbox" class="" tabindex="11" onclick="updateAgreeToTerms(this);" />
-                <span>I am at least 21 and I agree to Vinfolio's&nbsp; <a href="javascript:showTerms()"><strong>Terms &amp; Conditions*</strong></a></span>
-                <input type="hidden" name="agreeToTerms" id="agreeToTerms" value="false">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-3">
-              <button class="btn btn-primary">Register</button>
-            </div>
-          </div>
-
-        </form>
-      </div>
-
-
-
-
-      <div id="submitPageMessage" class="vfhidden" style="height:46px;font-size:14px;margin-top:120px;margin-bottom:220px;text-align:center;font-weight:bold">
-        Processing request...(do not refresh this page)
-        <br>
-        <img src="/images/ajax-loading-bar.gif">
-      </div>
-    </div>
-
-    <nav class="navbar navbar-static-bottom navbar-inverse" id="bottomNav" role="navigation">
-      <div class="container">
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-sm-3">
+            <p class="text-info">* Required field</p>
+          </div>
+
+        </div>
+
+        <div id='fg_membersite'>
+          <form id='register' action='source/register.php' method='post' accept-charset='UTF-8'>
+            <fieldset>
+              <legend>Register</legend>
+
+              <input type='hidden' name='submitted' id='submitted' value='1' />
+
+              <div class='short_explanation'>* required fields</div>
+              <input type='text' class='spmhidip' name='spe8306af0d23b01a2bf7c1734aacf25fe' />
+              <div><span class='error'></span></div>
+              <div class='container-form'>
+                <label for='name'>Your Full Name*: </label>
+                <br/>
+                <input type='text' name='name' id='name' value='' maxlength="50" />
+                <br/>
+                <span id='register_name_errorloc' class='error'></span>
+              </div>
+
+              <div class='container-form'>
+                <label for='email'>Email Address*:</label>
+                <br/>
+                <input type='text' name='email' id='email' value='' maxlength="50" />
+                <br/>
+                <span id='register_email_errorloc' class='error'></span>
+              </div>
+              <div class='container-form'>
+                <label for='username'>UserName*:</label>
+                <br/>
+                <input type='text' name='username' id='username' value='' maxlength="50" />
+                <br/>
+                <span id='register_username_errorloc' class='error'></span>
+              </div>
+              <div class='container-form' style='height:80px;'>
+                <label for='password'>Password*:</label>
+                <br/>
+                <div class='pwdwidgetdiv' id='thepwddiv'></div>
+                <input type='password' name='password' id='password' maxlength="50" />
+                <div id='register_password_errorloc' class='error' style='clear:both'></div>
+              </div>
+
+              <div class='container-form'>
+                <input type='submit' name='Submit' value='Submit' />
+              </div>
+
+            </fieldset>
+          </form>
+          <!-- client-side Form Validations: Uses the excellent form validation script from JavaScript-coder.com-->
+
+          <script type='text/javascript'>
+            // <![CDATA[
+            var pwdwidget = new PasswordWidget('thepwddiv', 'password');
+            pwdwidget.MakePWDWidget();
+
+            var frmvalidator = new Validator("register");
+            frmvalidator.EnableOnPageErrorDisplay();
+            frmvalidator.EnableMsgsTogether();
+            frmvalidator.addValidation("name", "req", "Please provide your name");
+
+            frmvalidator.addValidation("email", "req", "Please provide your email address");
+
+            frmvalidator.addValidation("email", "email", "Please provide a valid email address");
+
+            frmvalidator.addValidation("username", "req", "Please provide a username");
+
+            frmvalidator.addValidation("password", "req", "Please provide a password"); 
+
+          </script>
+
+          </form>
+        </div>
 
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class=navbar-header>
-              <ul class="nav navbar-nav">
-                <li><a href="/about/company"><small>ABOUT US</small></a></li>
-                <li><a href="/about/privateClient"><small>PRIVATE CLIENT</small></a></li>
-                <li><a href="/about/inspectionGuidelines"><small>INSPECTION GUIDELINES</small></a></li>
-                <li><a href="/about/purchaseGuarantees"><small>PURCHASE GUARANTEES</small></a></li>
-                <li><a href="/about/privacy"><small>PRIVACY POLICY</small></a></li>
-                <li><a href="/about/terms"><small>TERMS</small></a></li>
-                <li><a href="/about/shippingAndDelivery"><small>SHIPPING</small></a></li>
-              </ul>
-            </div>
 
-            <div class="navbar-header" style="width:50%">
-              <div class="navbar-text">
-                <h5>PAYMENT TYPES</h5>
-                <p>
-                  <img alt="" src="Images/cc-visa.gif" />&nbsp;&nbsp;<img alt="" src="Images/cc-mastercard.gif" />&nbsp;&nbsp;<img alt="" src="Images/cc-amex.gif" />
-                </p>
-                <div class="AuthorizeNetSeal">
-                  <script type="text/javascript">
-                    // <![CDATA[
-                    var ANS_customer_id = "1bbc5685-894c-4903-8c31-2362914ace6d";
-                    // ]]>
 
-                  </script>
-                  <script type="text/javascript" src="//verify.authorize.net/anetseal/seal.js"></script>
+        <div id="submitPageMessage" class="vfhidden" style="height:46px;font-size:14px;margin-top:120px;margin-bottom:220px;text-align:center;font-weight:bold">
+          Processing request...(do not refresh this page)
+          <br>
+          <img src="/images/ajax-loading-bar.gif">
+        </div>
+      </div>
+
+      <nav class="navbar navbar-static-bottom navbar-inverse" id="bottomNav" role="navigation">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class=navbar-header>
+                <ul class="nav navbar-nav">
+                  <li><a href="/about/company"><small>ABOUT US</small></a></li>
+                  <li><a href="/about/privateClient"><small>PRIVATE CLIENT</small></a></li>
+                  <li><a href="/about/inspectionGuidelines"><small>INSPECTION GUIDELINES</small></a></li>
+                  <li><a href="/about/purchaseGuarantees"><small>PURCHASE GUARANTEES</small></a></li>
+                  <li><a href="/about/privacy"><small>PRIVACY POLICY</small></a></li>
+                  <li><a href="/about/terms"><small>TERMS</small></a></li>
+                  <li><a href="/about/shippingAndDelivery"><small>SHIPPING</small></a></li>
+                </ul>
+              </div>
+
+              <div class="navbar-header" style="width:50%">
+                <div class="navbar-text">
+                  <h5>PAYMENT TYPES</h5>
+                  <p>
+                    <img alt="" src="Images/cc-visa.gif" />&nbsp;&nbsp;<img alt="" src="Images/cc-mastercard.gif" />&nbsp;&nbsp;<img alt="" src="Images/cc-amex.gif" />
+                  </p>
+                  <div class="AuthorizeNetSeal">
+                    <script type="text/javascript">
+                      // <![CDATA[
+                      var ANS_customer_id = "1bbc5685-894c-4903-8c31-2362914ace6d";
+                      // ]]>
+
+                    </script>
+                    <script type="text/javascript" src="//verify.authorize.net/anetseal/seal.js"></script>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="navbar-header">
-              <div class="navbar-text navbar-right">
-                <h5>CONTACT</h5>
-                <small>
+              <div class="navbar-header">
+                <div class="navbar-text navbar-right">
+                  <h5>CONTACT</h5>
+                  <small>
                 Corporate Office: 1890 Bryant St, Ste 208, San Francisco, CA 94110 800.969.1961<br/>
                 Office Hours: Monday to Friday 9 a.m - 5 p.m. Pacific Time<br/><br/>
                 Napa Warehouse: 644 Hanna Dr, Ste E American Canyon, CA 94503<br/>
@@ -667,121 +417,122 @@
 
                 Email: service@vinfolio.com<br/>
               </small>
-                <h5>Other Vinfolio Sites</h5>
-                <a href="http://www.wineprices.com"><small>WINEPRICES</small></a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                  <h5>Other Vinfolio Sites</h5>
+                  <a href="http://www.wineprices.com"><small>WINEPRICES</small></a> &nbsp;&nbsp;|&nbsp;&nbsp;
 
-                <a href="/do/winestore/home?b=hk"><small>HONG KONG</small></a>
+                  <a href="/do/winestore/home?b=hk"><small>HONG KONG</small></a>
 
+                </div>
               </div>
-            </div>
 
-            <div class="navbar-header">
-              <div class="navbar-text">
-                <small>
+              <div class="navbar-header">
+                <div class="navbar-text">
+                  <small>
                 Online auctions operated by Vinfolio, Inc. in accordance with CA ABC Act Section 23355.1(d) and Section 2328 of the CA Commercial Code.  &copy; 2004-2016 Vinfolio
               </small>
+                </div>
               </div>
             </div>
+
           </div>
-
         </div>
-      </div>
-    </nav>
+      </nav>
 
 
 
 
-    <script>
-      var wines = new Bloodhound({
-        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
-        queryTokenizer: Bloodhound.tokenizers.whitespace,
-        remote: '/do/winestore/inventorySearch?source=typeahead&query=%QUERY'
-      });
+      <script>
+        var wines = new Bloodhound({
+          datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
+          queryTokenizer: Bloodhound.tokenizers.whitespace,
+          remote: '/do/winestore/inventorySearch?source=typeahead&query=%QUERY'
+        });
 
-      wines.initialize();
+        wines.initialize();
 
-      $('.searchWineQuery').typeahead(null, {
-        name: 'results',
-        displayKey: 'value',
-        source: wines.ttAdapter(),
-        templates: {
-          empty: [
-            '<div class="empty-message">',
-            'Unable to find any wines that match your search',
-            '</div>'
-          ].join('\n'),
-          suggestion: Handlebars.compile([
-            '<div class="media clearfix"><a class="pull-right" href="{{url}}">',
-            '<img class="media-object" src="{{thumb}}" style="height:50px" /></a>',
-            '<div class="media-body"><a href="{{url}}"><h5>{{vendor}}</h5></a></div></div><hr>'
-          ].join(''))
-        }
-      });
+        $('.searchWineQuery').typeahead(null, {
+          name: 'results',
+          displayKey: 'value',
+          source: wines.ttAdapter(),
+          templates: {
+            empty: [
+              '<div class="empty-message">',
+              'Unable to find any wines that match your search',
+              '</div>'
+            ].join('\n'),
+            suggestion: Handlebars.compile([
+              '<div class="media clearfix"><a class="pull-right" href="{{url}}">',
+              '<img class="media-object" src="{{thumb}}" style="height:50px" /></a>',
+              '<div class="media-body"><a href="{{url}}"><h5>{{vendor}}</h5></a></div></div><hr>'
+            ].join(''))
+          }
+        });
 
-    </script>
+      </script>
 
-    <script type="text/javascript">
-      /* <![CDATA[ */
-      var google_conversion_id = 1027481378;
-      var google_custom_params = window.google_tag_params;
-      var google_remarketing_only = true;
-      /* ]]> */
+      <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 1027481378;
+        var google_custom_params = window.google_tag_params;
+        var google_remarketing_only = true;
+        /* ]]> */
 
-    </script>
-    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-
-
-    </script>
-    <noscript>
-      <div style="display:inline;">
-        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1027481378/?value=0&amp;guid=ON&amp;script=0" />
-      </div>
-    </noscript>
-
-    <!-- Facebook Re-marketing Pixel Code -->
-    <script>
-      ! function(f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function() {
-          n.callMethod ?
-            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s)
-      }(window,
-        document, 'script', '//connect.facebook.net/en_US/fbevents.js');
-
-      fbq('init', '1061452720555659');
-      fbq('track', "PageView");
-
-    </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1061452720555659&ev=PageView&noscript=1" /></noscript>
-    <!-- End Facebook Pixel Code -->
+      </script>
+      <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
 
 
-    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      twttr.conversion.trackPid('ntz2q', {
-        tw_sale_amount: 0,
-        tw_order_quantity: 0
-      });
+      </script>
+      <noscript>
+        <div style="display:inline;">
+          <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1027481378/?value=0&amp;guid=ON&amp;script=0" />
+        </div>
+      </noscript>
 
-    </script>
-    <noscript>
-      <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ntz2q&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
-      <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ntz2q&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
-    </noscript>
+      <!-- Facebook Re-marketing Pixel Code -->
+      <script>
+        ! function(f, b, e, v, n, t, s) {
+          if (f.fbq) return;
+          n = f.fbq = function() {
+            n.callMethod ?
+              n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          };
+          if (!f._fbq) f._fbq = n;
+          n.push = n;
+          n.loaded = !0;
+          n.version = '2.0';
+          n.queue = [];
+          t = b.createElement(e);
+          t.async = !0;
+          t.src = v;
+          s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s)
+        }(window,
+          document, 'script', '//connect.facebook.net/en_US/fbevents.js');
 
-    <!-- Segment Pixel - Poln + Vinfolio - DO NOT MODIFY -->
-    <img src="https://secure.adnxs.com/seg?add=5231343&t=2" width="1" height="1" />
-    <!-- End of Segment Pixel -->
+        fbq('init', '1061452720555659');
+        fbq('track', "PageView");
+
+      </script>
+      <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1061452720555659&ev=PageView&noscript=1" /></noscript>
+      <!-- End Facebook Pixel Code -->
+
+
+      <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        twttr.conversion.trackPid('ntz2q', {
+          tw_sale_amount: 0,
+          tw_order_quantity: 0
+        });
+
+      </script>
+      <noscript>
+        <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ntz2q&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+        <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ntz2q&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+      </noscript>
+
+      <!-- Segment Pixel - Poln + Vinfolio - DO NOT MODIFY -->
+      <img src="https://secure.adnxs.com/seg?add=5231343&t=2" width="1" height="1" />
+      <!-- End of Segment Pixel -->
   </body>
+
 </html>

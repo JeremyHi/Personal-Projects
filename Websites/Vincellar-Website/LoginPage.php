@@ -39,9 +39,10 @@
                     if($passwordConfirm == true && $password == $passwordConfirm) {
                       if($_POST['accept'] == "on") {
 
-                        
-                        $insert= mysql_query("INSERT INTO VinCellar_Users_db VALUES ('', '$username', '$firstName','$lastName','$email','#password')")
-                          or die("no work"); 
+
+
+                        $insert= mysql_query("INSERT INTO users VALUES ('','$username','$firstName','$lastName','$email','$password')")
+                        or die(" no work"); 
 
 
 
@@ -108,19 +109,19 @@
           <div class="form-group">
             <label for="name" class="col-sm-2 control-label">Username</label>
             <div class="col-sm-4">
-              <input name="username" class="form-control" id="name" placeholder="How others see you">
+              <input name="username" class="form-control" placeholder="How others see you">
             </div>
           </div>
           <div class="form-group">
             <label for="name" class="col-sm-2 control-label">First Name</label>
             <div class="col-sm-4">
-              <input name="firstName" class="form-control" id="name" placeholder="First Name">
+              <input name="firstName" class="form-control" placeholder="First Name">
             </div>
           </div>
           <div class="form-group">
             <label for="name" class="col-sm-2 control-label">Last Name</label>
             <div class="col-sm-4">
-              <input name="lastName" class="form-control" id="name" placeholder="Last Name">
+              <input name="lastName" class="form-control" placeholder="Last Name">
             </div>
           </div>
           <div class="form-group">
@@ -135,14 +136,14 @@
           <div class="form-group">
             <label for="password" class="col-sm-2 control-label">Password</label>
             <div class="col-sm-4">
-              <input name="password" class="form-control" id="pass" placeholder="**********">
+              <input name="password" class="form-control" placeholder="**********">
             </div>
           </div>
           <div class="form-group">
             <label for="password" class="col-sm-2 control-label">Confirm your password
             </label>
             <div class="col-sm-4">
-              <input name="passwordConfirm" class="form-control" id="confirmpass" placeholder="**********">
+              <input name="passwordConfirm" class="form-control" placeholder="**********">
             </div>
           </div>
           <!-- <div class="form-group">

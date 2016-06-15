@@ -1,3 +1,9 @@
+/*Navbar-Top*/
+.panel-default {
+    border-color: #ddd;
+    padding-top: 7vh;
+}
+
 /*Footer*/
 .col-xs-12 {
     width: 100%;

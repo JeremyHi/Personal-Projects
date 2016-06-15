@@ -21,31 +21,83 @@
     <?php
         include('php/register.php');
 
+        $username = $_POST['username'];
         $firstName = $_POST['firstName'];
         $lastName = $_POST['lastName'];
         $email = $_POST['email'];
         $password = $_POST['password'];
         $passwordConfirm = $_POST['passwordConfirm'];
         $submit = $_POST['submit'];
+        $encpassword = md5($password);
 
-        // if ($submit){
-        //     if ($firstName == null) {
-        //         echo " Please enter name fields ";
-        //     }
+        if($submit) {
+          if($username == true && strlen($username) < 64) {
+            if($firstName == true) {
+              if($lastName == true) {
+                if($email == true && stripos($email, '@') == true) {
+                  if($password == true && strlen($password) >= 6) {
+                    if($passwordConfirm == true && $password == $passwordConfirm) {
+                      if($_POST['accept'] == "on") {
 
-        //     if ($email == null) {
-        //         echo " Please enter email field ";
-        //     }
+                        
+                        $insert= mysql_query("INSERT INTO VinCellar_Users_db VALUES ('', '$username', '$firstName','$lastName','$email','#password')")
+                          or die("no work"); 
 
-        //     if ($password == null) {
-        //         echo " Please enter password fields ";
-        //     }   
-        // };
+
+
+
+                      } else
+                        echo '<script type="text/javascript">alert("Please accept the terms and conditions")</script>';
+                    } else
+                      echo '<script type="text/javascript">alert("Please confirm your password")</script>';
+                  } else
+                    echo '<script type="text/javascript">alert("Please enter a password at least 6 characcters long")</script>';
+                } else
+                  echo '<script type="text/javascript">alert("Please enter a valid email")</script>';
+              } else
+                echo '<script type="text/javascript">alert("Please enter a last name")</script>';
+            } else
+              echo '<script type="text/javascript">alert("Please enter a first name")</script>';
+          } else
+            echo '<script type="text/javascript">alert("Please enter a valid username less than or equal to 64 characters")</script>';
+        };
 
     ?>
   </head>
 
   <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Vincellar</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="Homepage.html">Home</a></li>
+            <li><a href="Overview.html">Overview</a></li>
+            <li><a href="https://www.vinfolio.com/">Contact</a></li>  
+          </ul>
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
+
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">Register to Join the VinCellar Network</h3>
@@ -54,22 +106,25 @@
       <div class="panel-body">
         <form class="form-horizontal" action="" method="post">
           <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">Username</label>
+            <div class="col-sm-4">
+              <input name="username" class="form-control" id="name" placeholder="How others see you">
+            </div>
+          </div>
+          <div class="form-group">
             <label for="name" class="col-sm-2 control-label">First Name</label>
-            <?php if($submit){if($firstName == null) {echo "<font color=\"red\">Please enter a first name</font>";}};?>
             <div class="col-sm-4">
               <input name="firstName" class="form-control" id="name" placeholder="First Name">
             </div>
           </div>
           <div class="form-group">
             <label for="name" class="col-sm-2 control-label">Last Name</label>
-            <?php if($submit){if($firstName == null) {echo "<font color=\"red\">Please enter a last name</font>";}};?>
             <div class="col-sm-4">
               <input name="lastName" class="form-control" id="name" placeholder="Last Name">
             </div>
           </div>
           <div class="form-group">
             <label for="gmail" class="col-sm-2 control-label">Email</label>
-            <?php if($submit){if($firstName == null) {echo "<font color=\"red\">Please enter an email</font>";}};?>
               <div class="col-sm-4">
                 <div class="input-group input-group-sm">
                   <span class="input-group-addon">example@mail.com</span>
@@ -79,17 +134,15 @@
           </div>
           <div class="form-group">
             <label for="password" class="col-sm-2 control-label">Password</label>
-            <?php if($submit){if($firstName == null) {echo "<font color=\"red\">Please enter a password</font>";}};?>
             <div class="col-sm-4">
-              <input name="password" class="form-control" id="pass">
+              <input name="password" class="form-control" id="pass" placeholder="**********">
             </div>
           </div>
           <div class="form-group">
             <label for="password" class="col-sm-2 control-label">Confirm your password
             </label>
-            <?php if($submit){if($firstName == null) {echo "<font color=\"red\">Please confirm your password</font>";}};?>
             <div class="col-sm-4">
-              <input name="passwordConfirm" class="form-control" id="confirmpass">
+              <input name="passwordConfirm" class="form-control" id="confirmpass" placeholder="**********">
             </div>
           </div>
           <!-- <div class="form-group">
@@ -345,9 +398,7 @@
               <div class="checkbox">
                 <label>
                   <input name="accept" type="checkbox" value="on">I accept the <a href="http://www.vinfolio.com/about/terms">terms</a> and confirm I am at least 21 years of age
-                  <?php if($submit){if($_POST['accept'] != "on") {echo "<font color=\"red\">Please accept the terms and conditions</font>";}};?>
                 </label>
-                
               </div>
             </div>
           </div>
@@ -362,7 +413,7 @@
       </div> <!-- End Panel Body -->
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12">
           <!-- Collect the nav links, forms, and other content for toggling -->

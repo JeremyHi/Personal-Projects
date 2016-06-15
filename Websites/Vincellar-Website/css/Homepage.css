@@ -29,6 +29,10 @@ p {
   border-color: #f7ab05;
 }
 
+.navbar-nav {
+    float: left;
+    margin: 0px 40vw 0px 0;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */

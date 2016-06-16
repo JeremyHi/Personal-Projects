@@ -73,13 +73,13 @@
       <div class="row row-centered">
         <div class="col-md-8 col-centered">
           <div class="centerblock">
-            <h1 class="VinCellar-heading"> <FONT FACE="arial"><b>VinCellar:</b></FONT> The ultimate wine cellar management tool.</h1>
+            <h1 class="VinCellar-heading"> VinCellar: The ultimate wine cellar management tool.</h1>
             <ul class="fa-ul bullits">
-              <li class="VinCellar-coreValue-1"><i class="fa-li fa fa-line-chart fa-2x"></i><b>Comprehensive</b> cellar management tools & analysis
+              <li class="VinCellar-coreValue-1"><i class="fa-li fa fa-line-chart"></i> Comprehensive cellar management tools & analysis
               </li>
-              <li class="VinCellar-coreValue-2"><i class="fa-li fa fa-bar-chart fa-2x"></i><b>Cellar Management</b>, Professional Content, Dedicated Marketplace
+              <li class="VinCellar-coreValue-2"><i class="fa-li fa fa-bar-chart"></i> Cellar Management, Professional Content, Dedicated Marketplace
               </li>
-              <li class="VinCellar-coreValue-3"><i class="fa-li fa fa-dollar fa-2x"></i><b>Completely</b> free
+              <li class="VinCellar-coreValue-3"><i class="fa-li fa fa-dollar"></i> Completely free
               </li>
             </ul>
           </div>
@@ -389,7 +389,7 @@
               </div>
               <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-4">
-                  <input name="submit" type="submit" class="btn btn-success btn-lg">
+                  <input name="submit" type="submit" class="btn btn-success btn-sm">
                 </div>
               </div>
             </form>
@@ -471,6 +471,13 @@
     <section class="Overview">
       <h2 class="section-header transparent">Our cellars services team can help manage your home wine storage solution, whether it be 500 or 5,000 bottles.</h2>
     </section>
+
+    <div class="row featurette bottom">
+      <div class="col-md-7 Register">
+        <h2 class="featurette-heading Register">Join Today!</span></h2>
+        <p><a class="btn btn-lg btn-primary" href="Register.html" role="button">Register</a></p>
+      </div>
+    </div>
 
     <!-- /END THE FEATURETTES -->
 

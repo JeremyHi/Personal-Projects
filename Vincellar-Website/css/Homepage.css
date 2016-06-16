@@ -1,8 +1,13 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
+
+
 /* Padding below the footer and lighter body text */
 
-@font-face { font-family: SpecialElite; src: url('../fonts/SpecialElite.ttf'); } 
+@font-face {
+  font-family: SpecialElite;
+  src: url('../fonts/SpecialElite.ttf');
+}
 
 body {
   padding-bottom: 15px;
@@ -16,10 +21,11 @@ p {
   font-size: 20px
 }
 
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
-.navbar-default .navbar-collapse, 
+.navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: #e7e7e7;
 }
@@ -47,19 +53,23 @@ h1.Signup-section {
   padding-left: 12vw;
 }
 
+
 /*Buttons
 ----------------------------------------------------*/
+
 .btn-success {
   color: #fff;
   background-color: #d60f00;
   border-color: #F44336;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   color: #fff;
   background-color: #d60f00;
-  border-color: #d60f00; /*set the color you want here*/
+  border-color: #d60f00;
+  /*set the color you want here*/
 }
+
 
 /*Front page section
 ----------------------------------------------------*/
@@ -69,36 +79,40 @@ h1.Signup-section {
 }
 
 .panel-body {
-    /* padding: 15px; */
-}
-@media (min-width: 992px) {}
-  .col-md-8 {
-    width: 55.666667%;
-    margin-top: 7vh;
-    margin-bottom: 6vh;
-    padding-left: 5vw;
-  }
-  .col-sm-2 {
-    width: 25.666667%;
-  }
-  .col-md-4 {
-    width: 44.333333%;
-    padding-right: 51px;
-  }
-  .col-sm-4 {
-    width: 74.333333%;
-  }
+  /* padding: 15px; */
 }
 
+@media (min-width: 992px) {}
+
+.col-md-8 {
+  width: 55.666667%;
+  margin-top: 7vh;
+  margin-bottom: 6vh;
+  padding-left: 5vw;
+}
+
+.col-sm-2 {
+  width: 25.666667%;
+}
+
+.col-md-4 {
+  width: 44.333333%;
+  padding-right: 51px;
+}
+
+.col-sm-4 {
+  width: 74.333333%;
+}
+
+
+}
 ul.bullits {
   text-align: left !important;
 }
-
 h1.VinCellar-heading {
   text-align: left;
   font-family: SpecialElite;
 }
-
 .fa-ul {
   padding-top: 9vh;
   padding-left: 0;
@@ -107,9 +121,8 @@ h1.VinCellar-heading {
   font-size: 20px;
   line-height: 63px;
 }
- 
 p.Sub-Signup-section {
-    padding-left: 11vw;
+  padding-left: 11vw;
 }
 
 /* MARKETING CONTENT
@@ -127,10 +140,9 @@ p.Sub-Signup-section {
   margin-right: 10px;
   margin-left: 10px;
 }
-
 .row.featurette.top {
   text-align: -webkit-center;
-  background-color: #ffe3a7;  
+  background-color: #ffe3a7;
   padding: 2vw;
 }
 .row.featurette.middle {
@@ -143,7 +155,6 @@ p.Sub-Signup-section {
   background-color: #ffefcb;
   padding: 2vw;
 }
-
 h2.section-header.transparent {
   text-align: center;
   font-family: SpecialElite;
@@ -158,11 +169,8 @@ h2.section-header.transparent {
   color: #ffffff;
 }
 
-
-
 /* Featurettes
 ------------------------- */
-
 .featurette-divider {
   margin: 3vh 0;
 }
@@ -174,20 +182,15 @@ h2.section-header.transparent {
   letter-spacing: -1px;
   font-family: SpecialElite;
 }
-
 .center-block {
   border-radius: 22%;
 }
-
 .text-muted {
   color: #b9b7b7;
 }
-
-
 .col-md-7.Register {
   float: none;
 }
-
 h2.featurette-heading.Register {
   padding-bottom: 7vh;
 }
@@ -195,47 +198,242 @@ h2.featurette-heading.Register {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 36px;
-  }
+/* Bump up size of carousel content */
+.carousel-caption p {
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: 1.4;
+}
+.featurette-heading {
+  font-size: 36px;
 }
 
+}
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
   }
 }
-
 .col-xs-12 {
-    width: 100%;
-    background-color: #000000;
+  width: 100%;
+  background-color: #000000;
 }
-
-small, .small {
+small,
+.small {
   font-size: 75%;
   color: #ffffff
 }
-
 .container {
-    width: 100vw;
+  width: 100vw;
 }
 
+/* GLOBAL STYLES
+-------------------------------------------------- */
 
+/* Padding below the footer and lighter body text */
+@font-face {
+  font-family: SpecialElite;
+  src: url('../fonts/SpecialElite.ttf');
+}
+body {
+  padding-bottom: 15px;
+  color: #5a5a5a;
+  font-family: "Myriad Set Pro",
+  "Helvetica Neue",
+  Helvetica,
+  Arial,
+  sans-serif;
+  background-color: #fff8e7;
+}
+p {
+  margin: 0px 10px 0px;
+  font-size: 20px
+}
 
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-default {
+  background-color: #ffd373;
+  border-color: #f7ab05;
+}
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+}
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: right;
+    margin: 0;
+  }
+}
+h1.Signup-section {
+  padding-left: 12vw;
+}
 
+/*Buttons
+----------------------------------------------------*/
+.btn-success {
+  color: #fff;
+  background-color: #d60f00;
+  border-color: #F44336;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #d60f00;
+  border-color: #d60f00;
+  /*set the color you want here*/
+}
 
+/*Front page section
+----------------------------------------------------*/
+.container.fill {
+  min-height: 92vh;
+}
+.panel-body {
+  /* padding: 15px; */
+}
+@media (min-width: 992px) {}
+.col-md-8 {
+  width: 55.666667%;
+  margin-top: 7vh;
+  margin-bottom: 6vh;
+  padding-left: 5vw;
+}
+.col-sm-2 {
+  width: 25.666667%;
+}
+.col-md-4 {
+  width: 44.333333%;
+  padding-right: 51px;
+}
+.col-sm-4 {
+  width: 74.333333%;
+}
 
+}
+ul.bullits {
+  text-align: left !important;
+}
+h1.VinCellar-heading {
+  text-align: left;
+  font-family: SpecialElite;
+}
+.fa-ul {
+  padding-top: 9vh;
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 63px;
+}
+p.Sub-Signup-section {
+  padding-left: 11vw;
+}
 
+/* MARKETING CONTENT
+-------------------------------------------------- */
 
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.row.featurette.top {
+  text-align: -webkit-center;
+  background-color: #ffe3a7;
+  padding: 2vw;
+}
+.row.featurette.middle {
+  text-align: -webkit-center;
+  background-color: #ffe9ba;
+  padding: 2vw;
+}
+.row.featurette.bottom {
+  text-align: -webkit-center;
+  background-color: #ffefcb;
+  padding: 2vw;
+}
+h2.section-header.transparent {
+  text-align: center;
+  font-family: SpecialElite;
+  font-size: 40px;
+  background-color: transparent;
+  padding: 9vh;
+  margin: 0;
+  background-image: url("../Images/Wine-Cellar-2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
 
+/* Featurettes
+------------------------- */
+.featurette-divider {
+  margin: 3vh 0;
+}
 
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+  font-family: SpecialElite;
+}
+.center-block {
+  border-radius: 22%;
+}
+.text-muted {
+  color: #b9b7b7;
+}
+.col-md-7.Register {
+  float: none;
+}
+h2.featurette-heading.Register {
+  padding-bottom: 7vh;
+}
 
+/* RESPONSIVE CSS
+-------------------------------------------------- */
 
+/* Bump up size of carousel content */
+.carousel-caption p {
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: 1.4;
+}
+.featurette-heading {
+  font-size: 36px;
+}
+
+}
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+.col-xs-12 {
+  width: 100%;
+  background-color: #000000;
+}
+small,
+.small {
+  font-size: 75%;
+  color: #ffffff
+}
+.container {
+  width: 100vw;
+}

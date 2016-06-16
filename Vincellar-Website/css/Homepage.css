@@ -47,7 +47,13 @@ h1.Signup-section {
   padding-left: 12vw;
 }
 
-
+/*Buttons
+----------------------------------------------------*/
+.btn-success {
+  color: #fff;
+  background-color: #F44336;
+  border-color: #F44336;
+}
 
 /*Front page section
 ----------------------------------------------------*/
@@ -71,6 +77,7 @@ h1.Signup-section {
   }
   .col-md-4 {
     width: 44.333333%;
+    padding-right: 51px;
   }
   .col-sm-4 {
     width: 74.333333%;
@@ -87,14 +94,14 @@ h1.VinCellar-heading {
 }
 
 .fa-ul {
-    padding-top: 3vh;
-    padding-left: 0;
-    margin-left: 2.14285714em;
-    list-style-type: none;
-    font-size: 20px;
-    line-height: 52px;
+  padding-top: 9vh;
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 63px;
 }
-
+ 
 p.Sub-Signup-section {
     padding-left: 11vw;
 }

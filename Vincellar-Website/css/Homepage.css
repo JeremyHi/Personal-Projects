@@ -21,12 +21,18 @@ p {
 .navbar-default .navbar-collapse, 
 .navbar-default .navbar-form {
   border-color: #e7e7e7;
-  float: right;
 }
 
 .navbar-default {
   background-color: #ffd373;
   border-color: #f7ab05;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
 }
 
 

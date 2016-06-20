@@ -54,23 +54,6 @@ h1.Signup-section {
 }
 
 
-/*Buttons
-----------------------------------------------------*/
-
-.btn-success {
-  color: #fff;
-  background-color: #d60f00;
-  border-color: #F44336;
-}
-
-.btn-primary:hover {
-  color: #fff;
-  background-color: #d60f00;
-  border-color: #d60f00;
-  /*set the color you want here*/
-}
-
-
 /*Front page section
 ----------------------------------------------------*/
 
@@ -237,7 +220,7 @@ small,
 }
 body {
   padding-bottom: 15px;
-  color: #5a5a5a;
+  color: #000000;
   font-family: "Myriad Set Pro",
   "Helvetica Neue",
   Helvetica,
@@ -256,37 +239,64 @@ p {
 .navbar-default .navbar-form {
   border-color: #e7e7e7;
 }
+
 .navbar-default {
-  background-color: #ffd373;
+  background-color: #9C7649;
   border-color: #f7ab05;
 }
+
 .navbar {
   position: relative;
   min-height: 50px;
   margin-bottom: 0px;
   border: 1px solid transparent;
 }
+
 @media (min-width: 768px) {
   .navbar-nav {
     float: right;
     margin: 0;
   }
+
+  .navbar-form .form-control {
+    display: inline-block;
+    width: 100px;
+    vertical-align: middle;
+  }
+
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 13px;
+  }
 }
+
 h1.Signup-section {
   padding-left: 12vw;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 0px; 
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*Buttons
 ----------------------------------------------------*/
 .btn-success {
   color: #fff;
-  background-color: #d60f00;
-  border-color: #F44336;
+  background-color: #95001F;
+  border-color: #95001F;
 }
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
   color: #fff;
-  background-color: #d60f00;
-  border-color: #d60f00;
+  background-color: #95001F;
+  border-color: #95001F;
   /*set the color you want here*/
 }
 
@@ -303,14 +313,14 @@ h1.Signup-section {
   width: 55.666667%;
   margin-top: 7vh;
   margin-bottom: 6vh;
-  padding-left: 5vw;
+  padding-left: 12vw;
 }
 .col-sm-2 {
   width: 25.666667%;
 }
 .col-md-4 {
   width: 44.333333%;
-  padding-right: 51px;
+  padding-right: 20px;
 }
 .col-sm-4 {
   width: 74.333333%;
@@ -353,17 +363,17 @@ p.Sub-Signup-section {
 }
 .row.featurette.top {
   text-align: -webkit-center;
-  background-color: #ffe3a7;
+  background-color: #E8CE79;
   padding: 2vw;
 }
 .row.featurette.middle {
   text-align: -webkit-center;
-  background-color: #ffe9ba;
+  background-color: #fbe7a5;
   padding: 2vw;
 }
 .row.featurette.bottom {
   text-align: -webkit-center;
-  background-color: #ffefcb;
+  background-color: #fff0bd;
   padding: 2vw;
 }
 h2.section-header.transparent {

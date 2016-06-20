@@ -65,7 +65,6 @@ h5, .h5 {
 }
 
 .navbar {
-  position: relative;
   min-height: 50px;
   margin-bottom: 0px;
   border: 1px solid transparent;
@@ -75,6 +74,7 @@ h5, .h5 {
   .navbar-nav {
     float: right;
     margin: 0;
+    padding-right: 8px;
   }
 
   .navbar-form .form-control {
@@ -108,7 +108,7 @@ h1.Signup-section {
 }
 
 .container {
-  padding-right: 15px;
+  padding-right: 0px;
   padding-left: 0px; 
   margin-right: auto;
   margin-left: auto;
@@ -130,8 +130,9 @@ h1.Signup-section {
 .blog-header {
   padding-top: 40px;
   padding-bottom: 20px;
-  background-color: #f3efec;
+  background-color: #fff8e7;
   border-style: solid;
+  margin-top: 52px;
 }
 .blog-title {
   margin-top: 30px;
@@ -168,7 +169,7 @@ h1.Signup-section {
 
 .blog-post-content {
   padding: 20px 0 3vh 0;
-  background-color: #E6E5E3;
+  background-color: #fffdf8;
   text-align: -webkit-center;
   border-style: dotted;
   overflow: auto;
@@ -186,8 +187,8 @@ b.title {
 }
 
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .col-md-4 {
@@ -219,7 +220,7 @@ section.post-container {
 }
 
 .blog-post-subheading {
-  background-color: #f7f5f2;
+  background-color: #fff8e7;
   padding: 5vw;
   font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
   font-size: 20px;
@@ -229,6 +230,10 @@ p.text-one, li {
   font-size: 18px;
 }
 
+
+img.iPhone-Image {
+    width: 100%;
+}
 
 /*------------------ Footer ------------------*/
 small, .small {

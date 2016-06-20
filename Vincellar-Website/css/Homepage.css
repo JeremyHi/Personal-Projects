@@ -1,277 +1,172 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
-
-
 /* Padding below the footer and lighter body text */
-
 @font-face {
-  font-family: SpecialElite;
-  src: url('../fonts/SpecialElite.ttf');
+    font-family: SpecialElite;
+    src: url(../fonts/SpecialElite.ttf);
 }
 
 body {
-  padding-bottom: 15px;
-  color: #5a5a5a;
-  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #fff8e7;
+    padding-bottom: 15px;
+    color: #5a5a5a;
+    font-family: "Myriad Set Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #fff8e7;
 }
 
 p {
-  margin: 0px 10px 0px;
-  font-size: 20px
-}
-
-
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: #e7e7e7;
-}
-
-.navbar-default {
-  background-color: #ffd373;
-  border-color: #f7ab05;
-}
-
-.navbar {
-  position: relative;
-  min-height: 50px;
-  margin-bottom: 0px;
-  border: 1px solid transparent;
-}
-
-@media (min-width: 768px) {
-  .navbar-nav {
-    float: right;
-    margin: 0;
-  }
-}
-
-h1.Signup-section {
-  padding-left: 12vw;
-}
-
-
-/*Front page section
-----------------------------------------------------*/
-
-.container.fill {
-  min-height: 92vh;
-}
-
-.panel-body {
-  /* padding: 15px; */
-}
-
-@media (min-width: 992px) {}
-
-.col-md-8 {
-  width: 55.666667%;
-  margin-top: 7vh;
-  margin-bottom: 6vh;
-  padding-left: 5vw;
-}
-
-.col-sm-2 {
-  width: 25.666667%;
-}
-
-.col-md-4 {
-  width: 44.333333%;
-  padding-right: 51px;
-}
-
-.col-sm-4 {
-  width: 74.333333%;
-}
-
-
-}
-ul.bullits {
-  text-align: left !important;
-}
-h1.VinCellar-heading {
-  text-align: left;
-  font-family: SpecialElite;
-}
-.fa-ul {
-  padding-top: 9vh;
-  padding-left: 0;
-  margin-left: 2.14285714em;
-  list-style-type: none;
-  font-size: 20px;
-  line-height: 63px;
-}
-p.Sub-Signup-section {
-  padding-left: 11vw;
+    margin: 0 10px;
+    font-size: 20px;
 }
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
-
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
+    margin-bottom: 20px;
+    text-align: center;
 }
-.marketing h2 {
-  font-weight: normal;
+
+.marketing {
+    font-weight: 400;
 }
+
 .marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
+
 .row.featurette.top {
-  text-align: -webkit-center;
-  background-color: #ffe3a7;
-  padding: 2vw;
+    text-align: -webkit-center;
+    background-color: #ffe3a7;
+    padding: 2vw;
 }
+
 .row.featurette.middle {
-  text-align: -webkit-center;
-  background-color: #ffe9ba;
-  padding: 2vw;
+    text-align: -webkit-center;
+    background-color: #ffe9ba;
+    padding: 2vw;
 }
+
 .row.featurette.bottom {
-  text-align: -webkit-center;
-  background-color: #ffefcb;
-  padding: 2vw;
+    text-align: -webkit-center;
+    background-color: #ffefcb;
+    padding: 2vw;
 }
-h2.section-header.transparent {
-  text-align: center;
-  font-family: SpecialElite;
-  font-size: 40px;
-  background-color: transparent;
-  padding: 9vh;
-  margin: 0;
-  background-image: url("../Images/Wine-Cellar-2.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #ffffff;
+
+.section-header.transparent {
+    text-align: center;
+    font-family: SpecialElite;
+    font-size: 40px;
+    background-color: transparent;
+    padding: 9vh;
+    margin: 0;
+    background-image: url(../Images/Wine-Cellar-2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
 }
 
 /* Featurettes
 ------------------------- */
 .featurette-divider {
-  margin: 3vh 0;
+    margin: 3vh 0;
 }
 
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-  font-family: SpecialElite;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-family: SpecialElite;
 }
+
 .center-block {
-  border-radius: 22%;
+    border-radius: 22%;
 }
+
 .text-muted {
-  color: #b9b7b7;
+    color: #b9b7b7;
 }
+
 .col-md-7.Register {
-  float: none;
+    float: none;
 }
-h2.featurette-heading.Register {
-  padding-bottom: 7vh;
+
+.featurette-heading.Register {
+    padding-bottom: 7vh;
 }
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-
 /* Bump up size of carousel content */
 .carousel-caption p {
-  margin-bottom: 20px;
-  font-size: 21px;
-  line-height: 1.4;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
 }
+
 .featurette-heading {
-  font-size: 36px;
+    font-size: 36px;
 }
 
-}
 @media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
+    .featurette-heading {
+        margin-top: 120px;
+    }
 }
+
 .col-xs-12 {
-  width: 100%;
-  background-color: #000000;
+    width: 100%;
+    background-color: #000;
 }
-small,
-.small {
-  font-size: 75%;
-  color: #ffffff
+
+small,.small {
+    font-size: 75%;
+    color: #fff;
 }
+
 .container {
-  width: 100vw;
-}
-
-/* GLOBAL STYLES
--------------------------------------------------- */
-
-/* Padding below the footer and lighter body text */
-@font-face {
-  font-family: SpecialElite;
-  src: url('../fonts/SpecialElite.ttf');
-}
-body {
-  padding-bottom: 15px;
-  color: #000000;
-  font-family: "Myriad Set Pro",
-  "Helvetica Neue",
-  Helvetica,
-  Arial,
-  sans-serif;
-  background-color: #fff8e7;
-}
-p {
-  margin: 0px 10px 0px;
-  font-size: 20px
+    width: 100vw;
 }
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: #e7e7e7;
-}
-
-.navbar-default {
-  background-color: #9C7649;
-  border-color: #f7ab05;
+.navbar-default .navbar-collapse,.navbar-default .navbar-form {
+    border-color: #e7e7e7;
 }
 
 .navbar {
-  position: relative;
-  min-height: 50px;
-  margin-bottom: 0px;
-  border: 1px solid transparent;
+    min-height: 50px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+}
+
+.navbar-default {
+    background-color: #9C7649;
+    border-color: #9C7649;
 }
 
 @media (min-width: 768px) {
-  .navbar-nav {
-    float: right;
-    margin: 0;
-  }
+    .navbar-nav {
+        float: right;
+        margin: 0;
+    }
 
-  .navbar-form .form-control {
-    display: inline-block;
-    width: 100px;
-    vertical-align: middle;
-  }
+    .navbar-form .form-control {
+        display: inline-block;
+        width: 100px;
+        vertical-align: middle;
+    }
 
-  .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 13px;
-  }
+    .navbar-nav > li > a {
+        padding-top: 15px;
+        padding-bottom: 13px;
+    }
 }
 
 h1.Signup-section {
-  padding-left: 12vw;
+    padding-left: 12vw;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -279,171 +174,80 @@ h1.Signup-section {
 }
 
 .container {
-  padding-right: 15px;
-  padding-left: 0px; 
-  margin-right: auto;
-  margin-left: auto;
+    padding-right: 15px;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /*Buttons
 ----------------------------------------------------*/
 .btn-success {
-  color: #fff;
-  background-color: #95001F;
-  border-color: #95001F;
+    color: #fff;
+    background-color: #95001F;
+    border-color: #95001F;
 }
-.btn-primary:hover,
-.btn-primary:focus {
-  color: #fff;
-  background-color: #95001F;
-  border-color: #95001F;
-  /*set the color you want here*/
+
+.btn-primary:hover,.btn-primary:focus {
+    color: #fff;
+    background-color: #95001F;
+    border-color: #95001F;
+/*set the color you want here*/
 }
 
 /*Front page section
 ----------------------------------------------------*/
 .container.fill {
-  min-height: 92vh;
+    min-height: 92vh;
+    margin-top: 35px;
 }
+
 .panel-body {
-  /* padding: 15px; */
-}
-@media (min-width: 992px) {}
-.col-md-8 {
-  width: 55.666667%;
-  margin-top: 7vh;
-  margin-bottom: 6vh;
-  padding-left: 12vw;
-}
-.col-sm-2 {
-  width: 25.666667%;
-}
-.col-md-4 {
-  width: 44.333333%;
-  padding-right: 20px;
-}
-.col-sm-4 {
-  width: 74.333333%;
+/* padding: 15px; */
 }
 
-}
-ul.bullits {
-  text-align: left !important;
-}
-h1.VinCellar-heading {
-  text-align: left;
-  font-family: SpecialElite;
-}
-.fa-ul {
-  padding-top: 9vh;
-  padding-left: 0;
-  margin-left: 2.14285714em;
-  list-style-type: none;
-  font-size: 20px;
-  line-height: 63px;
-}
-p.Sub-Signup-section {
-  padding-left: 11vw;
-}
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-.row.featurette.top {
-  text-align: -webkit-center;
-  background-color: #E8CE79;
-  padding: 2vw;
-}
-.row.featurette.middle {
-  text-align: -webkit-center;
-  background-color: #fbe7a5;
-  padding: 2vw;
-}
-.row.featurette.bottom {
-  text-align: -webkit-center;
-  background-color: #fff0bd;
-  padding: 2vw;
-}
-h2.section-header.transparent {
-  text-align: center;
-  font-family: SpecialElite;
-  font-size: 40px;
-  background-color: transparent;
-  padding: 9vh;
-  margin: 0;
-  background-image: url("../Images/Wine-Cellar-2.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #ffffff;
-}
-
-/* Featurettes
-------------------------- */
-.featurette-divider {
-  margin: 3vh 0;
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-  font-family: SpecialElite;
-}
-.center-block {
-  border-radius: 22%;
-}
-.text-muted {
-  color: #b9b7b7;
-}
-.col-md-7.Register {
-  float: none;
-}
-h2.featurette-heading.Register {
-  padding-bottom: 7vh;
-}
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-/* Bump up size of carousel content */
-.carousel-caption p {
-  margin-bottom: 20px;
-  font-size: 21px;
-  line-height: 1.4;
-}
-.featurette-heading {
-  font-size: 36px;
-}
-
-}
 @media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
+    
 }
-.col-xs-12 {
-  width: 100%;
-  background-color: #000000;
+
+.col-md-8 {
+    width: 55.666667%;
+    margin-top: 7vh;
+    margin-bottom: 6vh;
+    padding-left: 12vw;
 }
-small,
-.small {
-  font-size: 75%;
-  color: #ffffff
+
+.col-sm-2 {
+    width: 25.666667%;
 }
-.container {
-  width: 100vw;
+
+.col-md-4 {
+    width: 44.333333%;
+    padding-right: 20px;
+}
+
+.col-sm-4 {
+    width: 74.333333%;
+}
+
+ul.bullits {
+    text-align: left !important;
+}
+
+.VinCellar-heading {
+    text-align: left;
+    font-family: SpecialElite;
+}
+
+.fa-ul {
+    padding-top: 9vh;
+    padding-left: 0;
+    margin-left: 2.14285714em;
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 63px;
+}
+
+p.Sub-Signup-section {
+    padding-left: 11vw;
 }

@@ -13,6 +13,16 @@ body {
     background-color: #fff8e7;
 }
 
+@media (min-width: 992px) {
+  body {
+    padding-bottom: 15px;
+    color: #5a5a5a;
+    font-family: "Myriad Set Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #fff8e7;
+    font-size: 18px
+  }
+}
+
 p {
     margin: 0 10px;
     font-size: 20px;
@@ -67,6 +77,35 @@ p {
     color: #fff;
 }
 
+@media (min-width: 768px) {
+  .fa-ul {
+    padding-top: 9vh;
+    padding-left: 0;
+    margin-left: 2.14285714em;
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 63px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fa-ul>li {
+    position: relative;
+    padding: 10px 0 10px 0;
+  }
+  .fa-ul {
+    padding-top: 9vh;
+    padding-left: 0;
+    margin-left: 2.14285714em;
+    list-style-type: none;
+    font-size: 34px;
+    line-height: 69px;
+  }
+  h1, .h1 {
+    font-size: 54px;
+  }
+}
+
 /* Featurettes
 ------------------------- */
 .featurette-divider {
@@ -97,6 +136,18 @@ p {
     padding-bottom: 7vh;
 }
 
+@media (min-width: 768px) {
+  .lead {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .lead {
+    font-size: 35px;
+  }
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 /* Bump up size of carousel content */
@@ -112,7 +163,7 @@ p {
 
 @media (min-width: 992px) {
     .featurette-heading {
-        margin-top: 120px;
+        margin-top: 40px;
     }
 }
 
@@ -202,14 +253,6 @@ h1.Signup-section {
     margin-top: 35px;
 }
 
-.panel-body {
-/* padding: 15px; */
-}
-
-@media (min-width: 992px) {
-    
-}
-
 .col-md-8 {
     width: 55.666667%;
     margin-top: 7vh;
@@ -239,15 +282,11 @@ ul.bullits {
     font-family: SpecialElite;
 }
 
-.fa-ul {
-    padding-top: 9vh;
-    padding-left: 0;
-    margin-left: 2.14285714em;
-    list-style-type: none;
-    font-size: 20px;
-    line-height: 63px;
-}
-
 p.Sub-Signup-section {
     padding-left: 11vw;
+}
+
+footer {
+  display: block;
+  text-align: center;
 }

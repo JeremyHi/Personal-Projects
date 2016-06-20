@@ -34,16 +34,6 @@ h5, .h5 {
   text-align: center;
 }
 
-
-/*------------- Override Bootstrap's default container. --------------*/
-
-@media (min-width: 1200px) {
-  .container {
-    width: 970px;
-  }
-}
-
-
 /*--------------- Masthead for nav ---------------*/
 
 .blog-masthead {
@@ -68,30 +58,6 @@ h5, .h5 {
   min-height: 50px;
   margin-bottom: 0px;
   border: 1px solid transparent;
-}
-
-@media (min-width: 768px) {
-  .navbar-nav {
-    float: right;
-    margin: 0;
-    padding-right: 8px;
-  }
-
-  .navbar-form .form-control {
-    display: inline-block;
-    width: 100px;
-    vertical-align: middle;
-  }
-
-  .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 13px;
-  }
-
-  .navbar-nav > li {
-    float: left;
-    font-size: 15px;
-  }
 }
 
 img {
@@ -223,7 +189,7 @@ section.post-container {
   background-color: #fff8e7;
   padding: 5vw;
   font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 p.text-one, li {
@@ -236,12 +202,73 @@ img.iPhone-Image {
 }
 
 /*------------------ Footer ------------------*/
-small, .small {
-  font-size: 75%;
-  color: #ffffff
-}
-
 .col-xs-12 {
     width: 100%;
     background-color: #000000;
 }
+
+footer {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+
+/*------------- Override Bootstrap's default if screen gets too big. --------------*/
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: right;
+    margin: 0;
+    padding-right: 8px;
+  }
+
+  .navbar-form .form-control {
+    display: inline-block;
+    width: 100px;
+    vertical-align: middle;
+  }
+
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 13px;
+  }
+
+  .navbar-nav > li {
+    float: left;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+  p.text-one, li {
+    font-size: 31px;
+  }
+  h3, .h3 {
+    font-size: 36px;
+  }
+  .blog-post-subheading {
+    font-size: 38px;
+  }
+  .container {
+    width: 100%;
+  }
+  .blog-description {
+    font-size: 33px;
+    line-height: 54px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

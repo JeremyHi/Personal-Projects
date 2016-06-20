@@ -213,6 +213,11 @@ footer {
   font-size: 18px;
 }
 
+a {
+  color: #95001F;
+  text-decoration: none;
+}
+
 /*------------- Override Bootstrap's default if screen gets too big. --------------*/
 @media (min-width: 768px) {
   .navbar-nav {
@@ -264,16 +269,3 @@ footer {
     vertical-align: middle;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

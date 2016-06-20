@@ -163,16 +163,20 @@ h1.Signup-section {
 /*Buttons
 ----------------------------------------------------*/
 .btn-success {
-    color: #fff;
-    background-color: #95001F;
-    border-color: #95001F;
+  color: #fff;
+  background-color: #95001F;
+  border-color: #95001F;
 }
 
 .btn-primary:hover,.btn-primary:focus {
-    color: #fff;
-    background-color: #95001F;
-    border-color: #95001F;
-/*set the color you want here*/
+  color: #fff;
+  background-color: #95001F;
+  border-color: #95001F;
+}
+
+a {
+  color: #95001F;
+  text-decoration: none;
 }
 
 /*Front page section

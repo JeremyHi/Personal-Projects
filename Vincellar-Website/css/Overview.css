@@ -258,6 +258,11 @@ footer {
     font-size: 33px;
     line-height: 54px;
   }
+  .navbar-form .form-control {
+    display: inline-block;
+    width: 243px;
+    vertical-align: middle;
+  }
 }
 
 

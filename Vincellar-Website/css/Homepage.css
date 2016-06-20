@@ -13,16 +13,6 @@ body {
     background-color: #fff8e7;
 }
 
-@media (min-width: 992px) {
-  body {
-    padding-bottom: 15px;
-    color: #5a5a5a;
-    font-family: "Myriad Set Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #fff8e7;
-    font-size: 18px
-  }
-}
-
 p {
     margin: 0 10px;
     font-size: 20px;
@@ -77,35 +67,6 @@ p {
     color: #fff;
 }
 
-@media (min-width: 768px) {
-  .fa-ul {
-    padding-top: 9vh;
-    padding-left: 0;
-    margin-left: 2.14285714em;
-    list-style-type: none;
-    font-size: 20px;
-    line-height: 63px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .fa-ul>li {
-    position: relative;
-    padding: 10px 0 10px 0;
-  }
-  .fa-ul {
-    padding-top: 9vh;
-    padding-left: 0;
-    margin-left: 2.14285714em;
-    list-style-type: none;
-    font-size: 34px;
-    line-height: 69px;
-  }
-  h1, .h1 {
-    font-size: 54px;
-  }
-}
-
 /* Featurettes
 ------------------------- */
 .featurette-divider {
@@ -136,16 +97,8 @@ p {
     padding-bottom: 7vh;
 }
 
-@media (min-width: 768px) {
-  .lead {
-    font-size: 30px;
-  }
-}
-
-@media (min-width: 992px) {
-  .lead {
-    font-size: 35px;
-  }
+section.Overview {
+    width: 101%;
 }
 
 /* RESPONSIVE CSS
@@ -161,14 +114,8 @@ p {
     font-size: 36px;
 }
 
-@media (min-width: 992px) {
-    .featurette-heading {
-        margin-top: 40px;
-    }
-}
-
 .col-xs-12 {
-    width: 100%;
+    width: 101%;
     background-color: #000;
 }
 
@@ -196,24 +143,6 @@ small,.small {
 .navbar-default {
     background-color: #9C7649;
     border-color: #9C7649;
-}
-
-@media (min-width: 768px) {
-    .navbar-nav {
-        float: right;
-        margin: 0;
-    }
-
-    .navbar-form .form-control {
-        display: inline-block;
-        width: 100px;
-        vertical-align: middle;
-    }
-
-    .navbar-nav > li > a {
-        padding-top: 15px;
-        padding-bottom: 13px;
-    }
 }
 
 h1.Signup-section {
@@ -290,3 +219,93 @@ footer {
   display: block;
   text-align: center;
 }
+
+/*--------------Media Override for screen size--------------*/
+@media (min-width: 768px) {
+  .fa-ul {
+    padding-top: 9vh;
+    padding-left: 0;
+    margin-left: 2.14285714em;
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 63px;
+  }
+  .lead {
+    font-size: 30px;
+  }
+  .navbar-nav {
+      float: right;
+      margin: 0;
+  }
+  .navbar-form .form-control {
+      display: inline-block;
+      width: 100px;
+      vertical-align: middle;
+  }
+  .navbar-nav > li > a {
+      padding-top: 15px;
+      padding-bottom: 13px;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-bottom: 15px;
+    color: #5a5a5a;
+    font-family: "Myriad Set Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #fff8e7;
+    font-size: 18px
+  }
+  .lead {
+    font-size: 35px;
+  }
+
+  .featurette-heading {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fa-ul>li {
+    position: relative;
+    padding: 10px 0 10px 0;
+  }
+  .fa-ul {
+    padding-top: 9vh;
+    padding-left: 0;
+    margin-left: 2.14285714em;
+    list-style-type: none;
+    font-size: 34px;
+    line-height: 69px;
+  }
+  h1, .h1 {
+    font-size: 54px;
+  }
+  .navbar-form .form-control {
+    display: inline-block;
+    width: 243px;
+    vertical-align: middle;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

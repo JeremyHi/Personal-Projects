@@ -233,6 +233,9 @@ a {
 }
 
 @media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
   .navbar-nav {
     float: right;
     margin: 0;
@@ -256,10 +259,15 @@ a {
   }
 }
 
-@media (min-width: 1200px) {
-  .container {
-    width: 970px;
+@media (min-width: 950px) {
+  .navbar-form .form-control {
+    display: inline-block;
+    width: 163px;
+    vertical-align: middle;
   }
+}
+
+@media (min-width: 1200px) {
   p.text-one, li {
     font-size: 31px;
   }

@@ -144,16 +144,26 @@ small,.small {
 }
 
 .navbar-default {
-    background-color: #9C7649;
-    border-color: #9C7649;
+  background-color: rgba(0,0,0,0);
+  border-color: rgba(0,0,0,0);
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.blacked {
+  background-color: #000;
+  border-color: rgba(0,0,0,0);
 }
 
 h1.Signup-section {
-    padding-left: 12vw;
+    =padding-left: 12vw;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #fff;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a {
+  color: #fff;
+  background-color: rgba(231, 231, 231, 0.22);
 }
 
 .container {
@@ -161,6 +171,15 @@ h1.Signup-section {
     padding-left: 0;
     margin-right: auto;
     margin-left: auto;
+}
+
+.checkbox label {
+  background-color: rgba(138, 138, 138, 0.78);
+}
+
+.Logo {
+  width: auto;
+  max-width: 218px;
 }
 
 /*Buttons
@@ -304,13 +323,17 @@ footer {
     width: 100%;
     padding: 0;
     margin: 0;
+    background-image: url("../Images/WineStanding.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: 992px) {
   body {
     padding-bottom: 15px;
-    color: #5a5a5a;
+    color: #fff;
     font-family: "Myriad Set Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #fff8e7;
     font-size: 18px

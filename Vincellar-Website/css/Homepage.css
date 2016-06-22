@@ -344,14 +344,6 @@ footer {
   }
 }
 
-@media (min-width: 931px) {
-  .navbar-form .form-control {
-    display: inline-block;
-    width: 243px;
-    vertical-align: middle;
-  }
-}
-
 @media (min-width: 1200px) {
   .fa-ul>li {
     position: relative;

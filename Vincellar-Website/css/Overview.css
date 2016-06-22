@@ -7,6 +7,7 @@
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #555;
+  overflow-x: hidden;
 }
 
 h1, .h1,
@@ -49,14 +50,9 @@ small, .small {
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: #e7e7e7;
-}
-
 .navbar-default {
-  background-color: #9C7649;
-  border-color: #f7ab05;
+  background-color: #fff;
+  border-color: #000;
 }
 
 .navbar {
@@ -74,8 +70,13 @@ h1.Signup-section {
   padding-left: 12vw;
 }
 
+nav.navbar.navbar-default.navbar-fixed-top.blacked {
+  background-color: #000;
+  border-color: rgba(0, 0, 0, 0);
+}
+
 .navbar-default .navbar-nav > li > a {
-    color: #fff;
+    color: #888;
 }
 
 .container {
@@ -90,6 +91,15 @@ h1.Signup-section {
     color: #fff;
     background-color: #95001F;
     border-color: #95001F;
+}
+
+.Logo {
+  width: auto;
+  max-width: 218px;
+}
+
+.form-control {
+    font-size: 18px;
 }
 
 /*------------ Blog name and description -------------*/
@@ -153,7 +163,7 @@ p {
 
 b.title {
   color: #FFFFFF;
-  font-size: 43px;
+  font-size: 75px;
   letter-spacing: 8px;
 }
 
@@ -180,7 +190,7 @@ section.post-container {
 
 .blog-post-title {
   margin-bottom: 0px;
-  padding: 10vh;
+  padding: 20vh;
   background-color: transparent;
   font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
   text-transform: uppercase;
@@ -188,6 +198,7 @@ section.post-container {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 50vh;
 }
 
 .blog-post-subheading {
@@ -255,14 +266,15 @@ a {
 
   .navbar-nav > li {
     float: left;
-    font-size: 15px;
+    font-size: 16px;
   }
 }
+
 
 @media (min-width: 950px) {
   .navbar-form .form-control {
     display: inline-block;
-    width: 163px;
+    width: 113px;
     vertical-align: middle;
   }
 }
@@ -286,7 +298,7 @@ a {
   }
   .navbar-form .form-control {
     display: inline-block;
-    width: 243px;
+    width: 196px;
     vertical-align: middle;
   }
 }

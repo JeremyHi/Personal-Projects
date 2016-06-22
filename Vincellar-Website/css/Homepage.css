@@ -14,6 +14,7 @@ body {
   color: #fff;
   font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #fff8e7;
+  overflow-x: hidden;
 }
 
 p {
@@ -126,7 +127,7 @@ section.Overview {
 }
 
 .featurette-heading {
-  font-size: 36px;
+  font-size: 45px;
 }
 
 .col-xs-12 {

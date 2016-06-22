@@ -171,9 +171,9 @@ small,
 }
 
 .navbar-default {
-  background-color: rgba(0, 0, 0, 0.32);
+  background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
-  box-shadow: 9px 22px 142px rgba(0, 0, 0, 0.73);
+  box-shadow: 9px 22px 142px rgba(0, 0, 0, 0);
 }
 
 nav.navbar.navbar-default.navbar-fixed-top.blacked {

@@ -46,19 +46,19 @@ p {
 
 .row.featurette.top {
   text-align: -webkit-center;
-  background-color: #ffe3a7;
+  background-color: #dadada;
   padding: 2vw;
 }
 
 .row.featurette.middle {
   text-align: -webkit-center;
-  background-color: #ffe9ba;
+  background-color: #ececec;
   padding: 2vw;
 }
 
 .row.featurette.bottom {
   text-align: -webkit-center;
-  background-color: #ffefcb;
+  background-color: #fff;
   padding: 2vw;
 }
 
@@ -98,7 +98,7 @@ p {
 }
 
 .text-muted {
-  color: #b9b7b7;
+  color: #95001F;
 }
 
 .col-md-7.Register {
@@ -225,7 +225,7 @@ h1.Signup-section {
 }
 
 a {
-  color: #fff;
+  color: #b5b1b1;
   text-decoration: none;
 }
 
@@ -386,7 +386,7 @@ footer {
     padding-bottom: 15px;
     color: #fff;
     font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #fff8e7;
+    background-color: #949494;
     font-size: 15px;
   }
   .lead {
@@ -399,7 +399,7 @@ footer {
     width: 48.666667%;
     margin-left: -4%;
     margin-right: auto;
-    padding-left: 12vw;
+    padding-left: 11vw;
     margin-top: 9%;
   }
   .navbar-form .form-control {

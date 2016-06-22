@@ -194,9 +194,6 @@ h1.Signup-section {
   margin-left: auto;
 }
 
-.checkbox label {
-  background-color: rgba(138, 138, 138, 0.78);
-}
 
 .Logo {
   width: auto;
@@ -221,7 +218,7 @@ h1.Signup-section {
 }
 
 a {
-  color: #95001F;
+  color: #fff;
   text-decoration: none;
 }
 

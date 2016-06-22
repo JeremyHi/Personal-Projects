@@ -158,6 +158,12 @@ small,
   border-color: #e7e7e7;
 }
 
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 10px 6px;
+}
+
 .navbar {
   min-height: 50px;
   margin-bottom: 0;
@@ -165,8 +171,9 @@ small,
 }
 
 .navbar-default {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.32);
   border-color: rgba(0, 0, 0, 0);
+  box-shadow: 9px 22px 142px rgba(0, 0, 0, 0.73);
 }
 
 nav.navbar.navbar-default.navbar-fixed-top.blacked {
@@ -175,7 +182,7 @@ nav.navbar.navbar-default.navbar-fixed-top.blacked {
 }
 
 h1.Signup-section {
-  padding-left: 12vw;
+  padding-left: 27px;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -227,7 +234,7 @@ a {
 ----------------------------------------------------*/
 
 .container.fill {
-  min-height: 100vh;
+  min-height: 68vh;
   margin-top: 35px;
   background-image: url("../Images/WineStanding.jpg");
   background-attachment: fixed;
@@ -243,7 +250,7 @@ a {
 }
 
 .col-sm-2 {
-  width: 25.666667%;
+  width: 41.666667%;
 }
 
 .col-md-4 {
@@ -257,6 +264,20 @@ a {
 
 ul.bullits {
   text-align: left !important;
+}
+
+.form-horizontal .control-label {
+  padding-top: 7px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.form-group.Username {
+  padding-left: 15px;
+}
+
+input.form-control.Username {
+  width: 47%;
 }
 
 .VinCellar-heading {
@@ -319,7 +340,7 @@ footer {
     margin-left: 2.14285714em;
     list-style-type: none;
     font-size: 20px;
-    line-height: 63px;
+    line-height: 55px;
   }
   .lead {
     font-size: 30px;
@@ -330,7 +351,7 @@ footer {
   }
   .navbar-form .form-control {
     display: inline-block;
-    width: 100px;
+    width: 75px;
     vertical-align: middle;
   }
   .navbar-nav > li > a {
@@ -345,7 +366,6 @@ footer {
   }
   .col-md-4 {
     width: 83.333333%;
-    padding-right: 10%;
     padding-left: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -367,7 +387,7 @@ footer {
     color: #fff;
     font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #fff8e7;
-    font-size: 18px
+    font-size: 15px;
   }
   .lead {
     font-size: 35px;
@@ -376,7 +396,7 @@ footer {
     margin-top: 40px;
   }
   .col-md-8 {
-    width: 43.666667%;
+    width: 48.666667%;
     margin-left: -4%;
     margin-right: auto;
     padding-left: 12vw;
@@ -389,11 +409,10 @@ footer {
   }
   .col-md-4 {
     width: 55.333333%;
-    padding-right: 10%;
-    padding-left: 10px;
+    padding-left: 90px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 8%;
+    padding-top: 8.7%;
   }
 }
 
@@ -408,7 +427,7 @@ footer {
     margin-left: 2.14285714em;
     list-style-type: none;
     font-size: 28px;
-    line-height: 69px;
+    line-height: 55px;
   }
   h1,
   .h1 {

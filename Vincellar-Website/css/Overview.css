@@ -51,7 +51,7 @@ small, .small {
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 .navbar-default {
-  background-color: #fff;
+  background-color: rgba(0,0,0,0);
   border-color: #000;
 }
 

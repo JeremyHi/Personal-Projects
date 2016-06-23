@@ -1,12 +1,9 @@
 import sys
-import openpyxl
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import Select
-from datetime import datetime
-from threading import Timer
 
 # Address location of you firefox profile (for autofill)
 FIREFOX_PROFILE = '/Users/COMPUTER-NAME/Library/Application Support/Firefox/Profiles/xzbpu59q.default' #replace COMPUTER-NAME with the name in top right of computer

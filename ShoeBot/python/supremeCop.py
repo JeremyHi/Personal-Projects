@@ -9,7 +9,7 @@ from datetime import datetime
 from threading import Timer
 
 # Address location of you firefox profile (for autofill)
-FIREFOX_PROFILE = '/Users/Ruht_Roh/Library/Application Support/Firefox/Profiles/xzbpu59q.default'
+FIREFOX_PROFILE = '/Users/COMPUTER-NAME/Library/Application Support/Firefox/Profiles/xzbpu59q.default'
 
 #timing information
 

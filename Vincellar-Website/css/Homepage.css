@@ -146,6 +146,7 @@ small,
   background-color: rgba(0, 0, 0, 0);
   border-color: rgb(239, 154, 154);
   box-shadow: 9px 22px 142px rgba(0, 0, 0, 0);
+  width: 91%;
 }
 
 nav.navbar.navbar-default.navbar-fixed-top.blacked {
@@ -232,7 +233,7 @@ a.terms {
 
 .col-md-8 {
   width: 55.666667%;
-  margin-top: 7vh;
+  margin-top: 10vh;
   margin-bottom: 6vh;
   padding-left: 12vw;
 }
@@ -241,7 +242,7 @@ a.terms {
   width: 41.666667%;
 }
 
-.col-md-4 {
+.col-xs-4 {
   width: 44.333333%;
   padding-right: 20px;
 }
@@ -285,6 +286,10 @@ footer {
     margin-right: 0px;
   }
 
+  .form-control {
+    width: 49%;
+  }
+
   .container>.navbar-header {
     margin-right: 5px;
     margin-left: -34px;
@@ -313,6 +318,10 @@ footer {
     margin-left: 2%;
   }
 
+  .panel-body {
+    padding: 0;
+  }
+
   .col-md-8 {
     width: 100%;
   }
@@ -323,10 +332,10 @@ footer {
     padding-bottom: 3%;
     color: #000;
   }
-  .col-md-4 {
+  .col-xs-4 {
     padding-right: 8px;
     margin-left: 13%;
-    width: 31.3333333%
+    width: 64.3333333%
   }
   .col-xs-12 {
     width: 100%;
@@ -339,6 +348,14 @@ footer {
   .col-sm-4 {
     width: 74.333333%;
   }
+
+  .col-xs-4 {
+    padding-right: 8px;
+    margin-left: 10%;
+    width: 70%;
+    margin-top: 8.7%;
+  }
+
   .fa-ul {
     padding-top: 7%;
     padding-left: 0;
@@ -359,6 +376,11 @@ footer {
     width: 75px;
     vertical-align: middle;
   }
+
+  .form-control {
+    width: 140%;
+  }
+
   .navbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 13px;
@@ -376,11 +398,12 @@ footer {
     margin-right: auto;
     padding: 0;
   }
-  .col-md-4 {
-    width: 83.333333%;
-    padding-left: 10px;
-    margin-left: auto;
-    margin-right: auto;
+
+  .navbar-default {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(239, 154, 154);
+    box-shadow: 9px 22px 142px rgba(0, 0, 0, 0);
+    width: 100%;
   }
   .container.fill {
     width: 100%;
@@ -403,6 +426,13 @@ footer {
   .featurette-heading {
     margin-top: 40px;
   }
+  .col-xs-4 {
+    padding-right: 8px;
+    margin-left: 10%;
+    width: 41.33333%;
+    margin-top: 8.7%;
+  }
+  
   .col-md-8 {
     width: 48.666667%;
     margin-left: -4%;

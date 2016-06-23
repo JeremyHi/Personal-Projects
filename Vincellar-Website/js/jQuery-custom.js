@@ -13,6 +13,8 @@ $(function() {
   });
 });
 
+
+//Navbar fade in effect 
 (function($) {
   $(document).ready(function() {
 
@@ -23,7 +25,7 @@ $(function() {
     $(function() {
       $(window).scroll(function() {
         // set distance user needs to scroll before we fadeIn navbar
-        if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 50) {
           $('nav.navbar.navbar-default.navbar-fixed-top.blacked').fadeIn();
         } else {
           $('nav.navbar.navbar-default.navbar-fixed-top.blacked').fadeOut();

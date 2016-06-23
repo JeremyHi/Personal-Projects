@@ -13,7 +13,7 @@ body {
   padding-bottom: 15px;
   color: #fff;
   font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #fff8e7;
+  background-color: #c1c1c1;
   overflow-x: hidden;
 }
 
@@ -158,10 +158,24 @@ small,
   border-color: #e7e7e7;
 }
 
-.nav>li>a {
-  position: relative;
-  display: block;
-  padding: 10px 6px;
+.no-overflow {
+    position:absolute;
+    top:0;
+    left: 94%;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 0;
+    color:#ccc;
+    max-width:90%;
+}
+.no-overflow p {
+    color:#ccc;
+    line-height:50px;
+    padding:0 10px;
+    margin:0;
+    display:inline;
 }
 
 .navbar {
@@ -185,8 +199,16 @@ h1.Signup-section {
   padding-left: 27px;
 }
 
+.navbar-form {
+  padding: 0px 0px;
+}
+
 .navbar-default .navbar-nav > li > a {
   color: #fff;
+}
+
+.navbar-nav>li>a {
+  padding: 10px 5px;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -204,7 +226,9 @@ h1.Signup-section {
 
 .Logo {
   width: auto;
-  max-width: 218px;
+  max-width: 196px;
+  margin-top: 1px;
+  float: left;
 }
 
 
@@ -213,7 +237,7 @@ h1.Signup-section {
 
 .btn-success {
   color: #fff;
-  background-color: #95001F;
+  background-color: #ff0000;
   border-color: #95001F;
 }
 
@@ -225,8 +249,17 @@ h1.Signup-section {
 }
 
 a {
-  color: #fff;
+  color: #95001f;
   text-decoration: none;
+}
+
+a.terms {
+  color: #fff;
+}
+
+.btn {
+  margin-left: 6px;
+  margin-right: 10px; 
 }
 
 
@@ -236,10 +269,7 @@ a {
 .container.fill {
   min-height: 68vh;
   margin-top: 35px;
-  background-image: url("../Images/WineStanding.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #95001F;
 }
 
 .col-md-8 {
@@ -262,6 +292,11 @@ a {
   width: 74.333333%;
 }
 
+.col-sm-offset-2.col-sm-4 {
+  width: 75%;
+  margin: 0px;
+}
+
 ul.bullits {
   text-align: left !important;
 }
@@ -270,6 +305,8 @@ ul.bullits {
   padding-top: 7px;
   margin-bottom: 0;
   text-align: left;
+  white-space: nowrap;
+  overflow: visible;
 }
 
 .form-group.Username {
@@ -282,7 +319,7 @@ input.form-control.Username {
 
 .VinCellar-heading {
   text-align: left;
-  font-family: SpecialElite;
+  font-family: "Helvetica";
 }
 
 p.Sub-Signup-section {
@@ -299,17 +336,33 @@ footer {
 /*--------------Media Override for screen size--------------*/
 
 @media (min-width: 375px) {
+  .row {
+    margin-right: 0px;
+  }
+
+  #navbar {
+    width: 35%;
+    float: right;
+    margin-right: auto;
+    border-color: #ff6262;
+    background-color: #000;
+  }
+
   .col-sm-4 {
     width: 216.333333%;
   }
   .container {
-    width: 74%;
+    width: 100%;
     padding: 0;
     margin: 0;
   }
-}
+  .container.fill {
+    margin-top: 0px;
+  }
+  .Logo {
+    margin-left: 2%;
+  }
 
-@media (min-width: 632px) {
   .col-md-8 {
     width: 100%;
   }
@@ -321,12 +374,14 @@ footer {
     color: #000;
   }
   .col-md-4 {
-    padding-right: 9px;
-    margin-left: 15%;
+    padding-right: 8px;
+    margin-left: 13%;
+    width: 31.3333333%
   }
   .col-xs-12 {
-    width: 101vw;
+    width: 100%;
     background-color: #000;
+    padding-left: 6%;
   }
 }
 
@@ -358,6 +413,13 @@ footer {
     padding-top: 15px;
     padding-bottom: 13px;
   }
+  #navbar {
+    width: 100%;
+    float: right;
+    margin-right: auto;
+    border-color: #ff6262;
+    background-color: rgba(0, 0, 0, 0);
+  }
   .col-md-8 {
     width: 69.666667%;
     margin-left: auto;
@@ -374,10 +436,6 @@ footer {
     width: 100%;
     padding: 0;
     margin: 0;
-    background-image: url("../Images/WineStanding.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 }
 

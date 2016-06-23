@@ -88,18 +88,20 @@ nav.navbar.navbar-default.navbar-fixed-top.blacked {
 
 
 .btn-success {
-    color: #fff;
-    background-color: #95001F;
-    border-color: #95001F;
+  color: #fff;
+  background-color: #95001F;
+  border-color: #95001F;
+  margin-left: 5px;
 }
 
 .Logo {
   width: auto;
   max-width: 218px;
+  float: left;
 }
 
 .form-control {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 /*------------ Blog name and description -------------*/
@@ -107,6 +109,25 @@ nav.navbar.navbar-default.navbar-fixed-top.blacked {
   padding: 0px
 }
 
+.no-overflow {
+    position:absolute;
+    top:0;
+    left: 94%;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 0;
+    color:#ccc;
+    max-width:90%;
+}
+.no-overflow p {
+    color:#ccc;
+    line-height:50px;
+    padding:0 10px;
+    margin:0;
+    display:inline;
+}
 
 .blog-header {
   padding-top: 40px;
@@ -163,7 +184,7 @@ p {
 
 b.title {
   color: #FFFFFF;
-  font-size: 75px;
+  font-size: 38px;
   letter-spacing: 8px;
 }
 
@@ -190,7 +211,7 @@ section.post-container {
 
 .blog-post-title {
   margin-bottom: 0px;
-  padding: 20vh;
+  padding-top: 16vh;
   background-color: transparent;
   font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
   text-transform: uppercase;
@@ -274,8 +295,11 @@ a {
 @media (min-width: 950px) {
   .navbar-form .form-control {
     display: inline-block;
-    width: 113px;
+    width: 98px;
     vertical-align: middle;
+  }
+  b.title {
+    font-size: 65px;
   }
 }
 

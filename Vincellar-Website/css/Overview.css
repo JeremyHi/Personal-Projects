@@ -9,7 +9,7 @@ html {
 
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #555;
   overflow-x: hidden;
 }
@@ -40,8 +40,8 @@ h5, .h5 {
 }
 
 small, .small {
-    font-size: 85%;
-    color: #fff;
+    font-size: 83%;
+    color: #b4b4b4;
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -187,6 +187,9 @@ p.text-one, li {
   font-size: 18px;
 }
 
+ul {
+  text-align: left;
+}
 
 img.iPhone-Image {
     width: 100%;
@@ -261,7 +264,18 @@ a {
     width: 33%;
     padding-left: 3vw;
     padding-right: 0vw;
-  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+    font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+  }
+  .col-md-6 {
+    width: 50%;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+  }
+  .col-xs-6 {
+    width: 27%;
+    margin-left: 26%;
+    margin-right: -20%;
   }
 }
 

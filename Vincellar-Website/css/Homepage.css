@@ -17,7 +17,7 @@ body {
   padding-bottom: 15px;
   color: #fff;
   font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #c1c1c1;
+  background-color: #000;
   overflow-x: hidden;
 }
 
@@ -116,8 +116,12 @@ section.Overview {
 
 small,
 .small {
-  font-size: 75%;
-  color: #fff;
+  font-size: 83%;
+  color: #b4b4b4;
+}
+
+b, strong {
+  font-weight: normal;
 }
 
 .container {
@@ -128,6 +132,13 @@ small,
   width: 99%;
 }
 
+.col-xs-6.form {
+  margin-left: auto;
+  width: 40%;
+}
+.col-xs-6.second-column {
+  width: 40%;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -323,6 +334,11 @@ p.footer {
   .row {
     margin-right: 0px;
   }
+  .col-xs-6.form,
+  .col-xs-6.second-column {
+    margin-left: auto;
+    width: 100%;
+  }
 
   .col-xs-6 {
     width: 100%;
@@ -338,11 +354,12 @@ p.footer {
   }
 
   #navbar {
-    width: 35%;
+    width: 100%;
     float: right;
     margin-right: auto;
     border-color: #ff6262;
     background-color: #000;
+    margin-top: 4vh;
   }
 
   .navbar-default {
@@ -411,9 +428,25 @@ p.footer {
   .col-sm-4 {
     width: 74.333333%;
   }
+  #navbar {
+    width: 100%;
+    float: right;
+    margin-right: auto;
+    border-color: #ff6262;
+    background-color: #000;
+    margin-top: 0;
+  }
+
+  .col-xs-6.form,
+  .col-xs-6.second-column {
+    margin-right: 0px;
+    width: 40%;
+  }
 
   .col-xs-6 {
-    width: 50%;
+    width: 27%;
+    margin-left: 26%;
+    margin-right: -20%;
   }
 
   .col-xs-4 {
@@ -489,6 +522,9 @@ p.footer {
   }
   .lead {
     font-size: 35px;
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
   .featurette-heading {
     margin-top: 40px;
@@ -517,7 +553,7 @@ p.footer {
 @media (min-width: 1200px) {
   .fa-ul>li {
     position: relative;
-    padding: 10px 0 10px 0;
+    padding: 10px 8% 10px 0;
   }
   .fa-ul {
     padding-top: 0;

@@ -46,6 +46,11 @@ small, .small {
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
+.navbar-default .navbar-nav>li>a:hover {
+  color: #fff;
+  background-color: rgb(0, 0, 0);
+}
+
 .navbar-default {
   background-color: rgba(0,0,0,0);
   border-color: #fff;
@@ -253,9 +258,9 @@ a {
     margin-top: 1%;
   }
   .col-md-4 {
-  width: 50%;
-  padding-left: 8vw;
-  padding-right: 8vw;
+    width: 33%;
+    padding-left: 3vw;
+    padding-right: 0vw;
   font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
   }
 }

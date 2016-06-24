@@ -333,6 +333,7 @@ p.footer {
 @media (min-width: 320px) {
   .row {
     margin-right: 0px;
+    margin-left: 0px;
   }
   .col-xs-6.form,
   .col-xs-6.second-column {
@@ -342,6 +343,10 @@ p.footer {
 
   .col-xs-6 {
     width: 100%;
+  }
+
+  form.navbar-form.navbar-right {
+    display: none;
   }
 
   .form-control {
@@ -359,7 +364,7 @@ p.footer {
     margin-right: auto;
     border-color: #ff6262;
     background-color: #000;
-    margin-top: 4vh;
+    margin-top: 8vh;
   }
 
   .navbar-default {

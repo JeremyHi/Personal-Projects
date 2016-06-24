@@ -3,6 +3,10 @@
  */
 
 @font-face { font-family: SpecialElite; src: url('../fonts/SpecialElite.ttf'); } 
+html {
+  overflow-x: hidden;
+}
+
 
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -44,27 +48,29 @@ small, .small {
 -------------------------------------------------- */
 .navbar-default {
   background-color: rgba(0,0,0,0);
-  border-color: #000;
-}
-
-.navbar {
-  min-height: 50px;
-  margin-bottom: 0px;
-  border: 1px solid transparent;
-}
-
-img {
-    vertical-align: middle;
-    padding-left: 15px;
+  border-color: #fff;
 }
 
 nav.navbar.navbar-default.navbar-fixed-top.blacked {
   background-color: #000;
-  border-color: rgba(0, 0, 0, 0);
 }
 
-.navbar-default .navbar-nav > li > a {
-    color: #888;
+.navbar-nav>li {
+  font-size: 17px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+div#formInput {
+  float: right;
+  margin-right: 7px;
+}
+
+img {
+  vertical-align: middle;
+  padding-left: 15px;
 }
 
 .container {
@@ -89,7 +95,7 @@ nav.navbar.navbar-default.navbar-fixed-top.blacked {
 }
 
 .form-control {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 /*------------ Blog name and description -------------*/
@@ -98,16 +104,16 @@ nav.navbar.navbar-default.navbar-fixed-top.blacked {
 }
 
 .no-overflow {
-    position:absolute;
-    top:0;
-    left: 94%;
-    display: block;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-top: 0;
-    color:#ccc;
-    max-width:90%;
+  position:absolute;
+  top:0;
+  left: 94%;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 0;
+  color:#ccc;
+  max-width:90%;
 }
 
 
@@ -199,50 +205,65 @@ a {
 }
 
 /*------------- Override Bootstrap's default if screen gets too big. --------------*/
-@media (min-width: 375px) {
+@media (min-width: 320px) {
   .container {
-    width: 99%;
+    width: 100%;
     padding: 0;
-    margin: 0;
-  } 
+    background-color: #000;
+    margin-top: 7%;
+  }
+  .navbar-nav {
+    margin: 44.5px -7px;
+  }
+  div#formInput {
+    display: none;
+  }
+  .navbar {
+    margin-bottom: 0px;
+  }
+  .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    margin-top: 7%;
+  }
+  .container>.navbar-header {
+    margin-right: -15px;
+    margin-left: -30px;
+  }
 }
 
 @media (min-width: 768px) {
   .container {
     width: 100%;
+    margin: 0;
+    background-color: rgba(0,0,0,0);
+  }
+  div#formInput {
+    display: none;
   }
   .navbar-nav {
-    float: right;
-    margin: 0;
-    padding-right: 8px;
+    margin: 0px -5px;
   }
-
-  .navbar-form .form-control {
-    display: inline-block;
-    width: 81px;
-    vertical-align: middle;
+  .navbar {
+    margin-right: 0px;
   }
-
-  .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 13px;
+  .navbar-collapse {
+    margin-top: 0;
   }
-
-  .navbar-nav > li {
-    float: left;
-    font-size: 16px;
+  .navbar-default .navbar-form {
+    margin-top: 1%;
   }
 }
 
 
 @media (min-width: 950px) {
-  .navbar-form .form-control {
-    display: inline-block;
-    width: 98px;
-    vertical-align: middle;
-  }
   b.title {
     font-size: 65px;
+  }
+}
+
+@media (min-width: 1119px) {
+  div#formInput {
+    display: flex;
   }
 }
 
@@ -258,10 +279,5 @@ a {
   }
   .container {
     width: 100%;
-  }
-  .navbar-form .form-control {
-    display: inline-block;
-    width: 196px;
-    vertical-align: middle;
   }
 }

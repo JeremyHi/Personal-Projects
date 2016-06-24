@@ -9,6 +9,10 @@
   src: url(../fonts/SpecialElite.ttf);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   padding-bottom: 15px;
   color: #fff;
@@ -301,6 +305,13 @@ footer {
     margin-right: auto;
     border-color: #ff6262;
     background-color: #000;
+  }
+
+  .navbar-default {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(239, 154, 154);
+    box-shadow: 9px 22px 142px rgba(0, 0, 0, 0);
+    width: 100%;
   }
 
   .col-sm-4 {

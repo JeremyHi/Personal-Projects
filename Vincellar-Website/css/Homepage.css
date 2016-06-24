@@ -23,7 +23,7 @@ body {
 
 p {
   margin: 0 10px;
-  font-size: 20px;
+  font-size: 33px;
   color: #000;
 }
 
@@ -91,6 +91,7 @@ hr {
 
 .text-muted {
   color: #95001F;
+  float: none;
 }
 
 section.Overview {
@@ -241,6 +242,21 @@ a.terms {
 
 /*Front page section
 ----------------------------------------------------*/
+.section {
+  margin: 0px 17% 0px 17%;
+}
+
+span {
+  float: left;
+}
+
+i.stat {
+  float: right;
+}
+
+h4 {
+  font-size: 24px;
+}
 
 .container.fill {
   min-height: 68vh;
@@ -296,11 +312,20 @@ footer {
   text-align: center;
 }
 
+p.footer {
+  font-size: 17px;
+  color: #fff
+}
+
 /*--------------Media Override for screen size--------------*/
 
 @media (min-width: 320px) {
   .row {
     margin-right: 0px;
+  }
+
+  .col-xs-6 {
+    width: 100%;
   }
 
   .form-control {
@@ -363,14 +388,32 @@ footer {
   }
   .col-xs-12 {
     width: 100%;
-    background-color: #000;
-    padding-left: 6%;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+  }
+
+  .col-xs-12.explain {
+    border-style: none;
+  }
+  .col-xs-12.innerStats {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    text-align: left;
+    font-size: 19px;
+  }
+  li {
+    float: left;
   }
 }
 
 @media (min-width: 768px) {
   .col-sm-4 {
     width: 74.333333%;
+  }
+
+  .col-xs-6 {
+    width: 50%;
   }
 
   .col-xs-4 {
@@ -441,7 +484,7 @@ footer {
     padding-bottom: 15px;
     color: #fff;
     font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #949494;
+    background-color: #000;
     font-size: 15px;
   }
   .lead {
@@ -458,7 +501,7 @@ footer {
   }
   
   .col-md-8 {
-    width: 48.666667%;
+    width: 47.666667%;
     margin-left: -4%;
     margin-right: auto;
     padding-left: 11vw;

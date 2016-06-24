@@ -139,7 +139,7 @@ p {
 b.title {
   color: #FFFFFF;
   font-size: 38px;
-  letter-spacing: 8px;
+  letter-spacing: 3px;
 }
 
 .row {
@@ -148,7 +148,7 @@ b.title {
 }
 
 .col-md-4 {
-  width: 50%;
+  width: 100%;
   padding-left: 8vw;
   padding-right: 8vw;
   font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
@@ -160,7 +160,7 @@ b.title {
 
 .blog-post-title {
   margin-bottom: 0px;
-  padding-top: 16vh;
+  padding-top: 13vh;
   background-color: transparent;
   font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
   text-transform: uppercase;
@@ -168,7 +168,7 @@ b.title {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 50vh;
+  height: 31vh;
 }
 
 .blog-post-subheading {
@@ -251,6 +251,12 @@ a {
   }
   .navbar-default .navbar-form {
     margin-top: 1%;
+  }
+  .col-md-4 {
+  width: 50%;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
   }
 }
 

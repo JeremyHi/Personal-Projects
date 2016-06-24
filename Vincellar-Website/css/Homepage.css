@@ -30,6 +30,15 @@ p {
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
+hr {
+  margin-top: 11vh;
+  margin-bottom: -10vh;
+  border: 0;
+  border-top: 1px solid #fff;
+  margin-left: 7vw;
+  margin-right: 6vw;
+}
+
 
 .row.featurette.top {
   text-align: -webkit-center;
@@ -455,13 +464,6 @@ footer {
     display: inline-block;
     width: 11.5vw;
     vertical-align: middle;
-  }
-  .col-md-4 {
-    width: 55.333333%;
-    padding-left: 90px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 8.7%;
   }
 }
 

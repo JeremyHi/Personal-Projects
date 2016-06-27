@@ -30,15 +30,6 @@ p {
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
-hr {
-  margin-top: 11vh;
-  margin-bottom: -10vh;
-  border: 0;
-  border-top: 1px solid #fff;
-  margin-left: 7vw;
-  margin-right: 6vw;
-}
-
 
 .row.featurette.top {
   text-align: -webkit-center;
@@ -71,6 +62,7 @@ hr {
   background-repeat: no-repeat;
   color: #fff;
 }
+
 
 /* Featurettes
 ------------------------- */
@@ -107,6 +99,7 @@ section.Overview {
 
 .featurette-heading {
   font-size: 45px;
+  word-break: break-word;
 }
 
 .col-xs-12 {
@@ -120,8 +113,9 @@ small,
   color: #b4b4b4;
 }
 
-b, strong {
-  font-weight: normal;
+b,
+strong {
+  font-weight: bold;
 }
 
 .container {
@@ -136,12 +130,15 @@ b, strong {
   margin-left: auto;
   width: 40%;
 }
+
 .col-xs-6.second-column {
   width: 40%;
 }
 
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
+
 .navbar-default .navbar-nav>li>a:hover {
   color: #fff;
   background-color: rgb(0, 0, 0);
@@ -153,16 +150,16 @@ b, strong {
 }
 
 .no-overflow {
-    position:absolute;
-    top:0;
-    left: 94%;
-    display: block;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-top: 0;
-    color:#ccc;
-    max-width:90%;
+  position: absolute;
+  top: 0;
+  left: 94%;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 0;
+  color: #ccc;
+  max-width: 90%;
 }
 
 .navbar {
@@ -211,7 +208,6 @@ h1.Signup-section {
   margin-left: auto;
 }
 
-
 .Logo {
   width: auto;
   max-width: 196px;
@@ -247,22 +243,15 @@ a.terms {
 
 .btn {
   margin-left: 6px;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 
 /*Front page section
 ----------------------------------------------------*/
+
 .section {
   margin: 0px 17% 0px 17%;
-}
-
-span {
-  float: left;
-}
-
-i.stat {
-  float: right;
 }
 
 h4 {
@@ -328,6 +317,11 @@ p.footer {
   color: #fff
 }
 
+.col-xs-12.statTitle {
+  border-style: none;
+}
+
+
 /*--------------Media Override for screen size--------------*/
 
 @media (min-width: 320px) {
@@ -340,24 +334,19 @@ p.footer {
     margin-left: auto;
     width: 100%;
   }
-
   .col-xs-6 {
     width: 100%;
   }
-
   form.navbar-form.navbar-right {
     display: none;
   }
-
   .form-control {
     width: 49%;
   }
-
   .container>.navbar-header {
     margin-right: 5px;
     margin-left: -34px;
   }
-
   #navbar {
     width: 100%;
     float: right;
@@ -366,14 +355,12 @@ p.footer {
     background-color: #000;
     margin-top: 8vh;
   }
-
   .navbar-default {
     background-color: rgba(0, 0, 0, 0);
     border-color: rgb(239, 154, 154);
     box-shadow: 9px 22px 142px rgba(0, 0, 0, 0);
     width: 100%;
   }
-
   .col-sm-4 {
     width: 216.333333%;
   }
@@ -388,11 +375,9 @@ p.footer {
   .Logo {
     margin-left: 2%;
   }
-
   .panel-body {
     padding: 0;
   }
-
   .col-md-8 {
     width: 100%;
   }
@@ -413,16 +398,8 @@ p.footer {
     background-color: rgba(0, 0, 0, 0);
     border-style: solid;
   }
-
   .col-xs-12.explain {
     border-style: none;
-  }
-  .col-xs-12.innerStats {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    border-style: none;
-    text-align: left;
-    font-size: 19px;
   }
   li {
     float: left;
@@ -433,6 +410,11 @@ p.footer {
   .col-sm-4 {
     width: 74.333333%;
   }
+
+  form.navbar-form.navbar-right {
+    display: table-cell;
+  }
+
   #navbar {
     width: 100%;
     float: right;
@@ -441,26 +423,22 @@ p.footer {
     background-color: #000;
     margin-top: 0;
   }
-
   .col-xs-6.form,
   .col-xs-6.second-column {
     margin-right: 0px;
     width: 40%;
   }
-
   .col-xs-6 {
     width: 27%;
     margin-left: 26%;
     margin-right: -20%;
   }
-
   .col-xs-4 {
     padding-right: 8px;
     margin-left: 10%;
     width: 70%;
     margin-top: 8.7%;
   }
-
   .fa-ul {
     padding-top: 7%;
     padding-left: 0;
@@ -481,11 +459,9 @@ p.footer {
     width: 75px;
     vertical-align: middle;
   }
-
   .form-control {
     width: 140%;
   }
-
   .navbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 13px;
@@ -503,7 +479,6 @@ p.footer {
     margin-right: auto;
     padding: 0;
   }
-
   .navbar-default {
     background-color: rgba(0, 0, 0, 0);
     border-color: rgb(239, 154, 154);
@@ -540,7 +515,6 @@ p.footer {
     width: 41.33333%;
     margin-top: 8.7%;
   }
-  
   .col-md-8 {
     width: 47.666667%;
     margin-left: -4%;

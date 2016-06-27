@@ -145,6 +145,7 @@ b.title {
   color: #FFFFFF;
   font-size: 38px;
   letter-spacing: 3px;
+  word-break: break-word;
 }
 
 .row {

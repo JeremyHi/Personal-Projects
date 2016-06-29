@@ -1,21 +1,30 @@
 <?php
 
-$host= 'localhost';
-$user= 'root';
-$pass= ' Winston ';
-$db= 'users_test';
+$mysql_hostname = "localhost";
+$mysql_username = "root";
+$mysql_password = " Winston ";
+$mysql_database = "users_test";
+$db = mysql_connect ($mysql_hostname, $mysql_username, $mysql_password) or die(mysql_error());
+echo "Connected to Database. ";
 
-$con= mysqli_connect($host, $user, $pass, $db);
-if($con)
-	echo "Successfully connected";
 
-$query= mysqli_query("CREATE TABLE users (id INTEGER PRIMARY KEY, firstName TEXT, lastName TEXT, email TEXT, password TEXT)");
+mysql_select_db($mysql_database, $db) or die("Couldn't find database");
+echo "Selected Database. ";
 
-$sql= "INSERT INTO users VALUES (1, "John", "Cena", "test@gmail.com", "1234");"
 
-// INSERT INTO users VALUES (1, "John", "Cena", "test@gmail.com");
-// INSERT INTO users VALUES (2, "Jim", "Smith", "fake@gmail.com");
-// INSERT INTO users VALUES (3, "Mike", "Rashid", "mRashid@gmail.com");
-// INSERT INTO users VALUES (4, "Joe", "Rogan", "jrogan@gmail.com");
+$submit = $_POST['submit'];			//"submit" button is clicked
+$firstName = 'John';				//$_POST['firstName'];
+$lastName = 'Cena';					//$_POST['lastName'];
+$email = 'test@gmail.com';			//$_POST['email'];
+$password = '1234';					//$_POST['password'];
+$encpassword = 	md5($password);		//md5($_POST['password']);
+
+// In order to reset id field to 0
+// ALTER TABLE users AUTO_INCREMENT = 0;
+
+if ($submit) {
+	$insert= mysql_query("INSERT INTO `users` (`id`, `fistName`, `lastName`, `email`, `password`) VALUES (NULL, '$firstName', '$lastName', '$email', '$encpassword')") or die(mysql_error());
+	echo "Submitted. ";
+}
 
 ?>

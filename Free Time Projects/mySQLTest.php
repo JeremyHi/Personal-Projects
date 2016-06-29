@@ -22,9 +22,11 @@ $encpassword = 	md5($password);		//md5($_POST['password']);
 // In order to reset id field to 0
 // ALTER TABLE users AUTO_INCREMENT = 0;
 
-if ($submit) {
+
+//ONCE page is created check if submit has been clicked
+// if ($submit) {
 	$insert= mysql_query("INSERT INTO `users` (`id`, `fistName`, `lastName`, `email`, `password`) VALUES (NULL, '$firstName', '$lastName', '$email', '$encpassword')") or die(mysql_error());
 	echo "Submitted. ";
-}
+//}
 
 ?>

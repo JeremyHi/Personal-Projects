@@ -19,14 +19,12 @@ $email = 'test@gmail.com';			//$_POST['email'];
 $password = '1234';					//$_POST['password'];
 $encpassword = 	md5($password);		//md5($_POST['password']);
 
-// In order to reset id field to 0
-// ALTER TABLE users AUTO_INCREMENT = 0;
-
 
 //ONCE page is created check if submit has been clicked
 // if ($submit) {
 	$insert= mysql_query("INSERT INTO `users` (`id`, `fistName`, `lastName`, `email`, `password`) VALUES (NULL, '$firstName', '$lastName', '$email', '$encpassword')") or die(mysql_error());
 	echo "Submitted. ";
 //}
+
 
 ?>

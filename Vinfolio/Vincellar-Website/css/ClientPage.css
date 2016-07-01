@@ -22,11 +22,13 @@ body {
 }
 
 .container-fluid.header {
-  background-image: url(Images/Wine_cellar.jpg);
+  background-image: url(../Images/Wine_cellar.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 2%;
+  padding: 2%;
+  text-align: center;
 }
 
 

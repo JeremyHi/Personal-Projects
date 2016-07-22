@@ -13,13 +13,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="Images/vincellar-logo.jpg">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/LoginPage.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/LoginPage.css" />
 
     <title>Vinfolio: Register for an Account</title>
 
     <?php
-        include('php/register.php');
+        // include('register.php');
 
         $username = $_POST['username'];
         $firstName = $_POST['firstName'];

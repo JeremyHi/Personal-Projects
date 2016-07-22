@@ -1,0 +1,255 @@
+﻿<!doctype html>
+<head>
+  <style>
+    body { 
+		width: 300px;
+		margin: 0px;
+		padding: 0px;
+	}
+	.start {
+		-moz-box-shadow:inset 0px 1px 0px 0px #9acc85;
+        -webkit-box-shadow:inset 0px 1px 0px 0px #9acc85;
+        box-shadow:inset 0px 1px 0px 0px #9acc85;
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #74ad5a), color-stop(1, #68a54b));
+        background:-moz-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+        background:-webkit-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+        background:-o-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+        background:-ms-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+        background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#74ad5a', endColorstr='#68a54b',GradientType=0);
+        
+        background-color:#74ad5a;
+        
+        border:1px solid #3b6e22;
+        
+        display:inline-block;
+        color:#ffffff;
+        font-family:arial;
+        font-size:19px;
+        font-weight:bold;
+        padding:8px 31px;
+        text-decoration:none;
+	}
+	.stop {
+		  
+        -moz-box-shadow:inset 0px 1px 0px 0px #b54b3a;
+        -webkit-box-shadow:inset 0px 1px 0px 0px #b54b3a;
+        box-shadow:inset 0px 1px 0px 0px #b54b3a;
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #a73f2d), color-stop(1, #b34332));
+        background:-moz-linear-gradient(top, #a73f2d 5%, #b34332 100%);
+        background:-webkit-linear-gradient(top, #a73f2d 5%, #b34332 100%);
+        background:-o-linear-gradient(top, #a73f2d 5%, #b34332 100%);
+        background:-ms-linear-gradient(top, #a73f2d 5%, #b34332 100%);
+        background:linear-gradient(to bottom, #a73f2d 5%, #b34332 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a73f2d', endColorstr='#b34332',GradientType=0);
+        
+        background-color:#a73f2d;
+        
+        border:1px solid #241d13;
+        
+        display:inline-block;
+        color:#ffffff;
+        font-family:arial;
+        font-size:19px;
+        font-weight:bold;
+        padding:8px 31px;
+        text-decoration:none;
+        
+	}
+	.myButton:hover {
+		-webkit-filter: hue-rotate(-150deg);
+	}
+	.buttonContainer {
+		width: 100%;
+		text-align: center;
+		padding: 15px 0 15px 0;
+		margin-top: 3px;
+		background: rgb(232, 246, 252);
+	}
+	.formContainer {
+		padding: 20px 10px 20px 10px;
+		margin: 3px 0 0 0;
+		background: rgb(239, 243, 253);
+	}
+	.formContainer span {
+		width: 100px;
+		margin-top: 3px;
+	}
+	#title {
+		width: 100%;
+		text-align: center;
+		font-size: 21px;
+		background-color: rgb(160, 209, 255);
+		padding: 15px 0px 15px 0;
+		margin: 0px;
+		font-weight: bolder;
+		height:35px;
+		background: url('img/logo.png');
+		background-size: 100%;
+		text-indent: -1000em;
+	}
+	.fhButton {
+		float: left;
+		padding: 2px 7px 2px 7px;
+		border: solid 1px rgb(173, 173, 173);
+		margin: 6px 8px 0 0;
+		font-size: 11px;
+		font-weight: bolder;
+		background: rgb(243, 243, 243);
+		width: 116px;
+		text-align: center;
+		cursor: pointer;
+	}
+	.clear{
+		clear:both;
+		height: 17px;
+	}
+	.formContainer input {
+		float: left;
+		margin: 2px 4px 2px 0;
+		width: 178px;
+		padding: 2px 0 2px 3px;
+		height: 17px;
+	}
+	.fhButton.selected {
+		background: rgb(198, 233, 250);
+	}
+	#fastHandle {
+		margin-top: 7px;
+	}
+	
+	.smallButton {
+		-webkit-box-shadow: inset 0px 1px 0px 0px #9acc85;
+		box-shadow: inset 0px 1px 0px 0px #9acc85;
+		background: linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+		background-color: #74ad5a;
+		border: 1px solid #3b6e22;
+		display: inline-block;
+		color: #ffffff;
+		font-family: arial;
+		font-size: 13px;
+		font-weight: bold;
+		padding: 3px 28px;
+		margin-top: 2px;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	#signIn {
+		font-weight: bold;
+		margin-top: 15px;
+		cursor: pointer;
+	}
+	#signIn:hover {
+		color: blue;
+	}
+	#loginForm input {
+		width: 180px;
+		padding-top: 2px;
+		float: left;
+		margin-left: 25px;
+	}
+	#validate {
+		-webkit-box-shadow:inset 0px 1px 0px 0px #9acc85;         
+		box-shadow:inset 0px 1px 0px 0px #9acc85;                    
+		background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);                 
+		background-color:#74ad5a;                   
+		border:1px solid #3b6e22;                   
+		display:inline-block;          
+		color:#ffffff;          
+		font-family:arial;          
+		font-size: 12px;          
+		font-weight:bold;          
+		padding: 3px 16px;          
+		text-decoration:none;
+		margin-top: 2px;
+		margin-left: 10px;          
+		cursor: pointer;
+		float: left;
+	}
+	.hidden {
+		display: none;
+	}
+	#loginForm .clear {
+		font-size: 13px;
+		width: 85%;
+		margin: auto;
+		padding-top: 5px;
+	}
+	#helpKeywords {
+		padding: 5px;
+		font-size: 12px;
+		background: rgb(236, 236, 236);
+		margin-top: -3px;
+		border-radius: 0 0 7px 7px;
+		border: 1px rgb(162, 162, 162) solid;
+		display: none;
+	}
+  </style>
+  <title>HS 40Sites Botre</title>
+</head>
+<body>
+  <a href=http://heatedsneaks.com target="_new"><h3 id="title">Heated Sneaks 40Sites Bot</h3></a>
+  <div class="mainContainer">
+	  <div class="formContainer" style="display: none;">
+		<div id="fastHandle">
+			<div class="fhButton">Nikestore</div>
+			<div class="fhButton">Footlocker</div>
+			<div class="fhButton">Finishline</div>
+			<div class="fhButton">Eastbay</div>
+		</div>
+		<div class="clear"></div>
+		<div id="manualHandle">
+		<input type="text" name="fname" id="newshop" placeholder="Manual input"><div id="addHandle" class="smallButton">Add</div>
+		</div>
+	  </div>
+	  <div class="formContainer">
+		<span>Shoes size</span> 
+		<select name="shoesSize" id="shoesSize" class="size-dropdown">
+		<option name="skuId" value="3"> 3</option>
+		<option name="skuId" value="3.5"> 3.5</option>
+		<option name="skuId" value="4"> 4</option>
+		<option name="skuId" value="4.5"> 4.5</option>
+			<option name="skuId" value="5"> 5</option>
+			<option name="skuId" value="5.5"> 5.5</option>
+			<option name="skuId" value="6"> 6</option>
+			<option name="skuId" value="6.5"> 6.5</option>
+			<option name="skuId" value="7"> 7</option>
+			<option name="skuId" value="7.5"> 7.5</option>
+			<option name="skuId" value="8"> 8</option>
+			<option name="skuId" value="8.5"> 8.5</option>
+			<option name="skuId" value="9"> 9</option>
+			<option name="skuId" value="9.5"> 9.5</option>
+			<option name="skuId" value="10"> 10</option>
+			<option name="skuId" value="10.5"> 10.5</option>
+			<option name="skuId" value="11"> 11</option>
+			<option name="skuId" value="11.5"> 11.5</option>
+			<option name="skuId" value="12"> 12</option>
+			<option name="skuId" value="12.5"> 12.5</option>
+			<option name="skuId" value="13"> 13</option>
+			<option name="skuId" value="13.5"> 13.5</option>
+			<option name="skuId" value="14"> 14</option>
+			<option name="skuId" value="14.5"> 14.5</option>
+			<option name="skuId" value="15"> 15</option>
+			<option name="skuId" value="15.5"> 15.5</option>
+				<option name="skuId" value="16"> 16</option>
+					<option name="skuId" value="17"> 17 </option>
+						<option name="skuId" value="18"> 18</option>
+		</select>
+	  </div>
+	  <div class="formContainer">
+	  <span>Enter reattempt time delay(3,000 on release day):</span>
+	  <input type="text" name="keywords" id="timeout" style="float:none;width: 273px;margin-top: 10px;" placeholder="Enter time in milliseconds only.">
+	  </div>
+	  <div class="formContainer" style="display: none;">
+	  <span>Filter tweets by keywords</span>
+	  <input type="text" name="keywords" id="keywords" style="float:none;width: 273px;margin-top: 10px;" placeholder="Enter some keywords">
+	  <div id="helpKeywords">hh<br>
+	  <a href="" target="_new">ff</a></div>
+	  </div>
+	  <div class="buttonContainer"><a href="#" id="start" class="start myButton">Start</a></div>
+  </div>
+  <script src="lib/jquery.js"></script>
+  <script src="popup.js"></script>
+</body>

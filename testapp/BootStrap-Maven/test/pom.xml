@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.fast.archetype</groupId>
+    <artifactId>fast-archetype-parent</artifactId>
+    <version>2.12.1</version>
+  </parent>
+    <groupId>org.test</groupId>
+    <artifactId>test</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>${project.artifactId}</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>bootstrap</artifactId>
+      <version>4.0.0-alpha.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jasig.maven</groupId>
+      <artifactId>sass-maven-plugin</artifactId>
+      <version>1.1.1</version>
+    </dependency>
+    
+  </dependencies>
+
+
+  <build>
+    <filters>
+      <filter>src/main/filters/filter.properties</filter>
+    </filters>
+    <plugins>
+      <plugin>
+        <groupId>org.fast.maven.plugin</groupId>
+        <artifactId>fast-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.lesscss</groupId>
+        <artifactId>lesscss-maven-plugin</artifactId>
+        <configuration>
+          <sourceDirectory>${project.build.directory}/generated-html/v1/less</sourceDirectory>
+          <outputDirectory>${project.build.directory}/generated-html/v1/css-generated</outputDirectory>
+          <includes>
+            <include>bootstrap.less</include>
+            <include>responsive.less</include>
+            <include>screen.less</include>
+          </includes>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+  <repositories>
+    <repository>
+      <id>smile-github-repository</id>
+      <url>http://smile-sa.github.com/maven-repository/releases</url>
+    </repository>
+  </repositories>
+</project>

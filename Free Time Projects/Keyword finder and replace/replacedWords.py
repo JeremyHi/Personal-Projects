@@ -1,3 +1,5 @@
+# this is a comment
+
 import re
 
 keywords = ['get', '/shop/all/', 'category', 'indexOf', 'href', 'location', 'keyword', '', 'toLowerCase', 'color', '.inner-article > h1', 'size', '.inner-article', 'innerHTML', '.inner-article > h1 > a', 'getAttribute', 'trim', 'textContent', '.inner-article > p > a', 'not found', 'log', 'I am undefined', '.inner-article > a', 'done', 'GET', ':', 'split', 'text', 'title', 'filter', '-', '---', 'ajax', 'http://www.supremenewyork.com/shop/all/', '/shop/all', ':visible', 'is', '.in-cart', '#add-remove-buttons', 'selectedIndex', 'prop', '#size', 'each', '#size option', 'click', '[name="commit"]', 'ischeckout', 'shop/all', 'https://www.supremenewyork.com/checkout', 'sendMessage', 'extension']
@@ -15,3 +17,5 @@ indexBank = sorted(indexBank[1::])
 
 for y in wordBank:
 	s = s.replace(y, keywords[int(y[9:11])])
+
+

@@ -23,6 +23,15 @@ A collection of various projects, ideas, and speculations I have worked on previ
 
 ### **Loyola Marymount Works**
 
+  *Freshman*
+    - Java
+  
+  *Sophomore*
+    - Various languages and projects
+
+  *Junior*
+    - EcmaScript, Python, Prolog, MIPS, HTML, C
+
   - Projects categorized by year, lots of projects here, most are assignments, others are self made.
   - The "Random" directory is where a good amount of my favorite/best side projects are. It also contains work from challenges I partook in. My personal favorites being the Cryptography Services, where I first learned and practiced various forms of security, and Scrapy, one of my top favorite Python libraries for web crawling. I first used it to create a highly successful picture scraping bot on reddit for Space related images, saving them directly in my computers backgrounds folder.
   - Summer17 is where I will store the majority of projects I am doing that summer, as I am doing a "100 days of code" goal.

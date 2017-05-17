@@ -1,0 +1,15 @@
+To make a new branch and use for a github repo project:
+  Make new branch
+    - git branch <branch-name>
+    OR
+    - make new branch on repository site
+  Switch to new branch
+    - git checkout <branch-name>
+  Make new remote
+    - git remote add <remote-name> <branch-url>
+
+Should be good to go at this point. When finished, you should delete the branch by running:
+  Locally first
+    - git branch -d <branch-name>
+  Then the remote from server
+    - git push origin --delete <remote-name>

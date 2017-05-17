@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "YeezyFinder",
+  "version": "1", 
+
+  "content_scripts": [ 
+  {
+    "matches": [
+      "http://www.sneakersnstuff.com/en/product/22576/jordan-brand-air-jordan-xxx"
+    ],
+    "js": ["content.js"]
+  }]
+
+}

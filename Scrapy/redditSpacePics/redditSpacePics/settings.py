@@ -87,5 +87,7 @@ ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
+CLOSESPIDER_PAGECOUNT = 10
+
 IMAGES_STORE = './Images'
 IMAGES_EXPIRES = 30

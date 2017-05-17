@@ -1,0 +1,36 @@
+Jeremy Hitchcock				HW4
+
+
+After having run this program, I have found that the parent ID is displayed as a lower ID than the child process. The child process is executed first, and without the sleep() system call, the program does not know its own parent ID. When sleep() is called, the program allows itself to take the parent process ID if not included, the parent ID process is finished before the child can get it, which shows an output of 1 or 0 for the parent process ID.
+
+——————————————————————————————————————————————————————————————————————————————————————————————
+						Code
+
+
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/types.h>
+
+#define MAX_COUNT 100
+
+int main(void) {
+	pid_t pid;
+	pid = fork();
+
+    if (pid == 0) {
+    	int i;
+
+	    for (i = 1; i <= MAX_COUNT; i = i + 10) {
+	    	printf("	CHILD: pid is %d and my parent's id is %d. VALUE is %d\n", getpid(), getppid(), i);
+	    }
+	    printf("	*** Child process is done ***\n");
+	} else {
+    	int i;
+
+    	sleep(1);	
+    	for (i = 1; i <= MAX_COUNT; i = i + 10) {
+        	printf("PARENT: My pid is %d and my parent's id is %d. VALUE is %d\n", getpid(), pid, i);
+    	}
+    	printf("*** Parent is done ***\n");
+    }
+}

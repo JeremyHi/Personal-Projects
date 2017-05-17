@@ -1,0 +1,3 @@
+wvboTJRS230dleJRyYf6z/FGCNhW5dXtYBcK3KuEVVU= #logs in as David
+
+#completed by simply generating new encrypted string using the aes_cbc_cipher file’s encrypt method.

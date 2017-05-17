@@ -9,16 +9,17 @@ class ToScrapeCSSSpider(scrapy.Spider):
     start_urls = ['https://www.reddit.com/user/Ruht_Roh/m/spacesubreddits/']
 
     def parse(self, response):
-        if len(os.listdir('Images/full')) > 30:
-        	raise CloseSpider(reason='MAX ITEMS DOWNLOADED')
+        length = len(os.listdir('Images/full'))
+        if len(os.listdir('Images/full')) > (length + 30):
+            raise CloseSpider(reason='MAX ITEMS DOWNLOADED')
 
         for quote in response.css("div.thing"):
             if any(x in quote.css("div.entry a::attr(href)").extract_first() for x in ['.jpg', '.png']):
-	            yield {
-	                'title': quote.css("a.title::text").extract_first(),
-	                'author': quote.css("a.author::text").extract_first(),
-	                'image_urls': [quote.css("div.entry a::attr(href)").extract_first()],
-	            }
+                yield {
+                    'title': quote.css("a.title::text").extract_first(),
+                    'author': quote.css("a.author::text").extract_first(),
+                    'image_urls': [quote.css("div.entry a::attr(href)").extract_first()],
+                }
 
         next_page_url = response.css("span.next-button a::attr(href)").extract_first()
         if next_page_url is not None:

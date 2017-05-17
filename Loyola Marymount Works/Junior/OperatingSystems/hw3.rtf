@@ -1,0 +1,183 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf820
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset77 Mshtakan;\f2\fmodern\fcharset0 Courier-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red28\green28\blue28;\red246\green247\blue249;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c0;\cssrgb\c14510\c14510\c14510;\cssrgb\c97255\c97647\c98039;
+}
+\margl1440\margr1440\vieww17980\viewh20200\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs156 \cf0 convert the hex to ASCII
+\b0\fs24 \
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs28 \cf0 For a 
+\b .xml
+\b0  file
+\fs24 \
+ - after executing the \'93od -bc filename.ext | head -4\'94 command, the output was:\
+	
+\b 0000000   074 077 170 155 154 040 166 145 162 163 151 157 156 075 042 061\
+           <   ?   x   m   l       v   e   r   s   i   o   n   =   "   1\
+	0000020   056 060 042 077 076 012 074 143 141 164 141 154 157 147 076 012\
+           .   0   "   ?   >  \\n   <   c   a   t   a   l   o   g   >  \\
+\b0 \
+   The magic numbers for the .
+\b xml
+\b0  file are: 
+\b 3c 3f 78 6d 6c 20\
+
+\b0 \
+
+\b\fs28 .gif
+\b0  file
+\fs24 \
+ - The gif i used was a GIF89a, with had the output of:\
+	
+\b 0000000   107 111 106 070 071 141 073 001 322 000 346 000 000 047 045 044\
+           G   I   F   8   9   a   ; 001 322  \\0 346  \\0  \\0   '   %   $\
+	0000020   110 061 054 152 125 116 252 144 102 110 104 061 370 325 254 355\
+           H   1   ,   j   U   N 252   d   B   H   D   1 370   
+\f1 \uc0\u1388 
+\f0   ** 266
+\b0 \
+   The magic numbers for this 
+\b gif
+\b0  are: 
+\b 47 49 46 38 39 61\
+\
+
+\fs28 .jpg 
+\b0 file
+\fs24 \
+ - The output for the jpeg file format was:\
+
+\b 	\cf2 \CocoaLigature0 0000000   377 330 377 340 000 020 112 106 111 106 000 001 002 002 000 001\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2          377 330 377 340  \\0 020   J   F   I   F  \\0 001 002 002  \\0 001\
+	 0000020   000 001 000 000 377 340 014 002 112 106 130 130 000 020 377 330\
+          \\0 001  \\0  \\0 377 340  \\f 002   J   F   X   X  \\0 020 377 377
+\b0 \
+
+\b    
+\b0 The magic numbers for the 
+\b jpeg
+\b0  file are: 
+\b \cf3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 FF D8 FF DB
+\b0\fs28 \
+\
+
+\b a.out
+\b0  file\
+ - output\
+
+\b 	
+\fs24 \cf2 \kerning1\expnd0\expndtw0 \CocoaLigature0 0000000   317 372 355 376 007 000 000 001 003 000 000 200 002 000 000 000\
+         317 372 355 376  \\a  \\0  \\0 001 003  \\0  \\0 200 002  \\0  \\0  \\0\
+	0000020   017 000 000 000 260 004 000 000 205 000 040 000 000 000 000 000\
+         017  \\0  \\0  \\0 260 004  \\0  \\0 205  \\0      \\0  \\0  \\0  \\0  \\0\
+
+\fs28 \expnd0\expndtw0\kerning0
+\CocoaLigature1    
+\b0\fs24 \kerning1\expnd0\expndtw0 \CocoaLigature0 The magic numbers for the 
+\b .out
+\b0  file are:
+\b\fs28 \expnd0\expndtw0\kerning0
+\CocoaLigature1 	\
+
+\b0 \
+
+\b .txt
+\b0  file\
+ - output\
+	
+\b\fs24 \kerning1\expnd0\expndtw0 \CocoaLigature0 0000000   105 122 124 102 105 122 124 102 127 122 124 102 127 124 122 102\
+           E   R   T   B   E   R   T   B   W   R   T   B   W   T   R   B\
+	0000020   012 127 105 102 012 127 105 102 012 127 105 122 012 105 127 012\
+          \\n   W   E   B  \\n   W   E   B  \\n   W   E   R  \\n   E   W  \\n\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li6795\fi-6796\pardirnatural\partightenfactor0
+
+\b0\fs28 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    
+\fs24 \kerning1\expnd0\expndtw0 \CocoaLigature0 The magic numbers for the 
+\b .txt
+\b0  file are: 
+\b \cf3 \cb4 \expnd0\expndtw0\kerning0
+\CocoaLigature1 46 4F 52 4D nn nn nn nn46 54 58 54
+\b0\fs28 \cf2 \cb1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2 \
+
+\b .mpeg
+\b0  file\
+ - output\
+	
+\b\fs24 \kerning1\expnd0\expndtw0 \CocoaLigature0 0000000   000 000 001 263 024 000 360 024 000 310 040 240 000 000 001 270\
+          \\0  \\0 001 263 024  \\0 360 024  \\0 310     240  \\0  \\0 001 270\
+	0000020   000 010 000 100 000 000 001 000 000 011 326 120 000 000 001 001\
+          \\0  \\b  \\0   @  \\0  \\0 001  \\0  \\0  \\t 326   P  \\0  \\0 001 001\
+   
+\b0 The magic numbers for the 
+\b mpeg
+\b0  file are: 
+\f2\b\fs28 \expnd0\expndtw0\kerning0
+\CocoaLigature1 FF FB
+\f0\b0 \
+\
+
+\b .mp3
+\b0  file\
+ - output\
+	
+\b\fs24 \kerning1\expnd0\expndtw0 \CocoaLigature0 0000000   111 104 063 003 000 000 000 017 171 150 124 120 105 061 000 000\
+           I   D   3 003  \\0  \\0  \\0 017   y   h   T   P   E   1  \\0  \\0\
+	0000020   000 015 000 000 000 124 162 141 166 151 044 040 123 143 157 164\
+          \\0  \\r  \\0  \\0  \\0   T   r   a   v   i   $       S   c   o   t\
+   
+\b0 The magic numbers for the 
+\b mp3
+\b0  file are:
+\b  
+\f2\fs28 \expnd0\expndtw0\kerning0
+\CocoaLigature1 FF FB
+\f0\b0\fs24 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+
+\fs28 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\
+
+\b .exe\
+ - 
+\b0 output\
+	
+\b\fs24 \kerning1\expnd0\expndtw0 \CocoaLigature0 0000000   317 372 355 376 007 000 000 001 003 000 000 200 002 000 000 000\
+         317 372 355 376  \\a  \\0  \\0 001 003  \\0  \\0 200 002  \\0  \\0  \\0\
+	0000020   020 000 000 000 000 006 000 000 205 000 040 000 000 000 000 000\
+         020  \\0  \\0  \\0  \\0 006  \\0  \\0 205  \\0      \\0  \\0  \\0  \\0  \\0\
+
+\b0     The magic numbers for the 
+\b exe
+\b0  file are: 
+\f2\b\fs28 \expnd0\expndtw0\kerning0
+\CocoaLigature1 4D 5A
+\f0\b0\fs24 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

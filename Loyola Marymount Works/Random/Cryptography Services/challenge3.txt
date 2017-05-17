@@ -1,0 +1,10 @@
+Answer—————————————————————————————————————————————————————————————————————————————————————————————————————————————
+The first thing I noticed is that a 4 digit number used as salt for a SHA-256 hash means a limited set of possibilities, 10,000 to be exact. While 10,000 is a lot of numbers, if the app gets popular, then there will only be a limited amount of keys able to be produced that will overflow, which could lead to multiple people having the same key. A hacker could exploit that by brute forcing all the different keys t log into a specific users session.
+
+Logging into the video displays wifi hotspot presents a fair amount of vulnerabilities. One being that SSID
+is fairly weak on its own, coming from http://www.webopedia.com/TERM/S/SSID.html: SSID is considered to be a fairly weak form of security because an SSID can be sniffed in plain text from a packet and most access points broadcast the SSID multiple times per second within the body of each beacon frame. A hacker can easily use an 802.11 analysis tool to identify the SSID. Some network administrators turn off SSID broadcasting, but a hacker can still sniff the SSID from frames that stations use when associating with an access point.
+Also, public wifi hotspots, once taken over or logged into by a skilled hacker, can be the source of many data stealing attacks.
+
+One of the downsides to the Authentication of the Ephemeral Diffie-Hellman is that it doesn't provide authentication on its own, because the key is different every time. So neither party can be sure that the key is from the intended party. 
+
+For using AES in ECB (Electronic Cookbook) mode, the disadvantage of this method is that identical plaintext blocks are encrypted into identical ciphertext blocks; thus, it does not hide data patterns well. In some senses, it doesn't provide serious message confidentiality, and it is not recommended for use in cryptographic protocols at all.

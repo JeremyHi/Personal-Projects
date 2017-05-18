@@ -1,0 +1,25 @@
+body {
+  font-family: Georgia;
+  font-color: black
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  margin-bottom: 0px
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  background-color: #000
+}
+
+a, a:hover {
+  color: #FFF
+}

@@ -16,6 +16,9 @@ A collection of various projects, ideas, and speculations I have worked on previ
 
  *mCServer*
  - Using Twillio I created an alerter for my friends and I to tell when we turned on our Minecraft Server, so we wouldn't have to constantly, manually text each other when we started playing games.
+ 
+ *Time_Machine_Status*
+ - Captures the output of OSX command `tmutils status`. Used for a program I created to display time machine information as its happening on my computer.
 
 ### **LibSass Test**
 

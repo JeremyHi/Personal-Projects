@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="bootstrap/docs/favicon.ico">
+
+    <title>Hudson Luthringshausen</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../css/welcome.css" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div id="spacing-upper" class="row"></div>
+      <div class="row">
+        <div class="col-xs-5">
+          <ul id="navList">
+            <a href="../">
+              <li>
+                <h1>HUDSON</h1>
+              </li>
+              <li>
+                <h1>LUTHRINGSHAUSEN</h1>
+              </li>
+            </a>
+            <li><a href="../gallery1">current</a></li>
+            <li><a href="../gallery2">vault</a></li>
+            <li><a href="../gallery3">screenprints</a></li>
+            <li><a href="../bio">bio</a></li>
+            <li><a href="../contact">contact</a></li>
+            <li><a href="#">misc.</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-7">
+          <div class="row" style="text-align:right">
+            <a id="back">back</a> - <a id="next">next</a>
+            <script>
+              let painting = 1;
+              $('#back').click(function () {
+                $("#" + painting).toggle();
+                painting > 1 ? painting = painting - 1 : painting = 4;
+                $("#painting").attr("src", "../../images/gallery2/" + painting + ".jpg");
+                $("#" + painting).toggle();
+              })
+
+              $('#next').click(function () {
+                $("#" + painting).toggle();
+                painting < 4 ? painting = painting + 1 : painting = 1;
+                $("#painting").attr("src", "../../images/gallery2/" + painting + ".jpg");
+                $("#" + painting).toggle();
+              })
+            </script>
+          </div>
+            <div class="row">
+              <img id="painting" class="center-block" style="width: 75%" src="../../images/gallery2/1.jpg">
+              <p id="1" style="text-align:center">Basquiat</p>
+              <p id="2" style="text-align:center" hidden>Freddie Mercury</p>
+              <p id="3" style="text-align:center" hidden>Supermonroe</p>
+              <p id="4" style="text-align:center" hidden>Daft Punk</p>
+          </div>
+        </div>
+      </div>
+
+    <!-- Bootstrap core JavaScript ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+      window.jQuery || document.write('<script src="bootstrap/docs/assets/js/vendor/jquery.min.js "><\/script>')
+    </script>
+  </body>
+<!-- Made by @ruhtroh -->
+</html>

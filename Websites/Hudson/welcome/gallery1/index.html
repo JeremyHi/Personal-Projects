@@ -42,11 +42,11 @@
               </li>
             </a>
             <li><a href="#">current</a></li>
-            <li><a href="./gallery2">vault</a></li>
-            <li><a href="./gallery3">screenprints</a></li>
-            <li><a href="./bio">bio</a></li>
-            <li><a href="./contact">contact</a></li>
-            <li><a href="./misc">misc.</a></li>
+            <li><a href="../gallery2">vault</a></li>
+            <li><a href="../gallery3">screenprints</a></li>
+            <li><a href="../bio">bio</a></li>
+            <li><a href="../contact">contact</a></li>
+            <li><a href="../misc">misc.</a></li>
           </ul>
         </div>
         <div class="col-xs-7">
@@ -55,18 +55,27 @@
             <script>
               let painting = 1;
               $('#back').click(function () {
-                painting > 1 ? painting = painting - 1 : painting = 3;
+                $("#" + painting).toggle();
+                painting > 1 ? painting = painting - 1 : painting = 4;
                 $("#painting").attr("src", "../../images/gallery1/" + painting + ".jpg");
+                $("#" + painting).toggle();
               })
 
               $('#next').click(function () {
-                painting < 3 ? painting = painting + 1 : painting = 1;
+                $("#" + painting).toggle();
+                painting < 4 ? painting = painting + 1 : painting = 1;
                 $("#painting").attr("src", "../../images/gallery1/" + painting + ".jpg");
+                $("#" + painting).toggle();
               })
             </script>
           </div>
-            <img id="painting" class="center-block" style="width: 75%" src="../../images/gallery1/1.jpg">
-            <p>Stats</p>
+            <div class="row">
+              <img id="painting" class="center-block" style="width: 75%" src="../../images/gallery1/1.jpg">
+              <p id="1" style="text-align:center">Basquiat</p>
+              <p id="2" style="text-align:center" hidden>Freddie Mercury</p>
+              <p id="3" style="text-align:center" hidden>Supermonroe</p>
+              <p id="4" style="text-align:center" hidden>Daft Punk</p>
+          </div>
         </div>
       </div>
 

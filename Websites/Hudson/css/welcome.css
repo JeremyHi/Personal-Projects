@@ -18,6 +18,12 @@ a, a:hover, p {
   font-size:14px
 }
 
+p {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 #navList, #navList li{
 	margin:0;
 	padding:0;

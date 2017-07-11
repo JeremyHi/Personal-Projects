@@ -6,21 +6,17 @@ class myWebsocketClient(gdax.WebsocketClient):
     self.url = "wss://ws-feed.gdax.com/"
     self.products = ["ETH-USD"]
     self.message_count = 0
-    print("Lets count the messages!")
+    print("Begin Program: price_check_stream")
 
   def on_message(self, msg):
-    self.message_count += 1
     if 'price' in msg and 'type' in msg:
       print ("{}".format(float(msg["price"])))
+      time.sleep(.5)
   
   def on_close(self):
     print("-- Goodbye! --")
 
 wsClient = myWebsocketClient()
 wsClient.start()
-
-while (wsClient.message_count < 10):
-  print(wsClient.url, wsClient.products)
-  print ("\nmessage_count =", "{} \n".format(wsClient.message_count))
-  time.sleep(1)
-  wsClient.close()
+time.sleep(3)  
+wsClient.close()

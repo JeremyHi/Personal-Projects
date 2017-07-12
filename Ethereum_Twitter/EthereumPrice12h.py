@@ -1,15 +1,19 @@
 #!/usr/bin/env python
 
-import json
-import requests
-import time
+import json, requests, time
 from twython import Twython
+import TwitterCredentials as tc
 
 starttime = time.time()
 
 def twelve_hour_update():
+  credentials = tc.getTwitterCredentials()
+
   twitter = Twython(
-    )
+    credentials['APP_KEY'],
+    credentials['APP_SECRECT'], 
+    credentials['OAUTH_TOKEN'], 
+    credentials['OAUTH_TOKEN_SECRET'])
 
   response_Coin_Makret_Cap = json.loads(requests.get("https://coinmarketcap-nexuist.rhcloud.com/api/eth").text)['price']['usd']
   response_Crypto_Compare = json.loads(requests.get("https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD").text)['USD']

@@ -1,10 +1,17 @@
 import json, requests, time
+import TwitterCredentials as tc
 from twython import Twython
 
 starttime = time.time()
 
 def hourly_update():
-  twitter = Twython()
+  credentials = tc.getTwitterCredentials()
+
+  twitter = Twython(
+    credentials['APP_KEY'],
+    credentials['APP_SECRECT'], 
+    credentials['OAUTH_TOKEN'], 
+    credentials['OAUTH_TOKEN_SECRET'])
 
   response_Coin_Makret_Cap = json.loads(requests.get("https://coinmarketcap-nexuist.rhcloud.com/api/eth").text)['price']['usd']
   response_Crypto_Compare = json.loads(requests.get("https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD").text)['USD']

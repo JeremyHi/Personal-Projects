@@ -11,7 +11,7 @@ class myWebsocketClient(gdax.WebsocketClient):
   def on_message(self, msg):
     if 'price' in msg and 'type' in msg:
       print ("{}".format(float(msg["price"])))
-      time.sleep(.5)
+      time.sleep(.1)
   
   def on_close(self):
     print("-- Goodbye! --")

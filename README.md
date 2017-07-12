@@ -40,6 +40,11 @@ A collection of various projects, ideas, and speculations I have worked on previ
   - Summer17 is where I will store the majority of projects I am doing that summer, as I am doing a "100 days of code" goal.
   - TODO: find project, update the freshman/sophomore projects to more modern, best practices formats.
 
+### **Ethereum_Twitter**
+
+  - Currently houses the Python files in which my @Current_ETH Twitter account performs rudimentary coin analysis on price of Ethereum, then tweets information about said coin.
+  - Performs hourly, twelve hour, and under construction websocket analysis of Ethereum.
+
 ### **Scrapy**
 
   - This is the directory that contains one of my favorite projects, where I created a web scraping bot for reddit to save photos relating to space in my computers desktop backgrounds.

@@ -42,3 +42,4 @@ TwitterCredentials.py
 PriceData.txt
 RedditCredentials.py
 __pycache__
+*.pyc

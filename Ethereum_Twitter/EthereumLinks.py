@@ -22,15 +22,22 @@ def getTwitter():
 def getHotLink():
   imageExtensions = ['.gif','.jpeg','.jpg','.jif','.jfif','.jp2','.jpx','.j2k','.j2c','.fpx','.pcd','.png','.pdf','www.reddit.com']
 
-  for submission in reddit.subreddit('Ethereum').hot():
+  linkList = []
+  for submission in reddit.subreddit('Ethereum').hot(limit=20):
       if not any(extensions in submission.url for extensions in imageExtensions):
-        return(submission.url)
+        linkList.append(submission.url)
+  
+  return linkList
 
-def postToTwitter(submissionUrl):
+def postToTwitter(urlList):
   twitter = getTwitter()
-  tweet = submissionUrl + " #Ethereum #ETH"
-  twitter.update_status(status=tweet)
-  print(tweet)
+  for url in urlList:
+    try:
+      tweet = url + " #Ethereum #ETH"
+      print(tweet)
+      return twitter.update_status(status=tweet)
+    except Exception as e:    
+      print(e)
 
 try:
   postToTwitter(getHotLink())

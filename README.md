@@ -43,7 +43,8 @@ A collection of various projects, ideas, and speculations I have worked on previ
 ### **Ethereum_Twitter**
 
   - Currently houses the Python files in which my @Current_ETH Twitter account performs rudimentary coin analysis on price of Ethereum, then tweets information about said coin.
-  - Performs hourly, twelve hour, and under construction websocket analysis of Ethereum.
+  - Every 30 minutes scans for news/exciting information about ethereum and tweets the link.
+  - Performs half hour, hourly, twelve hour analysis of Ethereum.
 
 ### **Scrapy**
 

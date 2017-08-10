@@ -24,8 +24,8 @@ def checkIfRecentTweet(url):
   twitter = getTwitter()
   previousTweets = twitter.get("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=Current_ETH&count=40")
   previousUrls = [tweet['entities']['urls'][0]['expanded_url'] for tweet in previousTweets if tweet['entities']['urls']]
-
-  return url in previousUrls
+  
+  return url not in previousUrls
 
 def getHotLink():
   reddit = getReddit()

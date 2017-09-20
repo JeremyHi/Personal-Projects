@@ -1,9 +1,10 @@
 body {
-  font-family: Arial;
+  font-family: Courier;
   font-color: black
 }
 
 h1 {
+  font-family: Arial;
   text-align: right;
   margin: 0
 }

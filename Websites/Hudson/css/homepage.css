@@ -1,5 +1,5 @@
 body {
-  font-family: Arial;
+  font-family: Georgia;
   font-color: black
 }
 
@@ -22,4 +22,9 @@ body {
 
 a, a:hover {
   color: #FFF
+}
+
+.jumbotron .h1, .jumbotron h1 {
+  color: inherit;
+  FONT-FAMILY: Arial;
 }

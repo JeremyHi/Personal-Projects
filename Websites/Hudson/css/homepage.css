@@ -23,3 +23,8 @@ body {
 a, a:hover {
   color: #FFF
 }
+
+.jumbotron .h1, .jumbotron h1 {
+  color: inherit;
+  FONT-FAMILY: Arial;
+}

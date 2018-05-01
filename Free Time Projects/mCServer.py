@@ -2,8 +2,8 @@ from twilio.rest import TwilioRestClient
 import os
 import time
 
-ACCOUNT_SID = "AC6ca9b432885df372f4d6c6952bdc6cc5"
-AUTH_TOKEN = "9d7f2b788e887fad893b35b895d03c5c"
+ACCOUNT_SID = "<imported from external file>"
+AUTH_TOKEN = "<imported from external file>"
 
 client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
 
